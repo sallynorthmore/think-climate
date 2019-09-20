@@ -60,12 +60,11 @@ const IndexPage = () => (
 
             <ParallaxLayer offset={1} factor={1} speed={0.1}>
               <S.Content role="main">
-                <h2>Register</h2>
-                <p>
-                  Register your interest to attend our event and we will be in
-                  touch shortly
-                </p>
-                <div>form</div>
+                <S.ContentInner>
+                  <h2>Register</h2>
+                  <p>Register your interest to attend our event.</p>
+                  <div>form</div>
+                </S.ContentInner>
               </S.Content>
             </ParallaxLayer>
           </Parallax>
