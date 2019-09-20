@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import { ifProp } from 'styled-tools';
+// import { ifProp } from 'styled-tools';
 
 const fadeIn = keyframes`
   from {
@@ -56,7 +56,7 @@ export const Content = styled.main`
   text-align: center;
 `;
 
-export const ContentInner = styled.main`
+export const ContentInner = styled.div`
   max-width: 960px;
   margin: 0 auto;
   text-align: left;

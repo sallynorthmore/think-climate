@@ -4,7 +4,7 @@ import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 import Img from 'gatsby-image';
 import Banner from '../components/Banner';
 import Layout from '../components/Layout';
-import * as S from './styles';
+import * as S from '../components/Page/styles';
 
 const IndexPage = () => (
   <StaticQuery
