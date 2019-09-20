@@ -53,6 +53,12 @@ export const Content = styled.main`
   color: black;
   min-height: 100vh;
   padding: 2rem 2.5rem;
+  text-align: center;
+`;
+
+export const ContentInner = styled.main`
+  max-width: 960px;
+  margin: 0 auto;
   text-align: left;
 
   & * + * {
