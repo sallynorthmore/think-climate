@@ -2,6 +2,7 @@ import * as React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 import Img from 'gatsby-image';
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 import Banner from '../components/Banner';
 import Layout from '../components/Layout';
 import * as S from '../components/Page/styles';
@@ -38,17 +39,23 @@ const IndexPage = () => (
         return;
       }
 
+      console.log(page.hero.image);
       return (
         <Layout>
           <Parallax pages={2} scrolling>
             <ParallaxLayer offset={0} factor={1} speed={0.2}>
-              <S.Earth
-                style={{
-                  backgroundImage: `url('/images/uploads/earth-1.jpg')`
-                }}
-              />
+              {page.hero.image && (
+                <S.Earth>
+                  <PreviewCompatibleImage
+                    imageInfo={{
+                      image: page.hero.image,
+                      alt: `${page.hero.title}`
+                    }}
+                  />
+                </S.Earth>
+              )}
             </ParallaxLayer>
-            <ParallaxLayer offset={0} factor={1} speed={-0.2}>
+            <ParallaxLayer offset={0} factor={1} speed={-0.1}>
               <Banner />
               <S.Hero>
                 <S.HeroInner>
@@ -62,8 +69,19 @@ const IndexPage = () => (
               <S.Content role="main">
                 <S.ContentInner>
                   <h2>Register</h2>
-                  <p>Register your interest to attend our event.</p>
-                  <div>form</div>
+                  <p>
+                    Register your interest{' '}
+                    <a
+                      href="https://forms.gle/CZp4VcJ5G8VW3wEC7"
+                      title="Register form"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      here
+                    </a>{' '}
+                    to attend our event, <br />
+                    and we will be in touch with more information shortly.
+                  </p>
                 </S.ContentInner>
               </S.Content>
             </ParallaxLayer>
