@@ -1,5 +1,4 @@
 import styled, { keyframes } from 'styled-components';
-// import { ifProp } from 'styled-tools';
 
 const fadeIn = keyframes`
   from {
@@ -13,14 +12,12 @@ const fadeIn = keyframes`
 
 export const Earth = styled.div`
   animation: ${fadeIn} 5s ease-in;
-  background-repeat: no-repeat;
-  background-position: 100px -80%;
-  background-size: 125%;
-  min-height: 100vh;
+  position: relative;
+  left: 20%;
 
   @media (min-width: ${props => props.theme.desktop}) {
-    background-position: 100% center;
-    background-size: contain;
+    /* background-position: 100% center;
+    background-size: contain; */
   }
 `;
 
@@ -36,6 +33,9 @@ export const Hero = styled.header`
 
 export const HeroInner = styled.div`
   text-align: left;
+  margin-bottom: 0;
+  padding-top: 5rem;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 
   & p {
     font: 900 1rem/1rem var(--font-questrial);
@@ -45,6 +45,11 @@ export const HeroInner = styled.div`
     font: 900 3rem/3rem var(--font-questrial);
     margin-top: 1rem;
     max-width: 600px;
+  }
+
+  @media (min-width: ${props => props.theme.desktop}) {
+    margin: auto 0;
+    padding-top: 0;
   }
 `;
 
