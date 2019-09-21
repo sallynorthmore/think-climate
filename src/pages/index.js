@@ -44,7 +44,7 @@ const IndexPage = () => (
             <ParallaxLayer offset={0} factor={1} speed={0.2}>
               <S.Earth
                 style={{
-                  backgroundImage: `url('/img/uploads/earth-1.jpg')`
+                  backgroundImage: `url('/images/uploads/earth-1.jpg')`
                 }}
               />
             </ParallaxLayer>
