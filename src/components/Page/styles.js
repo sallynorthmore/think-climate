@@ -59,10 +59,10 @@ export const Content = styled.main`
 export const ContentInner = styled.div`
   max-width: 960px;
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
 
   & * + * {
-    margin: 2rem 0 0;
+    margin: 2rem auto 0;
   }
 
   & h2 {
@@ -72,5 +72,11 @@ export const ContentInner = styled.div`
 
   & p {
     font-size: 1.25rem;
+    line-height: 2rem;
+    max-width: 620px;
+  }
+
+  & a {
+    color: purple;
   }
 `;
