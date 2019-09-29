@@ -15,9 +15,13 @@ export const Hero = styled.header`
   animation: ${fadeIn} 0.5s ease-in;
   color: var(--white);
   display: flex;
-  min-height: 100vh;
+  min-height: 80vh;
   padding: 2rem 2.5rem;
   text-align: left;
+
+  @media (min-width: ${props => props.theme.desktop}) {
+    min-height: 100vh;
+  }
 `;
 
 export const HeroInner = styled.div`
@@ -27,12 +31,12 @@ export const HeroInner = styled.div`
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 
   & p {
-    font: 900 var(--type-0) var(--font-questrial);
+    font: 900 var(--type--2) var(--font-questrial);
     max-width: 100rem;
   }
 
   & h1 {
-    font: 900 var(--type-5) var(--font-questrial);
+    font: 900 var(--type-2) var(--font-questrial);
     margin-top: 1rem;
     max-width: 65rem;
   }
@@ -40,5 +44,13 @@ export const HeroInner = styled.div`
   @media (min-width: ${props => props.theme.desktop}) {
     margin: auto 0;
     padding-top: 0;
+
+    & p {
+      font: 900 var(--type-0) var(--font-questrial);
+    }
+
+    & h1 {
+      font: 900 var(--type-5) var(--font-questrial);
+    }
   }
 `;
