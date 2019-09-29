@@ -76,7 +76,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   html, body {
-    background: var(--moon);
+    background: var(--black);
     color: (--black);
     font-family: var(--font-raleway);
     font-size: 100%; /* 16px base font */

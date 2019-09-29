@@ -13,7 +13,6 @@ const fadeIn = keyframes`
 export const Hero = styled.header`
   align-items: center;
   animation: ${fadeIn} 0.5s ease-in;
-  background: var(--black);
   color: var(--white);
   display: flex;
   min-height: 100vh;
