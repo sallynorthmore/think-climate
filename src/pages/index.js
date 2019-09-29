@@ -104,7 +104,56 @@ const IndexPage = () => (
                         date="20 November 2019"
                         time="18:30-20:30"
                       >
-                        <p>More information</p>
+                        <p>
+                          Taking inspiration from The Climate Reality Project
+                          and Project Drawdown, this event will tackle three key
+                          questions: 'Must we Change?’, ‘Can we Change?’ and
+                          ‘Will we Change?’.  
+                        </p>
+                        {/*
+                        <p>
+                          This evening event, hosted by IBM, brings together a
+                          stellar group of professionals and climate enthusiasts
+                          - including Alex Weller Chief Marketing Officer of US
+                          clothing company Patagonia - to provide a truthful and
+                          hopeful take on how we can solve the Climate Crisis.
+                        </p>
+
+                         <h4>Who is it for?</h4>
+                        <p>
+                          Anybody who is interested in learning how we can
+                          tackle the Climate Crisis together.
+                        </p>
+
+                        <h4>Why come?</h4>
+                        <ul>
+                          <li>
+                            Learn from our climate experts about why we're
+                            experiencing a Climate Crisis Hear from IBM
+                            professionals about the solutions in place to manage
+                            the reduction of carbon emissions
+                          </li>
+                          <li>
+                            Listen to our key note speaker talk about brand
+                            mission and purpose
+                          </li>
+                          <li>
+                            Meet with other people who are experiencing similar
+                            challenges
+                          </li>
+                          <li>
+                            Did we mention a free drink and some (plant-based)
+                            nibbles?
+                          </li>
+                        </ul> */}
+                        <p>
+                          <a
+                            href="https://www.eventbrite.co.uk/e/think-climate-tickets-74001529567"
+                            target="_blank"
+                          >
+                            Register your interest here
+                          </a>
+                        </p>
                       </Event>
                     </li>
                   </ol>
