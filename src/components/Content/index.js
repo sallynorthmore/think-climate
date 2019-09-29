@@ -1,14 +1,11 @@
 import * as React from 'react';
+import PropTypes from 'prop-types';
 import * as S from './styles';
 
-type Props = {
-  children?: any;
-} & typeof defaultProps;
+const Content = ({ children }) => <S.Content>{children}</S.Content>;
 
-const defaultProps = {};
-
-const Content = (props: Props) => <S.Content>{props.children}</S.Content>;
-
-Content.defaultProps = defaultProps;
+Content.props = {
+  children: PropTypes.node
+};
 
 export default Content;

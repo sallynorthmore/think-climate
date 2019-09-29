@@ -1,4 +1,5 @@
-import * as React from "react"
+import React from "react";
+import PropTypes from 'prop-types';
 import * as S from './styles'
 
 const {{ properCase name }} = ({exampleProp}) => (
@@ -6,5 +7,11 @@ const {{ properCase name }} = ({exampleProp}) => (
     <div>{exampleProp}</div>
   </S.{{ properCase name }}>
 )
+
+{{ properCase name }}.defaultProps = {};
+
+{{ properCase name }}.props = {
+  exampleProp: PropTypes.string
+};
 
 export default {{ properCase name }};

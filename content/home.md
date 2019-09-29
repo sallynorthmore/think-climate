@@ -3,6 +3,6 @@ templateKey: home-page
 title: Think Earth
 hero:
   image: /images/earth-1.jpg
-  date: IBM Southbank, London  •  November 20, 2019
+  date: Upcoming  • IBM Southbank, London
   title: A talk on Climate Change and our future
 ---
