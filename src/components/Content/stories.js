@@ -18,23 +18,8 @@ stories.add('default', () => (
           h3 Jaunty <a href="#">zinnias</a> vie with flaunting phlox
         </h3>
         <h4>h4 Five or six big jet planes zoomed quickly by the new tower.</h4>
-        <h5>
-          h5 Expect skilled signwriters to use many jazzy, quaint old alphabets
-          effectively.
-        </h5>
-        <h6>h6 Pack my box with five dozen liquor jugs.</h6>
       </section>
-      <ul>
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-      </ul>
+
       <article>
         <p>
           This paragraph is nested inside an article. It contains many
@@ -80,6 +65,17 @@ stories.add('default', () => (
       </section>
 
       <section>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
         <ul>
           <li>Unordered List item one</li>
           <li>Level 3, item one</li>

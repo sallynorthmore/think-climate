@@ -13,41 +13,57 @@ export const Content = styled.div`
    * combinator is used to migigate leaky cascading should this have to happen.
    */
 
-  /* stylelint-disable selector-no-universal, selector-no-type, selector-max-specificity, selector-max-universal, selector-max-type */
-  font: 400 var(--type-0) var(--font-ivar-regular);
+  /* stylelint-disable  */
+  font: 400 var(--type-0) var(--font-questrial);
   margin: 0 auto;
-  max-width: 720px;
-  padding: 3rem 2rem;
+  max-width: 45rem; /* 720px */
+  /* padding: 3rem 2rem; */
   text-align: left;
 
   & * + * {
     color: var(--black);
-    font: inherit; /* stylelint-disable-line */
+    font: inherit;
     margin-top: 3rem;
   }
 
   & h1 {
     color: var(--black);
-    font: 400 var(--type-4) var(--font-value-bold);
-    margin-top: 0;
+    font: 900 var(--type-4) var(--font-questrial);
   }
 
   & h2 {
     color: var(--black);
-    font: 400 var(--type-2) var(--font-value-bold);
+    font: 900 var(--type-3) var(--font-questrial);
   }
 
   & h3 {
     color: var(--black);
-    font: 400 var(--type-1) var(--font-value-bold);
+    font: 900 var(--type-2) var(--font-questrial);
+  }
+
+  & h4 {
+    color: var(--black);
+    font: 900 var(--type--1) var(--font-raleway);
   }
 
   & p {
-    font: 400 var(--type-0) var(--font-ivar-regular);
+    font: 300 var(--type-0) var(--font-raleway);
 
     &:not(:first-child) {
-      margin-top: 1.25rem;
+      margin-top: 2rem;
     }
+  }
+
+  & blockquote p {
+    color: var(--coal);
+    font: 300 var(--type-2) var(--font-raleway);
+    line-height: 3rem;
+  }
+
+  & blockquote cite {
+    color: var(--coal);
+    font: 600 var(--type--1) var(--font-raleway);
+    display: block;
   }
 
   & * > li {
@@ -56,18 +72,46 @@ export const Content = styled.div`
 
   & ul {
     & > li {
-      list-style: square;
+      list-style: disc inside;
     }
   }
 
   & ol {
     & li {
-      list-style: decimal;
+      list-style: decimal inside;
     }
 
     & ol {
       margin-left: 3rem;
       margin-top: 0;
+    }
+  }
+
+  & strong {
+    font-weight: 600;
+  }
+
+  /* <a> tags within <p>, <ol><li> and <ul><li> */
+  & a,
+  & * > a,
+  & * > * > a {
+    color: var(--coal);
+    background-repeat: repeat-x;
+    background-image: linear-gradient(
+      to right,
+      currentColor 100%,
+      currentColor 0
+    );
+    background-size: 1px 1px;
+    background-position: 0 100%;
+    font: inherit;
+    text-decoration: none;
+    transition: 200ms background-size var(--ease-inOut);
+    white-space: initial;
+
+    &:hover {
+      background-size: 1px 2px;
+      text-decoration: none;
     }
   }
 
@@ -77,33 +121,23 @@ export const Content = styled.div`
     width: 100%;
   }
 
+  & th {
+    font: 600 var(--type--1) var(--font-raleway);
+    padding: 1rem 0.5rem 0.25rem;
+  }
+
   & tr {
     color: var(--black);
     margin: 0;
-    padding: 1rem 0;
 
     & td {
-      border: 1px solid var(--mist);
+      border: 1px solid var(--silver);
       border-collapse: collapse;
+      background: var(--white);
       margin: 0;
-      padding: 0.25rem;
+      padding: 1.25rem 0.5rem;
       vertical-align: text-top;
     }
   }
-
-  & strong {
-    font-family: var(--font-value-bold);
-    font-weight: 400;
-  }
-
-  /* <a> tags within <p>, <ol><li> and <ul><li> */
-  & * > a,
-  & * > * > a {
-    font: inherit; /* stylelint-disable-line */
-    text-decoration: underline;
-
-    &:hover {
-      text-decoration: none;
-    }
-  }
+  /* stylelint-enable */
 `;
