@@ -1,9 +1,10 @@
 import * as React from 'react';
+import PropTypes from 'prop-types';
 import * as S from './styles';
 
-const Banner = ({ exampleProp }) => (
+const Banner = ({ text }) => (
   <S.Banner>
-    <S.Logo>ThinkClimate</S.Logo>
+    <S.Logo>{text}</S.Logo>
     {/* <S.Nav>
       <ul>
         <li>
@@ -16,5 +17,13 @@ const Banner = ({ exampleProp }) => (
     </S.Nav> */}
   </S.Banner>
 );
+
+Banner.defaultProps = {
+  text: 'ThinkClimate'
+};
+
+Banner.proptypes = {
+  text: PropTypes.string
+};
 
 export default Banner;

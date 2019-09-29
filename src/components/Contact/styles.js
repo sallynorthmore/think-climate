@@ -1,17 +1,9 @@
 import styled from 'styled-components';
 
-interface IProps {
-  color?: string;
-}
-
 export const Contact = styled.ul`
   font: 400 var(--type-0) var(--font-value-regular);
   list-style: none;
   text-align: center;
-
-  @media (min-width: ${props => props.theme.desktop}) {
-    text-align: left;
-  }
 `;
 
 export const Item = styled.li`
@@ -33,17 +25,9 @@ export const Item = styled.li`
       transition: 0.5s opacity let(--ease-outQuint);
     }
   }
-
-  @media (min-width: ${props => props.theme.tablet}) {
-    & .iconLink {
-      margin: auto;
-      transform: scale(1);
-    }
-  }
 `;
 
 export const Link = styled.a`
-  color: ${(props: IProps) => (props.color ? props.color : `var(--purple)`)};
   font: 400 var(--type-1) var(--font-value-regular);
 
   /* stylelint-disable-next-line */

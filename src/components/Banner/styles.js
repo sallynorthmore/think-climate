@@ -11,8 +11,8 @@ const fadeIn = keyframes`
 `;
 
 export const Banner = styled.div`
-  background: linear-gradient(black, transparent);
   animation: ${fadeIn} 0.5s ease-in;
+  background: linear-gradient(var(--black), transparent);
   display: flex;
   justify-content: space-between;
   padding: 2rem 2.5rem;
@@ -20,21 +20,21 @@ export const Banner = styled.div`
 `;
 
 export const Logo = styled.a`
-  background: black;
-  color: white;
+  background: var(--black);
+  color: var(--white);
   display: inline-block;
-  font-style: italic;
   font: 900 1.4rem/1.8rem var(--font-raleway);
+  font-style: italic;
 `;
 
 export const Nav = styled.div`
   & ul {
-    color: white;
+    color: var(--white);
     display: flex;
     list-style: none;
 
     & a {
-      color: white;
+      color: var(--white);
     }
   }
 `;

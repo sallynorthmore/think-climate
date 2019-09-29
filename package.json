@@ -14,7 +14,8 @@
     "generate": "plop --plopfile generator/index.js",
     "lint:css": "stylelint './src/**/styles.ts'",
     "serve": "gatsby serve",
-    "start": "npm run develop"
+    "start": "npm run develop",
+    "storybook": "start-storybook -p 6006"
   },
   "browserslist": [
     "last 2 version",
@@ -23,6 +24,9 @@
   "dependencies": {
     "@raygesualdo/gatsby-plugin-babel-styled-components": "^1.0.1",
     "@researchgate/react-intersection-observer": "^1.0.1",
+    "@storybook/addon-links": "^5.1.9",
+    "@storybook/addons": "^5.1.9",
+    "@storybook/react": "^5.1.9",
     "gatsby": "^2.13.31",
     "gatsby-image": "^2.2.20",
     "gatsby-plugin-manifest": "^2.2.18",
@@ -52,7 +56,8 @@
     "react-error-overlay": "^6.0.2",
     "react-helmet": "^5.2.1",
     "react-markdown": "^4.2.2",
-    "storybook-addon-styled-component-theme": "^1.2.4",
+    "storybook": "^5.1.11",
+    "storybook-addon-styled-component-theme": "^1.2.3",
     "styled-components": "^4.3.2",
     "styled-tools": "^1.7.1",
     "uuid": "^3.3.3"

@@ -30,17 +30,14 @@ export const GlobalStyle = createGlobalStyle`
         *  font-size: 1rem;
         */
 
-        --type--3: .75rem/1.25rem; /* Form Errors */
-        --type--2: .875rem/1rem; /* Nav Links / Buttons */
-        --type--1: 1rem/1.2rem; /* Subheadline, Secondary CTA */
-        --type-0: 1rem/2rem; /* Base, Small body*/
-        --type-1: 1.125rem/2rem; /* Large body */
-        --type-2: 1.5rem/2rem; /* Feature body, Small headline */
-        --type-3: 2rem/2.25rem; /* Medium headline, Page intro */
-        --type-4: 2.25rem/3.5rem; /* Quote */
-        --type-5: 3rem/3.5rem; /* Large headline, Page headline */
-        --type-6: 3.5rem/4rem; /* Section headline */
-        --type-7: 5rem/5rem; /* marketing figure */
+        --type--2: .707rem/1rem; /* Nav Links / Buttons */
+        --type--1: 1rem/1.25rem; /* Subheadline, Secondary CTA */
+        --type-0: 1rem/1.75rem; /* Base, Small body*/
+        --type-1: 1.414rem/2rem; /* Large body */
+        --type-2: 1.99rem/2.25rem; /* Feature body, Small headline */
+        --type-3: 2.827rem/3rem; /* Medium headline, Page intro */
+        --type-4: 3.99rem/4.25rem; /* Quote */
+        --type-5: 5.65rem/5.75rem; /* Large headline, Page headline */
 
         /* Font Families & Weights */
         --font-questrial: Questrial, sans-serif;
@@ -51,16 +48,7 @@ export const GlobalStyle = createGlobalStyle`
         --ease-outQuint: cubic-bezier(0.23, 1, 0.32, 1);
 
         /* Colors */
-        --aqua: #7ff5ff;
-        --eggshell: #e0f9fd;
         --black: #343138;
-        --silver: #F9F9F9;
-        --grey: #d8d8d8;
-        --mist: #959398;
-        --pink: #ffa4e0;
-        --red: #f13b72;
-        --plum: #22096f;
-        --purple: #431faf;
         --white: #fff;
     }
 
@@ -96,7 +84,6 @@ export const GlobalStyle = createGlobalStyle`
       font-family: var(--font-questrial);
       font-weight: 900;
     }
-
     /* stylelint-enable */
 
 `;

@@ -99,12 +99,10 @@ export const Content = styled.div`
   /* <a> tags within <p>, <ol><li> and <ul><li> */
   & * > a,
   & * > * > a {
-    color: var(--plum);
     font: inherit; /* stylelint-disable-line */
     text-decoration: underline;
 
     &:hover {
-      color: var(--purple);
       text-decoration: none;
     }
   }
