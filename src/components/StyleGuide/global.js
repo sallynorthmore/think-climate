@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalTheme = {
   desktop: '64rem',
-  maxWidth: '1260px',
+  maxWidth: '1700px',
   tablet: '45rem'
 };
 

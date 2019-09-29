@@ -4,7 +4,9 @@ import * as S from './styles';
 
 const Banner = ({ text }) => (
   <S.Banner>
-    <S.Logo>{text}</S.Logo>
+    <S.Logo href="/" title="Home">
+      {text}
+    </S.Logo>
     {/* <S.Nav>
       <ul>
         <li>
@@ -22,7 +24,7 @@ Banner.defaultProps = {
   text: 'ThinkClimate'
 };
 
-Banner.proptypes = {
+Banner.props = {
   text: PropTypes.string
 };
 

@@ -59,6 +59,12 @@ module.exports = {
         path: '../src/components/{{properCase name}}/styles.js',
         templateFile: './component/styles.template.hbs',
         abortOnFail: true
+      },
+      {
+        type: 'add',
+        path: '../src/components/{{properCase name}}/stories.js',
+        templateFile: './component/stories.template.hbs',
+        abortOnFail: true
       }
     ];
 
