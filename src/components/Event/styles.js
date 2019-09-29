@@ -1,37 +1,41 @@
 import styled from 'styled-components';
 
 export const Event = styled.div`
+  margin: 0 auto;
+  max-width: 640px;
+  text-align: center;
+
   & .title {
     color: var(--coal);
     font: 900 var(--type-2) var(--font-questrial);
   }
 
-  & .date {
-    color: var(--coal);
-    font: 900 var(--type-0) var(--font-questrial);
-    margin-top: 0;
-  }
-
-  & .time {
-    color: var(--coal);
-    font: 900 var(--type--2) var(--font-questrial);
-    margin-top: 0;
-  }
-
-  & .location {
-    color: var(--coal);
-    font: 900 var(--type--1) var(--font-questrial);
-    margin-top: 0;
-  }
-
   & .body {
-    font: 300 var(--type-0) var(--font-raleway);
     margin: 2rem auto 0;
-    max-width: 640px;
 
-    & p {
-      font: 300 var(--type-0) var(--font-raleway);
-      margin-top: 2rem;
+    p {
+      text-align: center;
+    }
+  }
+
+  & .footer {
+    align-items: center;
+    box-shadow: inset 0 1px #eee;
+    color: var(--coal);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 2rem 0 0;
+    padding: 0.5rem 0;
+
+    & li {
+      font: 900 var(--type--1) var(--font-questrial);
+      margin: 0.5rem 0 0 2rem;
+
+      &:first-child {
+        margin-left: 0;
+      }
     }
   }
 `;

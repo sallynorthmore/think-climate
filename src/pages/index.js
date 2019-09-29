@@ -48,7 +48,7 @@ const IndexPage = () => (
       return (
         <Layout>
           <Parallax pages={3} scrolling>
-            <ParallaxLayer offset={0} factor={1} speed={0.2}>
+            <ParallaxLayer offset={0} factor={1} speed={0.05}>
               {page.hero.image && (
                 <S.Earth>
                   <PreviewCompatibleImage
@@ -60,7 +60,7 @@ const IndexPage = () => (
                 </S.Earth>
               )}
             </ParallaxLayer>
-            <ParallaxLayer offset={0} factor={1} speed={-0.1}>
+            <ParallaxLayer offset={0} factor={1} speed={-0.03}>
               <Banner />
               <Hero
                 smallText={page.hero.date}
@@ -68,7 +68,7 @@ const IndexPage = () => (
               ></Hero>
             </ParallaxLayer>
 
-            <ParallaxLayer offset={1} factor={2}>
+            <ParallaxLayer offset={1} factor={2} speed={0.1}>
               <S.Main role="main">
                 <S.Events>
                   <h2>Upcoming events</h2>
@@ -83,13 +83,15 @@ const IndexPage = () => (
                         <p>
                           A bunch of us iX planet fanatics will watch Al Gore’s
                           full speech on the Climate Crisis, in which he tackles
-                          the questions ‘Must we Change?’, ‘Can we Change?’ and
-                          ‘Will we Change?’, providing a truthful and hopeful
-                          take on how we’ll solve the mess we’re in.
+                          the questions <strong>‘Must we Change?’</strong>,{' '}
+                          <strong>‘Can we Change?’</strong> and{' '}
+                          <strong>‘Will we Change?’</strong>, providing a
+                          truthful and hopeful take on how we’ll solve the mess
+                          we’re in.
                         </p>
                         <p>
                           Exclusive content provided by our iX CCO and IBM
-                          Climate Evangelist @Jeremy.
+                          Climate Evangelist Jeremy Waite.
                         </p>
                         <p>
                           It’s a long one, but feel free to stay how long you
