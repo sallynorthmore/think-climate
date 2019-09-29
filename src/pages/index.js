@@ -47,7 +47,7 @@ const IndexPage = () => (
       console.log(page.hero.image);
       return (
         <Layout>
-          <Parallax pages={2} scrolling>
+          <Parallax pages={3} scrolling>
             <ParallaxLayer offset={0} factor={1} speed={0.2}>
               {page.hero.image && (
                 <S.Earth>
@@ -68,9 +68,10 @@ const IndexPage = () => (
               ></Hero>
             </ParallaxLayer>
 
-            <ParallaxLayer offset={1} factor={2} speed={0.1}>
+            <ParallaxLayer offset={1} factor={2}>
               <S.Main role="main">
                 <S.Events>
+                  <h2>Upcoming events</h2>
                   <ol>
                     <li>
                       <Event
@@ -151,7 +152,7 @@ const IndexPage = () => (
                             href="https://www.eventbrite.co.uk/e/think-climate-tickets-74001529567"
                             target="_blank"
                           >
-                            Register your interest here
+                            Register your interest to attend here
                           </a>
                         </p>
                       </Event>
