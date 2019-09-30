@@ -12,7 +12,7 @@ const fadeIn = keyframes`
 
 export const Banner = styled.div`
   animation: ${fadeIn} 0.5s ease-in;
-  background: var(--black);
+  /* background: var(--black); */
   /* background: linear-gradient(var(--black), transparent); */
   display: flex;
   justify-content: space-between;
