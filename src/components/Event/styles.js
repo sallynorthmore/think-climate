@@ -1,13 +1,21 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { ifProp } from 'styled-tools';
 
 export const Event = styled.article`
   margin: 0 auto;
-  max-width: 720px;
+  max-width: 45rem;
   text-align: center;
 
   @media (min-width: ${props => props.theme.tablet}) {
     display: flex;
     text-align: left;
+
+    ${ifProp(
+      'isImageRight',
+      css`
+        flex-direction: row-reverse;
+      `
+    )}
   }
 `;
 
@@ -27,6 +35,18 @@ export const Content = styled.div`
     flex: 1;
     margin-left: 2rem;
     margin-top: 0;
+
+    & .body {
+      display: flex;
+      flex-direction: column;
+    }
+    ${ifProp(
+      'isImageRight',
+      css`
+        margin-left: 0;
+        margin-right: 2rem;
+      `
+    )}
   }
 `;
 

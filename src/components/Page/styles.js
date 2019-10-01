@@ -1,5 +1,11 @@
 import styled, { keyframes } from 'styled-components';
 
+export const Hero = styled.div`
+  background: var(--black);
+  height: 100vh;
+  position: relative;
+`;
+
 const fadeIn = keyframes`
   from {
     opacity: 0;

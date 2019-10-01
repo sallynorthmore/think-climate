@@ -4,10 +4,17 @@ import Img from 'gatsby-image';
 import Content from '../Content/';
 import * as S from './styles';
 
-const Event = ({ image, title, date, time, children, location }) => {
-  console.log(`image`, image);
+const Event = ({
+  isImageRight,
+  image,
+  title,
+  date,
+  time,
+  children,
+  location
+}) => {
   return (
-    <S.Event>
+    <S.Event isImageRight={isImageRight}>
       {image && (
         <S.Image className="image">
           <Img
@@ -17,7 +24,7 @@ const Event = ({ image, title, date, time, children, location }) => {
           />
         </S.Image>
       )}
-      <S.Content>
+      <S.Content isImageRight={isImageRight}>
         <h3 className="title">{title}</h3>
         {children && (
           <Content>

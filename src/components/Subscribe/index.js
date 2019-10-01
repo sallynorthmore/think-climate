@@ -15,7 +15,8 @@ const Subscribe = ({ exampleProp }) => (
       >
         here
       </a>{' '}
-      with your email address to receive news and updates.
+      to receive news and updates,<br></br> and express interest in volunteer
+      and speaking opportunities.
     </p>
   </S.Subscribe>
 );
