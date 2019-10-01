@@ -1,36 +1,41 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import PreviewCompatibleImage from '../PreviewCompatibleImage';
+import Img from 'gatsby-image';
 import Content from '../Content/';
 import * as S from './styles';
 
-const Event = ({ image, title, date, time, children, location }) => (
-  <S.Event>
-    {image && (
-      <S.Image className="image">
-        <PreviewCompatibleImage
-          imageInfo={{
-            image: { image },
-            alt: 'Event image'
-          }}
-        />
-      </S.Image>
-    )}
-    <S.Content>
-      <h3 className="title">{title}</h3>
-      {children && (
-        <div className="body">
-          <Content>{children}</Content>
-        </div>
+const Event = ({ image, title, date, time, children, location }) => {
+  console.log(`image`, image);
+  return (
+    <S.Event>
+      {image && (
+        <S.Image className="image">
+          <Img
+            className="eventImage"
+            alt={image}
+            fluid={image.childImageSharp.fluid}
+          />
+        </S.Image>
       )}
-      <ul className="footer">
-        {date && <li className="date">{date}</li>}
-        {time && <li className="time">{time}</li>}
-        {location && <li className="location">{location}</li>}
-      </ul>
-    </S.Content>
-  </S.Event>
-);
+      <S.Content>
+        <h3 className="title">{title}</h3>
+        {children && (
+          <Content>
+            <div
+              className="body"
+              dangerouslySetInnerHTML={{ __html: children }}
+            ></div>
+          </Content>
+        )}
+        <S.Footer className="footer">
+          {date && <div className="date">{date}</div>}
+          {time && <div className="time">{time}</div>}
+          {location && <div className="location">{location}</div>}
+        </S.Footer>
+      </S.Content>
+    </S.Event>
+  );
+};
 
 Event.defaultProps = {};
 
