@@ -61,7 +61,7 @@ const IndexPage = () => (
       console.log(events);
       return (
         <Layout>
-          <Parallax pages={3} scrolling>
+          <Parallax pages={4} scrolling>
             <ParallaxLayer offset={0} factor={1} speed={0.05}>
               {page.hero.image && (
                 <S.Earth>
@@ -82,7 +82,7 @@ const IndexPage = () => (
               ></Hero>
             </ParallaxLayer>
 
-            <ParallaxLayer offset={1} factor={2} speed={0.1}>
+            <ParallaxLayer offset={0.8} factor={3} speed={0.3}>
               <S.Main role="main">
                 <S.Events>
                   <h2>Upcoming events</h2>
