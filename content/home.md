@@ -7,7 +7,7 @@ hero:
   title: A talk on Climate Change and our future
 events:
   - title: Screening Al Gore’s Climate Crisis
-    location: IBM London Southbank Client Center
+    location: IBM Southbank, iX MediaScape
     date: 4 October 2019
     time: 5:30pm - 8pm
     image: /images/earth-1.jpg
@@ -15,7 +15,7 @@ events:
     <p>Exclusive content provided by our iX CCO and IBM Climate Evangelist Jeremy Waite.</p>
     <p>It’s a long one, but feel free to stay how long you wish. Bring some snacks and refreshments. See you there!</p>"
   - title: Climate & Cocktails
-    location: IBM London Southbank Client Center
+    location: IBM Southbank, Client Center
     date: 20 November 2019
     time: 18:30-20:30
     image: /images/earth-rise.jpg

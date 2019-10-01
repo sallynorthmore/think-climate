@@ -1,11 +1,9 @@
 import * as React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
-import Img from 'gatsby-image';
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 import Banner from '../components/Banner';
 import Hero from '../components/Hero';
-import Content from '../components/Content';
 import Subscribe from '../components/Subscribe';
 import Event from '../components/Event';
 import Layout from '../components/Layout';

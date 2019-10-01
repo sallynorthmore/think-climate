@@ -12,7 +12,7 @@ const Event = ({ image, title, date, time, children, location }) => {
         <S.Image className="image">
           <Img
             className="eventImage"
-            alt={image}
+            alt={title}
             fluid={image.childImageSharp.fluid}
           />
         </S.Image>
@@ -28,9 +28,9 @@ const Event = ({ image, title, date, time, children, location }) => {
           </Content>
         )}
         <S.Footer className="footer">
-          {date && <div className="date">{date}</div>}
-          {time && <div className="time">{time}</div>}
-          {location && <div className="location">{location}</div>}
+          {date && <li>{date}</li>}
+          {time && <li>{time}</li>}
+          {location && <li>{location}</li>}
         </S.Footer>
       </S.Content>
     </S.Event>
