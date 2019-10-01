@@ -1,88 +1,70 @@
-import * as React from 'react';
+import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
-import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 import Banner from '../components/Banner';
-import Hero from '../components/Hero';
+import ParralaxHero from '../components/ParralaxHero';
 import Subscribe from '../components/Subscribe';
 import Event from '../components/Event';
 import Layout from '../components/Layout';
 import Footer from '../components/Footer';
 import * as S from '../components/Page/styles';
 
-const IndexPage = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        page: markdownRemark(
-          frontmatter: { templateKey: { eq: "home-page" } }
-        ) {
-          frontmatter {
-            title
-            hero {
-              color
+const IndexPage = () => {
+  return (
+    <StaticQuery
+      query={graphql`
+        query {
+          page: markdownRemark(
+            frontmatter: { templateKey: { eq: "home-page" } }
+          ) {
+            frontmatter {
               title
-              date
-              image {
-                childImageSharp {
-                  fluid(quality: 85, maxWidth: 2000) {
-                    ...GatsbyImageSharpFluid
+              hero {
+                color
+                title
+                date
+                image {
+                  childImageSharp {
+                    fluid(quality: 85, maxWidth: 2000) {
+                      ...GatsbyImageSharpFluid
+                    }
                   }
                 }
               }
-            }
-            events {
-              title
-              location
-              time
-              date
-              body
-              image {
-                childImageSharp {
-                  fluid(quality: 85, maxWidth: 720) {
-                    ...GatsbyImageSharpFluid
+              events {
+                title
+                location
+                time
+                date
+                body
+                image {
+                  childImageSharp {
+                    fluid(quality: 85, maxWidth: 720) {
+                      ...GatsbyImageSharpFluid
+                    }
                   }
                 }
               }
             }
           }
         }
-      }
-    `}
-    render={data => {
-      const page = data.page.frontmatter;
+      `}
+      render={data => {
+        if (!data.page) {
+          return;
+        }
+        const page = data.page.frontmatter;
+        const events = page.events;
 
-      if (!page) {
-        return;
-      }
-
-      const events = page.events;
-
-      console.log(events);
-      return (
-        <Layout>
-          <Parallax pages={4} scrolling>
-            <ParallaxLayer offset={0} factor={1} speed={0.05}>
-              {page.hero.image && (
-                <S.Earth>
-                  <PreviewCompatibleImage
-                    imageInfo={{
-                      image: page.hero.image,
-                      alt: `${page.hero.title}`
-                    }}
-                  />
-                </S.Earth>
-              )}
-            </ParallaxLayer>
-            <ParallaxLayer offset={0} factor={1} speed={-0.03}>
+        console.log(events);
+        return (
+          <Layout>
+            <S.Home>
               <Banner />
-              <Hero
-                smallText={page.hero.date}
+              <ParralaxHero
                 headline={page.hero.title}
-              ></Hero>
-            </ParallaxLayer>
-
-            <ParallaxLayer offset={0.8} factor={3} speed={0.3}>
+                smallText={page.hero.date}
+                image={page.hero.image}
+              ></ParralaxHero>
               <S.Main role="main">
                 <S.Events>
                   <h2>Upcoming events</h2>
@@ -95,6 +77,7 @@ const IndexPage = () => (
                           date={event.date}
                           time={event.time}
                           image={event.image}
+                          isImageRight={i % 2 !== 0}
                         >
                           {event.body}
                         </Event>
@@ -106,12 +89,12 @@ const IndexPage = () => (
                 <Subscribe />
               </S.Main>
               <Footer />
-            </ParallaxLayer>
-          </Parallax>
-        </Layout>
-      );
-    }}
-  />
-);
+            </S.Home>
+          </Layout>
+        );
+      }}
+    />
+  );
+};
 
 export default IndexPage;

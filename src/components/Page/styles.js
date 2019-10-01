@@ -1,35 +1,17 @@
 import styled, { keyframes } from 'styled-components';
-
-export const Hero = styled.div`
-  background: var(--black);
-  height: 100vh;
-  position: relative;
-`;
-
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-`;
-
-export const Earth = styled.div`
-  animation: ${fadeIn} 5s ease-in;
-  left: 20%;
-  position: relative;
-
-  @media (min-width: ${props => props.theme.desktop}) {
-    background-position: 100% center;
-    background-size: contain;
-  }
+import { prop } from 'styled-tools';
+export const Home = styled.div`
+  /* position: relative; */
+  /* height: 100%;
+  position: absolute;
+  width: 100%;
+  overflow: auto; */
 `;
 
 export const Main = styled.main`
   background: var(--white);
   text-align: center;
+  /* margin-top: 100vh; */
 `;
 
 export const Events = styled.div`

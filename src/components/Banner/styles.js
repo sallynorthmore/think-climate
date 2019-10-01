@@ -17,6 +17,8 @@ export const Banner = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 2rem 2.5rem;
+  position: absolute;
+  top: 0;
   z-index: 10;
 `;
 
