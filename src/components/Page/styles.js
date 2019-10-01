@@ -1,25 +1,6 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-`;
-
-export const Earth = styled.div`
-  animation: ${fadeIn} 5s ease-in;
-  left: 20%;
-  position: relative;
-
-  @media (min-width: ${props => props.theme.desktop}) {
-    background-position: 100% center;
-    background-size: contain;
-  }
-`;
+export const Home = styled.div``;
 
 export const Main = styled.main`
   background: var(--white);
@@ -46,7 +27,7 @@ export const Events = styled.div`
           color: var(--silver);
           content: ' • ';
           display: inline-block;
-          font-size: 3rem;
+          font-size: 3rem; /* stylelint-disable-line */
           padding: 3rem 0;
         }
       }

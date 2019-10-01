@@ -15,6 +15,8 @@ export const Subscribe = styled.section`
 
   & p {
     font: 300 var(--type-0) var(--font-raleway);
+    max-width: 26rem;
+    margin: 0 auto;
 
     &:not(:first-child) {
       margin-top: 2rem;

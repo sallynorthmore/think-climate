@@ -1,25 +1,48 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Img from 'gatsby-image';
 import Content from '../Content/';
 import * as S from './styles';
 
-const Event = ({ image, title, date, time, children, location }) => (
-  <S.Event>
-    {image && <div className="image">{image}</div>}
-    <h3 className="title">{title}</h3>
-
-    {children && (
-      <div className="body">
-        <Content>{children}</Content>
-      </div>
-    )}
-    <ul className="footer">
-      {date && <li className="date">{date}</li>}
-      {time && <li className="time">{time}</li>}
-      {location && <li className="location">{location}</li>}
-    </ul>
-  </S.Event>
-);
+const Event = ({
+  isImageRight,
+  image,
+  title,
+  date,
+  time,
+  children,
+  location
+}) => {
+  return (
+    <S.Event isImageRight={isImageRight}>
+      {image && (
+        <S.Image className="image">
+          <Img
+            className="eventImage"
+            alt={title}
+            fluid={image.childImageSharp.fluid}
+          />
+        </S.Image>
+      )}
+      <S.Content isImageRight={isImageRight}>
+        <h3 className="title">{title}</h3>
+        {children && (
+          <Content>
+            <div
+              className="body"
+              dangerouslySetInnerHTML={{ __html: children }}
+            ></div>
+          </Content>
+        )}
+        <S.Footer className="footer">
+          {date && <li>{date}</li>}
+          {time && <li>{time}</li>}
+          {location && <li>{location}</li>}
+        </S.Footer>
+      </S.Content>
+    </S.Event>
+  );
+};
 
 Event.defaultProps = {};
 
