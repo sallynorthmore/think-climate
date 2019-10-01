@@ -37,8 +37,8 @@ const Layout = props => {
         }
       `}
       render={data => {
-        const global = data.global.frontmatter;
-        const contact = data.contact.frontmatter;
+        // const global = data.global.frontmatter;
+        // const contact = data.contact.frontmatter;
 
         return (
           <>

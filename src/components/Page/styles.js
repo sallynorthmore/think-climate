@@ -1,17 +1,10 @@
-import styled, { keyframes } from 'styled-components';
-import { prop } from 'styled-tools';
-export const Home = styled.div`
-  /* position: relative; */
-  /* height: 100%;
-  position: absolute;
-  width: 100%;
-  overflow: auto; */
-`;
+import styled from 'styled-components';
+
+export const Home = styled.div``;
 
 export const Main = styled.main`
   background: var(--white);
   text-align: center;
-  /* margin-top: 100vh; */
 `;
 
 export const Events = styled.div`
@@ -34,7 +27,7 @@ export const Events = styled.div`
           color: var(--silver);
           content: ' • ';
           display: inline-block;
-          font-size: 3rem;
+          font-size: 3rem; /* stylelint-disable-line */
           padding: 3rem 0;
         }
       }

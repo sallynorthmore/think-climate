@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { useScrollPosition } from '@n8tb1t/use-scroll-position';
 import PreviewCompatibleImage from '../PreviewCompatibleImage';
@@ -10,7 +10,6 @@ const ParralaxHero = ({ image, headline, smallText }) => {
 
   useScrollPosition(
     ({ prevPos, currPos }) => {
-      const isShow = currPos.y > prevPos.y;
       if (currPos.y < 0 && currPos.y > -600) {
         setScrollTop(currPos.y);
       }
@@ -35,7 +34,7 @@ const ParralaxHero = ({ image, headline, smallText }) => {
     top: 0,
     width: '100%',
     transform: `translateY(${scrollTop * -0.1}px)`,
-    transition: '0.2s transform cubic-bezier(0.075, 0.82, 0.165, 1)'
+    transition: '0.1s transform cubic-bezier(0.075, 0.82, 0.165, 1)'
   };
 
   return (
