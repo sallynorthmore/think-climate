@@ -1,11 +1,12 @@
 import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
 import Banner from '../components/Banner';
-import ParralaxHero from '../components/ParralaxHero';
-import Subscribe from '../components/Subscribe';
 import Event from '../components/Event';
-import Layout from '../components/Layout';
 import Footer from '../components/Footer';
+import Layout from '../components/Layout';
+import ParralaxHero from '../components/ParralaxHero';
+import SEO from '../components/SEO/index';
+import Subscribe from '../components/Subscribe';
 import * as S from '../components/Page/styles';
 
 const IndexPage = () => {
@@ -54,16 +55,21 @@ const IndexPage = () => {
         }
         const page = data.page.frontmatter;
         const events = page.events;
+        const hero = page.hero;
 
-        console.log(events);
         return (
           <Layout>
+            <SEO
+              title="ThinkClimate"
+              description={hero.title}
+              image="/images/uploads/earth-rise.jpg"
+            />
             <S.Home>
               <Banner />
               <ParralaxHero
-                headline={page.hero.title}
-                smallText={page.hero.date}
-                image={page.hero.image}
+                headline={hero.title}
+                smallText={hero.date}
+                image={hero.image}
               ></ParralaxHero>
               <S.Main role="main">
                 <S.Events>

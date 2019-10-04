@@ -1,9 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Think Climate`,
-    description: ``,
-    author: `Think Climate`,
-    siteUrl: `https://thinkclimate.earth`
+    title: `ThinkClimate`,
+    titleTemplate: '%s · ThinkClimate',
+    description: '',
+    author: `ThinkClimate`,
+    image: '',
+    url: `https://thinkclimate.earth`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
