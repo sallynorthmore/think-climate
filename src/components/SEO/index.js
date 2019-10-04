@@ -22,7 +22,7 @@ const SEO = ({ title, description, image, pathname, article }) => (
         title: title || defaultTitle,
         description: description || defaultDescription,
         image: `${siteUrl}${image || defaultImage}`,
-        url: `${siteUrl}${pathname || '/'}`
+        siteUrl: `${siteUrl}${pathname || '/'}`
       };
 
       return (
@@ -80,7 +80,7 @@ const query = graphql`
         defaultTitle: title
         titleTemplate
         defaultDescription: description
-        siteUrl: url
+        siteUrl: siteUrl
         defaultImage: image
         # twitterUsername
       }

@@ -5,7 +5,7 @@ module.exports = {
     description: '',
     author: `ThinkClimate`,
     image: '',
-    url: `https://thinkclimate.earth`
+    siteUrl: `https://thinkclimate.earth`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
