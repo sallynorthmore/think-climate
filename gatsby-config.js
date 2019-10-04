@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Think Climate`,
-    description: ``,
-    author: `Think Climate`,
+    title: `ThinkClimate`,
+    titleTemplate: '%s · ThinkClimate',
+    description: '',
+    author: `ThinkClimate`,
+    image: '',
     siteUrl: `https://thinkclimate.earth`
   },
   plugins: [
