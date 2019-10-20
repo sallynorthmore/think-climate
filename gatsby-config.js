@@ -8,6 +8,12 @@ module.exports = {
     siteUrl: `https://thinkclimate.earth`
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-150388513-1'
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
