@@ -20,9 +20,9 @@ const IndexPage = () => {
             frontmatter {
               title
               hero {
-                color
+                background
                 title
-                date
+                smalltext
                 image {
                   childImageSharp {
                     fluid(quality: 85, maxWidth: 2000) {
@@ -68,7 +68,7 @@ const IndexPage = () => {
               <Banner />
               <ParralaxHero
                 headline={hero.title}
-                smallText={hero.date}
+                smallText={hero.smalltext}
                 image={hero.image}
               ></ParralaxHero>
               <S.Main role="main">

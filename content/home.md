@@ -1,6 +1,6 @@
 ---
 templateKey: home-page
-title: Think Earth
+title: ThinkClimate
 hero:
   background: #000
   image: /images/earth-1.jpg
