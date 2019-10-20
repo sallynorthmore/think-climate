@@ -8,12 +8,6 @@ module.exports = {
     siteUrl: `https://thinkclimate.earth`
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'UA-150388513-1'
-      }
-    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -50,18 +44,12 @@ module.exports = {
         path: `${__dirname}/content`
       }
     },
-    // {
-    //   resolve: `gatsby-plugin-manifest`,
-    //   options: {
-    //     name: `Think Climate`,
-    //     short_name: `Think Climate`,
-    //     start_url: `/`
-    //     // background_color: `#431faf`,
-    //     // theme_color: `#7ff5ff`,
-    //     // display: `standalone`,
-    //     // icon: `src/images/icon.png`
-    //   }
-    // },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-150388513-1'
+      }
+    },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
