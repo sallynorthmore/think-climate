@@ -2,9 +2,10 @@
 templateKey: home-page
 title: Think Earth
 hero:
+  background: #000
   image: /images/earth-1.jpg
-  date: Upcoming  • IBM Southbank, London
   title: A talk on Climate Change and our future
+  smalltext: Upcoming  • IBM Southbank, London
 events:
   - title: Screening Al Gore’s Climate Crisis
     location: IBM Southbank, iX MediaScape

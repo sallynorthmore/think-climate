@@ -1,9 +1,9 @@
 ---
-templateKey: about-us
-title: About Us
+templateKey: about
+title: About
 hero:
-  color: '#368084'
+  background: '#000'
   image: /images/uploads/earth-1.jpg
-  intro: >-
-    Intro text
+  title: About us
+body: About body text
 ---
