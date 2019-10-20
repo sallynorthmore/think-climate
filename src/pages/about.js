@@ -2,25 +2,25 @@ import * as React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
 import Layout from '../components/Layout/index';
 
-const AboutUsPage = () => (
+const AboutPage = () => (
   <StaticQuery
     query={graphql`
       query {
-        page: markdownRemark(frontmatter: { templateKey: { eq: "about-us" } }) {
+        page: markdownRemark(frontmatter: { templateKey: { eq: "about" } }) {
           frontmatter {
             title
             hero {
-              color
+              background
               title
-              intro
-              # image {
-              #   childImageSharp {
-              #     fluid(quality: 85, maxWidth: 2000) {
-              #       ...GatsbyImageSharpFluid
-              #     }
-              #   }
-              # }
+              image {
+                childImageSharp {
+                  fluid(quality: 85, maxWidth: 2000) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
             }
+            body
           }
         }
       }
@@ -32,12 +32,13 @@ const AboutUsPage = () => (
         return;
       }
       return (
-        <Layout hero={page.hero} noSpace={true}>
-          About us
+        <Layout>
+          <h1>{page.title}</h1>
+          {page.body}
         </Layout>
       );
     }}
   />
 );
 
-export default AboutUsPage;
+export default AboutPage;

@@ -1,771 +1,96 @@
-# backend:
-#   name: gitlab
-#   repo: Lifted/lifted-website
-#   branch: development # TODO: change this to master once we go live
+backend:
+  name: github
+  repo: sallynorthmore/think-climate
+  branch: development # TODO: change this to master once we go live
 #   auth_type: implicit
 #   app_id: 43c25021ee0461cd3c4a3389671fbe266f6943c586fc24198aeedf2132427407
 
-# media_folder: 'static/img/uploads'
-# public_folder: '/img/uploads'
-
-# collections:
-#   - label: 'Global site information'
-#     name: 'global'
-#     files:
-#       - label: 'Global site information'
-#         name: 'global'
-#         file: 'content/global.md'
-#         fields:
-#           - {
-#               label: 'Template Key',
-#               name: 'templateKey',
-#               widget: 'hidden',
-#               default: 'global',
-#             }
-#           - { label: Site Title, name: title, widget: string }
-#           - { label: Address, name: address, widget: markdown }
-#           - { label: Email, name: email, widget: string }
-#           - label: Telephone
-#             name: tel
-#             widget: object
-#             fields:
-#               - { label: Country Code, name: code, widget: string }
-#               - { label: Phone Number, name: number, widget: string }
-#           - { label: facebook Url, name: facebookUrl, widget: string }
-#           - { label: linkedIn Url, name: linkedInUrl, widget: string }
-#           - { label: twitter Url, name: twitterUrl, widget: string }
-#           - { label: Site Map,
-#             name: siteMap,
-#             widget: list,
-#             allow_add: true,
-#             fields: [
-#               { label: Text, name: text, widget: string },
-#               { label: URL, name: url, widget: string },
-#             ]
-#           }
-#           - { label: Main Navigation,
-#             name: menuLinks,
-#             widget: list,
-#             allow_add: true,
-#             fields: [
-#               { label: Text, name: text, widget: string },
-#               { label: URL, name: url, widget: string },
-#               {
-#                 label: Sublinks (optional),
-#                 name: items,
-#                 widget: list,
-#                 allow_add: true,
-#                 fields: [
-#                   { label: Text, name: text, widget: string },
-#                   { label: URL, name: url, widget: string },
-#                 ]
-#               }
-#             ]
-#           }
-#   - label: 'Contact Form'
-#     name: 'contactform'
-#     files:
-#       - label: 'Contact Form'
-#         name: 'contactform'
-#         file: 'content/contact-form.md'
-#         fields:
-#           - {
-#               label: 'Template Key',
-#               name: 'templateKey',
-#               widget: 'hidden',
-#               default: 'contactform',
-#             }
-#           - { label: Title, name: title, widget: string }
-#           - { label: Body, name: body, widget: string }
-#   - label: 'Download App'
-#     name: 'downloadapp'
-#     files:
-#       - label: 'Download App'
-#         name: 'downloadapp'
-#         file: 'content/downloadapp.md'
-#         fields:
-#           - {
-#               label: 'Template Key',
-#               name: 'templateKey',
-#               widget: 'hidden',
-#               default: 'downloadapp',
-#             }
-#           - { label: Title, name: title, widget: string }
-#           - { label: Body, name: body, widget: string }
-#           - { label: Google Store URL, name: googleStoreUrl, widget: string }
-#           - { label: App Store URL, name: appStoreUrl, widget: string }
-#   - label: Pricing
-#     name: pricing
-#     files:
-#       - label: 'Pricing'
-#         name: 'pricing'
-#         file: 'content/pricing.md'
-#         fields:
-#           - {
-#               label: 'Template Key',
-#               name: 'templateKey',
-#               widget: 'hidden',
-#               default: 'pricing',
-#             }
-#           - { label: Title, name: title, widget: string }
-#           - { label: Items,
-#             name: items,
-#             widget: list,
-#             allow_add: true,
-#             fields: [
-#               { label: Title, name: title, widget: string },
-#               { label: Rate, name: rate, widget: string },
-#               { label: Unit, name: unit, widget: string },
-#               { label: Description, name: description, widget: string },
-#             ]
-#           }
-#   - label: Services - How we can help
-#     name: services-info
-#     files:
-#       - label: 'Services - How we can help'
-#         name: 'services-info'
-#         file: 'content/services-info.md'
-#         fields:
-#           - {
-#               label: 'Template Key',
-#               name: 'templateKey',
-#               widget: 'hidden',
-#               default: 'services-info',
-#             }
-#           - { label: Title, name: title, widget: string }
-#           - { label: Items,
-#             name: items,
-#             widget: list,
-#             allow_add: true,
-#             fields: [
-#               { label: Title, name: title, widget: string },
-#               { label: Body, name: body, widget: text },
-#               { label: Icon, name: icon, widget: select, options: ["Medication", "Active", "Apple", "HouseKeeping", "Hands", "Companionship"] },
-#             ]
-#           }
-#   - label: 'Pages'
-#     name: 'pages'
-#     files:
-#       - label: 'Home page'
-#         name: 'home'
-#         file: 'content/home.md'
-#         fields:
-#           - {
-#               label: 'Template Key',
-#               name: 'templateKey',
-#               widget: 'hidden',
-#               default: 'home-page',
-#             }
-#           - { label: Title, name: title, widget: string }
-#           - label: Hero
-#             name: hero
-#             widget: object
-#             fields:
-#               - { label: Background Color (hex), name: color, widget: string }
-#               - { label: Image, name: image, widget: image }
-#               - { label: Title, name: title, widget: string }
-#               - { label: Intro Title, name: introTitle, widget: string }
-#               - { label: Intro, name: intro, widget: markdown }
-#           - label: Hero Chat
-#             name: heroChat
-#             widget: object
-#             fields:
-#               - { label: Label, name: label, widget: string }
-#               - { label: Placeholder, name: placeholder, widget: string }
-#               - { label: Button Text, name: buttonText, widget: string }
-#           - label: Services
-#             name: services
-#             widget: object
-#             fields:
-#               - { label: Title, name: title, widget: string }
-#               - { label: Items,
-#                 name: items,
-#                 widget: list,
-#                 allow_add: true,
-#                 fields: [
-#                    { label: Title, name: title, widget: string },
-#                    { label: Image, name: image, widget: image },
-#                    { label: Is image right?, name: isImageRight, widget: boolean, default: false},
-#                    { label: Description, name: description, widget: markdown },
-#                    { label: Link,
-#                      name: link,
-#                      widget: object,
-#                      fields: [
-#                       { label: Label, name: label, widget: string },
-#                       { label: URL, name: url, widget: string },
-#                      ]
-#                     }
-#                 ]
-#               }
-#           - label: Bio
-#             name: bio
-#             widget: object
-#             fields:
-#               - { label: Image, name: image, widget: image }
-#               - { label: Title, name: title, widget: string }
-#               - { label: Intro, name: intro, widget: string }
-#               - { label: Description, name: description, widget: markdown }
-#           - label: How it works
-#             name: how
-#             widget: object
-#             fields:
-#               - { label: Title, name: title, widget: string }
-#               - label: Steps
-#                 name: steps
-#                 widget: list
-#                 fields:
-#                   - { label: Title, name: title, widget: string }
-#                   - { label: Figure, name: figure, widget: number }
-#                   - { label: Description, name: description, widget: text }
-#           - label: Quote
-#             name: quote
-#             widget: object
-#             fields:
-#               - { label: Quote, name: quote, widget: text }
-#               - { label: Source, name: source, widget: string }
-#           - label: Partnerships
-#             name: partnerships
-#             widget: object
-#             fields:
-#               - { label: Image, name: image, widget: image }
-#               - { label: Title, name: title, widget: string }
-#               - { label: Description, name: description, widget: markdown }
-#               - label: Link
-#                 name: link
-#                 widget: object
-#                 fields:
-#                   - { label: Label, name: label, widget: string }
-#                   - { label: URL, name: url, widget: string }
-#       - label: 'Personal Care'
-#         name: 'personal-care'
-#         file: 'content/personal-care.md'
-#         fields:
-#           - {
-#               label: 'Template Key',
-#               name: 'templateKey',
-#               widget: 'hidden',
-#               default: 'personal-care',
-#             }
-#           - { label: Page Title, name: title, widget: string }
-#           - label: Hero
-#             name: hero
-#             widget: object
-#             fields:
-#               - { label: Background Color (hex), name: color, widget: string }
-#               - { label: Image, name: image, widget: image }
-#               - { label: Title, name: title, widget: string }
-#               - { label: Intro Title, name: introTitle, widget: string }
-#               - { label: Intro, name: intro, widget: markdown }
-#           - label: Story
-#             name: story
-#             widget: object
-#             fields:
-#               - { label: Title, name: title, widget: string }
-#               - { label: Subtitle, name: subtitle, widget: string }
-#               - { label: Body, name: body, widget: text }
-#               - { label: Image, name: image, widget: image }
-#           - label: Funding
-#             name: funding
-#             widget: object
-#             fields:
-#               - { label: Title, name: title, widget: string }
-#               - { label: Body, name: body, widget: string }
-#               - { label: Image, name: image, widget: image }
-#               - { label: Image Alt Text, name: alt, widget: string }
-#               - { label: Cta Text, name: ctaText, widget: string }
-#               - { label: Link URL, name: url, widget: string }
-#           - label: Benefits
-#             name: benefits
-#             widget: list
-#             allow_add: true
-#             fields: [
-#                { label: Text, name: text, widget: string },
-#                {
-#                   label: Included in Live In Care,
-#                   name: liveInCare,
-#                   widget: boolean,
-#                 },
-#                { label: Included in CareHome, name: careHome, widget: boolean }
-#             ]
-#       - label: 'Dementia Care'
-#         name: 'dementia-care'
-#         file: 'content/dementia-care.md'
-#         fields:
-#           - {
-#               label: 'Template Key',
-#               name: 'templateKey',
-#               widget: 'hidden',
-#               default: 'dementia-care',
-#             }
-#           - { label: Page Title, name: title, widget: string }
-#           - label: Hero
-#             name: hero
-#             widget: object
-#             fields:
-#               - { label: Background Color (hex), name: color, widget: string }
-#               - { label: Image, name: image, widget: image }
-#               - { label: Title, name: title, widget: string }
-#               - { label: Intro Title, name: introTitle, widget: string }
-#               - { label: Intro, name: intro, widget: markdown }
-#           - label: Story
-#             name: story
-#             widget: object
-#             fields:
-#               - { label: Title, name: title, widget: string }
-#               - { label: Subtitle, name: subtitle, widget: string }
-#               - { label: Body, name: body, widget: text }
-#               - { label: Image, name: image, widget: image }
-#           - label: Funding
-#             name: funding
-#             widget: object
-#             fields:
-#               - { label: Title, name: title, widget: string }
-#               - { label: Body, name: body, widget: string }
-#               - { label: Image, name: image, widget: image }
-#               - { label: Image Alt Text, name: alt, widget: string }
-#               - { label: Cta Text, name: ctaText, widget: string }
-#               - { label: Link URL, name: url, widget: string }
-#           - label: Benefits
-#             name: benefits
-#             widget: list
-#             allow_add: true
-#             fields: [
-#                { label: Text, name: text, widget: string },
-#                {
-#                   label: Included in Live In Care,
-#                   name: liveInCare,
-#                   widget: boolean,
-#                 },
-#                { label: Included in CareHome, name: careHome, widget: boolean }
-#             ]
-#       - label: 'Live in Care'
-#         name: 'live-in-care'
-#         file: 'content/live-in-care.md'
-#         fields:
-#           - {
-#               label: 'Template Key',
-#               name: 'templateKey',
-#               widget: 'hidden',
-#               default: 'live-in-care',
-#             }
-#           - { label: Page Title, name: title, widget: string }
-#           - label: Hero
-#             name: hero
-#             widget: object
-#             fields:
-#               - { label: Background Color (hex), name: color, widget: string }
-#               - { label: Image, name: image, widget: image }
-#               - { label: Title, name: title, widget: string }
-#               - { label: Intro Title, name: introTitle, widget: string }
-#               - { label: Intro, name: intro, widget: markdown }
-#           - label: Story
-#             name: story
-#             widget: object
-#             fields:
-#               - { label: Title, name: title, widget: string }
-#               - { label: Subtitle, name: subtitle, widget: string }
-#               - { label: Body, name: body, widget: text }
-#               - { label: Image, name: image, widget: image }
-#           - label: Funding
-#             name: funding
-#             widget: object
-#             fields:
-#               - { label: Title, name: title, widget: string }
-#               - { label: Body, name: body, widget: string }
-#               - { label: Image, name: image, widget: image }
-#               - { label: Image Alt Text, name: alt, widget: string }
-#               - { label: Cta Text, name: ctaText, widget: string }
-#               - { label: Link URL, name: url, widget: string }
-#           - label: Benefits
-#             name: benefits
-#             widget: list
-#             allow_add: true
-#             fields: [
-#                { label: Text, name: text, widget: string },
-#                {
-#                   label: Included in Live In Care,
-#                   name: liveInCare,
-#                   widget: boolean,
-#                 },
-#                { label: Included in CareHome, name: careHome, widget: boolean }
-#             ]
-#       - label: 'Respite Care'
-#         name: 'respite-care'
-#         file: 'content/respite-care.md'
-#         fields:
-#           - {
-#               label: 'Template Key',
-#               name: 'templateKey',
-#               widget: 'hidden',
-#               default: 'respite-care',
-#             }
-#           - { label: Page Title, name: title, widget: string }
-#           - label: Hero
-#             name: hero
-#             widget: object
-#             fields:
-#               - { label: Background Color (hex), name: color, widget: string }
-#               - { label: Image, name: image, widget: image }
-#               - { label: Title, name: title, widget: string }
-#               - { label: Intro Title, name: introTitle, widget: string }
-#               - { label: Intro, name: intro, widget: markdown }
-#           - label: Story
-#             name: story
-#             widget: object
-#             fields:
-#               - { label: Title, name: title, widget: string }
-#               - { label: Subtitle, name: subtitle, widget: string }
-#               - { label: Body, name: body, widget: text }
-#               - { label: Image, name: image, widget: image }
-#           - label: Funding
-#             name: funding
-#             widget: object
-#             fields:
-#               - { label: Title, name: title, widget: string }
-#               - { label: Body, name: body, widget: string }
-#               - { label: Image, name: image, widget: image }
-#               - { label: Image Alt Text, name: alt, widget: string }
-#               - { label: Cta Text, name: ctaText, widget: string }
-#               - { label: Link URL, name: url, widget: string }
-#           - label: Benefits
-#             name: benefits
-#             widget: list
-#             allow_add: true
-#             fields: [
-#                { label: Text, name: text, widget: string },
-#                {
-#                   label: Included in Live In Care,
-#                   name: liveInCare,
-#                   widget: boolean,
-#                 },
-#                { label: Included in CareHome, name: careHome, widget: boolean }
-#             ]
-#       - label: 'Companionship Care'
-#         name: 'companionship-care'
-#         file: 'content/companionship-care.md'
-#         fields:
-#           - {
-#               label: 'Template Key',
-#               name: 'templateKey',
-#               widget: 'hidden',
-#               default: 'companionship-care',
-#             }
-#           - { label: Page Title, name: title, widget: string }
-#           - label: Hero
-#             name: hero
-#             widget: object
-#             fields:
-#               - { label: Background Color (hex), name: color, widget: string }
-#               - { label: Image, name: image, widget: image }
-#               - { label: Title, name: title, widget: string }
-#               - { label: Intro Title, name: introTitle, widget: string }
-#               - { label: Intro, name: intro, widget: markdown }
-#           - label: Story
-#             name: story
-#             widget: object
-#             fields:
-#               - { label: Title, name: title, widget: string }
-#               - { label: Subtitle, name: subtitle, widget: string }
-#               - { label: Body, name: body, widget: text }
-#               - { label: Image, name: image, widget: image }
-#           - label: Funding
-#             name: funding
-#             widget: object
-#             fields:
-#               - { label: Title, name: title, widget: string }
-#               - { label: Body, name: body, widget: string }
-#               - { label: Image, name: image, widget: image }
-#               - { label: Image Alt Text, name: alt, widget: string }
-#               - { label: Cta Text, name: ctaText, widget: string }
-#               - { label: Link URL, name: url, widget: string }
-#           - label: Benefits
-#             name: benefits
-#             widget: list
-#             allow_add: true
-#             fields: [
-#                { label: Text, name: text, widget: string },
-#                {
-#                   label: Included in Live In Care,
-#                   name: liveInCare,
-#                   widget: boolean,
-#                 },
-#                { label: Included in CareHome, name: careHome, widget: boolean }
-#             ]
-#       - label: 'Our Services Page'
-#         name: 'our-services'
-#         file: 'content/our-services.md'
-#         fields:
-#           - {
-#             label: 'Template Key',
-#             name: 'templateKey',
-#             widget: 'hidden',
-#             default: 'our-services',
-#           }
-#           - { label: Page Title, name: title, widget: string }
-#           - label: Hero
-#             name: hero
-#             widget: object
-#             fields:
-#               - { label: Background Color (a hex value), name: color, widget: string }
-#               - { label: Image, name: image, widget: image }
-#               - { label: Title, name: title, widget: string }
-#               - { label: Intro Title, name: introTitle, widget: string, required: false }
-#               - { label: Intro, name: intro, widget: string }
-#           - label: Stories
-#             name: stories
-#             widget: list
-#             allow_add: true
-#             fields:
-#               - { label: Title, name: title, widget: string }
-#               - { label: Subtitle, name: subtitle, widget: string, required: false }
-#               - { label: Link, name: url, widget: string }
-#               - { label: Body, name: body, widget: text }
-#               - { label: Image, name: image, widget: image }
-#       - label: 'Features'
-#         name: 'features'
-#         file: 'content/features.md'
-#         fields:
-#           - {
-#             label: 'Template Key',
-#             name: 'templateKey',
-#             widget: 'hidden',
-#             default: 'features',
-#           }
-#           - { label: Page Title, name: title, widget: string }
-#           - label: Hero
-#             name: hero
-#             widget: object
-#             fields:
-#               - { label: Background Color (a hex value), name: color, widget: string }
-#               - { label: Image, name: image, widget: image }
-#               - { label: Title, name: title, widget: string }
-#               - { label: Intro Title, name: introTitle, widget: string }
-#               - { label: Intro, name: intro, widget: string }
-#           - { label: Bullet Points Title, name: bulletsTitle, widget: string }
-#           - label: Bullet Points
-#             name: bullets
-#             widget: list
-#             allow_add: true
-#             fields:
-#               - { label: Text, name: text, widget: string }
-#               - { label: Icon Name, name: icon, widget: string }
-#           - label: Features
-#             name: features
-#             widget: list
-#             allow_add: true
-#             fields:
-#               - { label: Title, name: title, widget: string }
-#               - { label: Body, name: body, widget: text }
-#               - { label: Video Filetype, name: videoFileType, widget: string }
-#               - { label: Video, name: video, widget: video }
-#           - label: Hive Story
-#             name: hiveStory
-#             widget: object
-#             fields:
-#               - { label: Title, name: title, widget: string }
-#               - { label: Image, name: image, widget: image }
-#               - { label: Description, name: body, widget: string }
-#               - { label: Link, name: url, widget: string }
-#       - label: 'Financing Page'
-#         name: 'financing'
-#         file: 'content/financing.md'
-#         fields:
-#           - {
-#             label: 'Template Key',
-#             name: 'templateKey',
-#             widget: 'hidden',
-#             default: 'financing',
-#           }
-#           - { label: Page Title, name: title, widget: string }
-#           - label: Hero
-#             name: hero
-#             widget: object
-#             fields:
-#               - { label: Background Color (a hex value), name: color, widget: string }
-#               - { label: Image, name: image, widget: image }
-#               - { label: Title, name: title, widget: string }
-#               - { label: Intro Title, name: introTitle, widget: string }
-#               - { label: Intro, name: intro, widget: string }
-#           - label: Cards
-#             name: cards
-#             widget: list
-#             allow_add: true
-#             fields:
-#               - { label: Title, name: title, widget: string }
-#               - { label: Body, name: body, widget: text }
-#               - { label: Button, name: button, widget: string }
-#               - { label: Link, name: url, widget: string }
-#       - label: 'Become a carer'
-#         name: 'become-a-carer'
-#         file: 'content/become-a-carer.md'
-#         fields:
-#           - {
-#             label: 'Template Key',
-#             name: 'templateKey',
-#             widget: 'hidden',
-#             default: 'become-a-carer',
-#           }
-#           - { label: Page Title, name: title, widget: string }
-#           - label: Hero
-#             name: hero
-#             widget: object
-#             fields:
-#               - { label: Background Color (a hex value), name: color, widget: string }
-#               - { label: Image, name: image, widget: image }
-#               - { label: Title, name: title, widget: string }
-#               - { label: Intro Title, name: introTitle, widget: string }
-#               - { label: Intro, name: intro, widget: string }
-#           - label: Join us Promo
-#             name: joinPromo
-#             widget: object
-#             fields:
-#               - { label: Title, name: title, widget: string }
-#               - { label: Body, name: body, widget: text }
-#               - { label: Link, name: url, widget: string }
-#               - { label: Image, name: image, widget: image }
-#       - label: 'About Us Page'
-#         name: 'about us'
-#         file: 'content/about-us.md'
-#         fields:
-#           - {
-#               label: 'Template Key',
-#               name: 'templateKey',
-#               widget: 'hidden',
-#               default: 'about-us',
-#             }
-#           - { label: Title, name: title, widget: string }
-#           - label: Hero
-#             name: hero
-#             widget: object
-#             fields:
-#               - { label: Background Color (hex), name: color, widget: string }
-#               - { label: Image, name: image, widget: image }
-#               - { label: Title, name: title, widget: string }
-#               - { label: Intro Title, name: introTitle, widget: string }
-#               - { label: Intro, name: intro, widget: markdown }
-#           - label: Bio
-#             name: bio
-#             widget: object
-#             fields:
-#               - { label: Image, name: image, widget: image }
-#               - { label: Intro, name: intro, widget: string }
-#               - { label: Description, name: description, widget: markdown }
-#           - label: Profiles
-#             name: profiles
-#             widget: list
-#             allow_add: true
-#             fields:
-#               - { label: Image, name: image, widget: image }
-#               - { label: Name, name: name, widget: string }
-#               - { label: Title, name: title, widget: string }
-#           - label: Carers Banner
-#             name: carersBanner
-#             widget: object
-#             fields:
-#               - { label: Image, name: image, widget: image }
-#               - { label: Intro, name: intro, widget: string }
-#               - { label: Description, name: description, widget: markdown }
-#               - { label: Url, name: url, widget: string }
-#       - label: 'Our Carers Page'
-#         name: 'our-carers'
-#         file: 'content/our-carers.md'
-#         fields:
-#           - {
-#             label: 'Template Key',
-#             name: 'templateKey',
-#             widget: 'hidden',
-#             default: 'our-carers',
-#           }
-#           - { label: Page Title, name: title, widget: string }
-#           - label: Hero
-#             name: hero
-#             widget: object
-#             fields:
-#               - { label: Background Color (a hex value), name: color, widget: string }
-#               - { label: Image, name: image, widget: image }
-#               - { label: Title, name: title, widget: text }
-#               - { label: Intro Title, name: introTitle, widget: string, required: false}
-#               - { label: Intro, name: intro, widget: text }
-#           - label: Carers
-#             name: carers
-#             widget: object
-#             fields:
-#               - { label: Section Heading, name: heading, widget: string }
-#               - { label: Stories,
-#               name: stories,
-#               widget: list,
-#               allow_add: true,
-#               fields: [
-#                 { label: Title, name: title, widget: string },
-#                 { label: Subtitle, name: subtitle, widget: string },
-#                 { label: Body, name: body, widget: text },
-#                 { label: Image, name: image, widget: image }
-#               ]
-#             }
-#           - label: Information Blocks
-#             name: infoBlock
-#             widget: object
-#             fields:
-#               - { label: Section Heading, name: heading, widget: string }
-#               - { label: Items,
-#             name: items,
-#             widget: list,
-#             allow_add: true,
-#             fields: [
-#               { label: Title, name: title, widget: string },
-#               { label: Body, name: body, widget: text },
-#               { label: Icon, name: icon, widget: select, options: ["Selection", "BgCheck", "Specialists", "Experience", "Profiles", "Interests"] },
-#             ]
-#           }
-#       - label: 'Lifted x Hive Page'
-#         name: 'hive'
-#         file: 'content/hive.md'
-#         fields:
-#           - {
-#             label: 'Template Key',
-#             name: 'templateKey',
-#             widget: 'hidden',
-#             default: 'hive',
-#           }
-#           - label: Hero
-#             name: hero
-#             widget: object
-#             fields:
-#               - { label: Background Color (a hex value), name: color, widget: string }
-#               - { label: Image, name: image, widget: image }
-#               - { label: Title, name: title, widget: string }
-#               - { label: Intro Title, name: introTitle, widget: string, required: false }
-#               - { label: Intro, name: intro, widget: string }
-#               - { label: Title Text Colour (a hex value), name: titleColor, widget: string  }
-#           - { label: Page Title, name: title, widget: string }
-#           - label: How it works
-#             name: how
-#             widget: object
-#             fields:
-#               - label: Steps
-#                 name: steps
-#                 widget: list
-#                 fields:
-#                   - { label: Title, name: title, widget: string }
-#                   - { label: Figure, name: figure, widget: number }
-#                   - { label: Description, name: description, widget: text }
-#           - label: Stories
-#             name: stories
-#             widget: list
-#             allow_add: true
-#             fields:
-#               - { label: Title, name: title, widget: string }
-#               - { label: Subtitle, name: subtitle, widget: string, required: false }
-#               - { label: Link, name: url, widget: string }
-#               - { label: Body, name: body, widget: text }
-#               - { label: CTA Text, name: ctaText, widget: string}
-#               - { label: Image, name: image, widget: image }
-#           - label: Platform Promo
-#             name: platformPromo
-#             widget: object
-#             fields:
-#               - { label: Title, name: title, widget: string }
-#               - { label: Body, name: body, widget: text }
-#               - { label: Url, name: url, widget: string }
-#               - { label: CTA Text, name: ctaText, widget: string }
-#               - { label: Image, name: image, widget: image }
+media_folder: 'static/images/uploads'
+public_folder: '/images/uploads'
+collections:
+  - label: 'Global site information'
+    name: 'global'
+    files:
+      - label: 'Global site information'
+        name: 'global'
+        file: 'content/global.md'
+        fields:
+          - {
+              label: 'Template Key',
+              name: 'templateKey',
+              widget: 'hidden',
+              default: 'global',
+            }
+          - { label: Site Title, name: title, widget: string }
+          - { label: Email, name: email, widget: string }
+          - { label: Description, name: description, widget: string }
+  - label: 'Subscribe'
+    name: 'subscribe'
+    files:
+      - label: 'Subscribe'
+        name: 'subscribe'
+        file: 'content/subscribe.md'
+        fields:
+          - {
+              label: 'Template Key',
+              name: 'templateKey',
+              widget: 'hidden',
+              default: 'subscribe',
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: Body, name: body, widget: markdown }
+  - label: 'Pages'
+    name: 'pages'
+    files:
+      - label: 'Home page'
+        name: 'home'
+        file: 'content/home.md'
+        fields:
+          - {
+              label: 'Template Key',
+              name: 'templateKey',
+              widget: 'hidden',
+              default: 'home-page',
+            }
+          - { label: Title, name: title, widget: string }
+          - label: Hero
+          name: hero
+          widget: object
+          fields:
+            - { label: Background Color (a hex value), name: background, widget: string }
+            - { label: Image, name: image, widget: image }
+            - { label: Title, name: title, widget: string }
+            - { label: SmallText, name: smalltext, widget: string, required: false }
+      - label: 'About'
+        name: 'about'
+        file: 'content/about.md'
+        fields:
+          - {
+              label: 'Template Key',
+              name: 'templateKey',
+              widget: 'hidden',
+              default: 'about',
+            }
+          - { label: Page Title, name: title, widget: string }
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Background Color (hex), name: background, widget: string }
+              - { label: Image, name: image, widget: image }
+              - { label: Title, name: title, widget: string }
+          - label: Body
+            name: body
+            widget: markdown
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+      label: "Blog" # Used in the UI
+      folder: "content/_posts/blog" # The path to the folder where the documents are stored
+      create: true # Allow users to create new documents in this collection
+      slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+      fields: # The fields for each document, usually in front matter
+        - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Publish Date", name: "date", widget: "datetime"}
+        - {label: "Featured Image", name: "thumbnail", widget: "image"}
+        - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
+        - {label: "Body", name: "body", widget: "markdown"}
