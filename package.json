@@ -30,7 +30,7 @@
     "@storybook/react": "^5.1.9",
     "gatsby": "^2.13.31",
     "gatsby-image": "^2.2.20",
-    "gatsby-plugin-manifest": "^2.2.18",
+    "gatsby-plugin-google-analytics": "^2.1.23",
     "gatsby-plugin-netlify": "^2.0.6",
     "gatsby-plugin-netlify-cms": "^4.1.6",
     "gatsby-plugin-offline": "^2.2.10",
@@ -61,7 +61,8 @@
     "storybook-addon-styled-component-theme": "^1.2.3",
     "styled-components": "^4.3.2",
     "styled-tools": "^1.7.1",
-    "uuid": "^3.3.3"
+    "uuid": "^3.3.3",
+    "why": "^0.1.12"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
