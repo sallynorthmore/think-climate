@@ -54,13 +54,13 @@ collections:
             }
           - { label: Title, name: title, widget: string }
           - label: Hero
-          name: hero
-          widget: object
-          fields:
-            - { label: Background Color (a hex value), name: background, widget: string }
-            - { label: Image, name: image, widget: image }
-            - { label: Title, name: title, widget: string }
-            - { label: SmallText, name: smalltext, widget: string, required: false }
+            name: hero
+            widget: object
+            fields:
+              - { label: Background Color (a hex value), name: background, widget: string }
+              - { label: Image, name: image, widget: image }
+              - { label: Title, name: title, widget: string }
+              - { label: SmallText, name: smalltext, widget: string, required: false }
       - label: 'About'
         name: 'about'
         file: 'content/about.md'
