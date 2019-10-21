@@ -2,8 +2,6 @@ backend:
   name: github
   repo: sallynorthmore/think-climate
   branch: master # TODO: change this to master once we go live
-#   auth_type: implicit
-#   app_id: 43c25021ee0461cd3c4a3389671fbe266f6943c586fc24198aeedf2132427407
 
 media_folder: 'static/images/uploads'
 public_folder: '/images/uploads'
