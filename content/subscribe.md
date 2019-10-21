@@ -1,5 +1,7 @@
 ---
 templateKey: subscribe
 title: Subscribe
-body: Sign up here to receive news and updates, and express interest in volunteer and speaking opportunities.
 ---
+Sign up [here](https://forms.gle/CZp4VcJ5G8VW3wEC7) to receive news and updates on upcoming events,
+
+and to express interest in volunteer and speaking opportunities.
