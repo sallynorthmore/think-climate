@@ -5,7 +5,8 @@
   "author": "sally northmore",
   "keywords": [
     "gatsby",
-    "styled components"
+    "styled components",
+    "netlify-cms"
   ],
   "license": "MIT",
   "scripts": {
