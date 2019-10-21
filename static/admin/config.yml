@@ -110,7 +110,7 @@ collections:
           name: 'category',
           widget: 'select',
           options:
-            - { label: "Lunch & Learn", value: "lunch" }
-            - { label: "Event", value: "event" }
+            - { label: 'Lunch & Learn', value: 'lunch' },
+            - { label: 'Event', value: 'event' }
         }
       - { label: 'Body', name: 'body', widget: 'markdown' }
