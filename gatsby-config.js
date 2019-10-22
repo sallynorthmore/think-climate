@@ -10,6 +10,14 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
+      // keep as first gatsby-source-filesystem plugin for gatsby image support
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/static/images/uploads`,
+        name: 'uploads'
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -21,13 +29,6 @@ module.exports = {
       options: {
         name: `videos`,
         path: `${__dirname}/static/videos`
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `uploads`,
-        path: `${__dirname}/static/images/uploads`
       }
     },
     {
@@ -94,7 +95,14 @@ module.exports = {
         ]
       }
     },
-    `gatsby-plugin-styled-components`
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: 'gatsby-plugin-netlify-cms',
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`
+      }
+    }
+
     // {
     //   resolve: `gatsby-plugin-netlify-cms`,
     //   options: {
