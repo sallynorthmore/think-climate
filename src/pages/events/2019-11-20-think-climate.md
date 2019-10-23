@@ -47,7 +47,7 @@ Risk & Resilience
 Anybody who is interested in learning how we can tackle the Climate Crisis together.
 
 ## Book tickets
-**[Get tickets here](https://www.eventbrite.co.uk/e/think-climate-tickets-74001529567)**
 
+**<a href="https://www.eventbrite.co.uk/e/think-climate-tickets-74001529567" target="_blank">Get tickets here</a>**
 
 **For each audience member coming to the event, Climate Reality will plant one tree on their behalf in partnership with One Tree Planted.**
