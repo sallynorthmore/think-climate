@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1510px" height="1549px" viewBox="0 0 1510 1549" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>V4 Logo Original</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="486.0675" cy="486.0675" r="486.0675"></circle>
+    </defs>
+    <g id="V4-Logo-Original" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" stroke="#C20000" stroke-width="20" cx="754.5" cy="773.5" r="638.5"></circle>
+        <g id="Group" transform="translate(269.000000, 288.000000)">
+            <g id="Oval-+-Oval-+-Oval-+-Oval-+-Oval-+-Oval-+-Oval-+-Oval-+-Oval-Mask" transform="translate(0.855000, 0.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <ellipse id="Oval" fill-opacity="0.5" fill="#547893" mask="url(#mask-2)" cx="121.812536" cy="943.751496" rx="535.738631" ry="1563.45799"></ellipse>
+                <ellipse id="Oval" fill-opacity="0.5" fill="#A1C1DA" mask="url(#mask-2)" transform="translate(93.325397, 942.591969) rotate(20.000000) translate(-93.325397, -942.591969) " cx="93.3253969" cy="942.591969" rx="536.416251" ry="1563.59631"></ellipse>
+                <ellipse id="Oval" fill-opacity="0.3" fill="#97B0C4" mask="url(#mask-2)" transform="translate(93.325397, 942.591969) rotate(40.000000) translate(-93.325397, -942.591969) " cx="93.3253969" cy="942.591969" rx="536.416251" ry="1563.59631"></ellipse>
+                <ellipse id="Oval" fill-opacity="0.3" fill="#A3D5CD" mask="url(#mask-2)" transform="translate(93.325397, 942.591969) rotate(60.000000) translate(-93.325397, -942.591969) " cx="93.3253969" cy="942.591969" rx="536.416251" ry="1563.59631"></ellipse>
+                <ellipse id="Oval" fill-opacity="0.3" fill="#82ABA4" mask="url(#mask-2)" transform="translate(93.325397, 942.591969) rotate(80.000000) translate(-93.325397, -942.591969) " cx="93.3253969" cy="942.591969" rx="536.416251" ry="1563.59631"></ellipse>
+                <path d="M93.3253969,2506.18828 C389.579912,2506.18828 629.741648,1806.14236 629.741648,942.591969 C629.741648,79.041574 389.579912,-621.004338 93.3253969,-621.004338 C-69.0359406,-621.004338 -214.549515,-410.741845 -312.915965,-78.5362763 C-394.03501,195.420935 -443.090854,552.3076 -443.090854,942.591969 C-443.090854,1806.14236 -202.929118,2506.18828 93.3253969,2506.18828 Z" id="Oval" fill-opacity="0.3" fill="#C2F2EB" mask="url(#mask-2)" transform="translate(93.325397, 942.591969) rotate(100.000000) translate(-93.325397, -942.591969) "></path>
+                <ellipse id="Oval" fill-opacity="0.3" fill="#D5EBE8" mask="url(#mask-2)" transform="translate(93.325397, 942.591969) rotate(120.000000) translate(-93.325397, -942.591969) " cx="93.3253969" cy="942.591969" rx="536.416251" ry="1563.59631"></ellipse>
+                <ellipse id="Oval" fill-opacity="0.5" fill="#BED4D0" mask="url(#mask-2)" transform="translate(93.325397, 942.591969) rotate(140.000000) translate(-93.325397, -942.591969) " cx="93.3253969" cy="942.591969" rx="536.416251" ry="1563.59631"></ellipse>
+                <ellipse id="Oval" fill-opacity="0.3" fill="#7C8D8A" mask="url(#mask-2)" transform="translate(93.325397, 942.591969) rotate(160.000000) translate(-93.325397, -942.591969) " cx="93.3253969" cy="942.591969" rx="536.416251" ry="1563.59631"></ellipse>
+            </g>
+            <circle id="Oval" fill-opacity="0.45" fill="#000000" cx="486.495" cy="486.495" r="486.495"></circle>
+            <text id="think-climate." font-family="Raleway-Regular, Raleway" font-size="153.9" font-weight="normal" line-spacing="141.075" fill="#FFFFFF">
+                <tspan x="200.925" y="451.945">think</tspan>
+                <tspan x="202.3101" y="593.942893" font-family="Raleway-SemiBold, Raleway" font-weight="500">climate</tspan>
+                <tspan x="748.0395" y="593.02">. </tspan>
+            </text>
+        </g>
+    </g>
+</svg>
