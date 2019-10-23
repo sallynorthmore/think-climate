@@ -59,6 +59,10 @@ export const Content = styled.div`
 
   & .body {
     margin: 2rem auto 0;
+
+    & p {
+      font: 300 var(--type-0) var(--font-raleway);
+    }
   }
 
   & .readMore {

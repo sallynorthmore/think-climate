@@ -36,7 +36,10 @@ class EventRoll extends React.Component {
                       </Link>
                     </h3>
 
-                    <Content className="body" content={post.excerpt}></Content>
+                    <div className="body">
+                      <p>{post.excerpt}</p>
+                    </div>
+
                     <Link className="readMore" to={post.fields.slug}>
                       Keep Reading →
                     </Link>
