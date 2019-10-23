@@ -1,6 +1,6 @@
 ---
 templateKey: event-post
-title: Climate and Cocktails
+title: THINK Climate
 date: 2019-10-22T15:04:10.000Z
 featuredpost: true
 featuredimage: /img/earth-rise.jpg
