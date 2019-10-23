@@ -34,6 +34,7 @@ export const Hero = styled.header`
       'isEvent',
       css`
         min-height: 400px;
+        padding: 4rem 2.5rem 1rem;
       `
     )}
   }
