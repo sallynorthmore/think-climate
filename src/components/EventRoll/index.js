@@ -5,13 +5,14 @@ import PreviewCompatibleImage from '../PreviewCompatibleImage';
 import Content from '../Content';
 import * as S from './styles';
 
-class BlogRoll extends React.Component {
+class EventRoll extends React.Component {
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
 
     return (
-      <S.BlogRoll>
+      <S.EventRoll>
+        <h2>Upcoming Events</h2>
         <ol>
           {posts &&
             posts.map(({ node: post }, i) => (
@@ -30,17 +31,15 @@ class BlogRoll extends React.Component {
                   ) : null}
                   <S.Content>
                     <h3 className="title">
-                      {post.frontmatter.title}
-
-                      {/* <Link to={post.fields.slug}>
+                      <Link to={post.fields.slug}>
                         {post.frontmatter.title}
-                      </Link>{post.frontmatter.date} */}
+                      </Link>
                     </h3>
 
-                    <Content content={post.excerpt}></Content>
-                    {/*<Link className="button" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>*/}
+                    <Content className="body" content={post.excerpt}></Content>
+                    <Link className="readMore" to={post.fields.slug}>
+                      Keep Reading →
+                    </Link>
                     <S.Footer className="footer">
                       {post.frontmatter.eventDate && (
                         <li>{post.frontmatter.eventDate}</li>
@@ -57,12 +56,12 @@ class BlogRoll extends React.Component {
               </li>
             ))}
         </ol>
-      </S.BlogRoll>
+      </S.EventRoll>
     );
   }
 }
 
-BlogRoll.props = {
+EventRoll.props = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array
@@ -70,15 +69,15 @@ BlogRoll.props = {
   })
 };
 
-// export default BlogRoll;
+// export default EventRoll;
 
 export default () => (
   <StaticQuery
     query={graphql`
-      query BlogRollQuery {
+      query EventRollQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+          filter: { frontmatter: { templateKey: { eq: "event-post" } } }
         ) {
           edges {
             node {
@@ -109,6 +108,6 @@ export default () => (
         }
       }
     `}
-    render={(data, count) => <BlogRoll data={data} count={count} />}
+    render={(data, count) => <EventRoll data={data} count={count} />}
   />
 );

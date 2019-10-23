@@ -1,15 +1,16 @@
 import styled, { css } from 'styled-components';
 import { ifProp } from 'styled-tools';
 
-export const BlogRoll = styled.div`
-  /* & > h2 {
+export const EventRoll = styled.div`
+  padding: 4rem 0;
+
+  & > h2 {
     color: var(--black);
     font: 900 var(--type-3) var(--font-questrial);
-  } */
+  }
 
   & > ol {
     list-style: none;
-    padding: 4rem 0;
 
     & > li {
       margin: 0 2rem;
@@ -27,7 +28,7 @@ export const BlogRoll = styled.div`
 `;
 
 export const Post = styled.article`
-  margin: 0 auto;
+  margin: 4rem auto 0;
   max-width: 45rem;
   text-align: center;
 
@@ -50,10 +51,19 @@ export const Content = styled.div`
   & .title {
     color: var(--coal);
     font: 900 var(--type-2) var(--font-questrial);
+
+    & a {
+      display: inline-block;
+    }
   }
 
   & .body {
     margin: 2rem auto 0;
+  }
+
+  & .readMore {
+    display: inline-block;
+    margin: 1.5rem 0;
   }
 
   @media (min-width: ${props => props.theme.tablet}) {

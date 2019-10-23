@@ -6,7 +6,7 @@ import ParralaxHero from '../components/ParralaxHero';
 import Footer from '../components/Footer';
 import Subscribe from '../components/Subscribe';
 import * as S from '../components/Home/styles';
-import BlogRoll from '../components/BlogRoll';
+import EventRoll from '../components/EventRoll';
 
 export const IndexPageTemplate = ({ title, hero }) => (
   <S.Home>
@@ -16,7 +16,7 @@ export const IndexPageTemplate = ({ title, hero }) => (
       image={hero.image}
     ></ParralaxHero>
     <S.Main role="main">
-      <BlogRoll />
+      <EventRoll />
       {/* <Link to="/blog">Read more</Link> */}
       {/* <Link to="/contact">Contact us</Link> */}
 
