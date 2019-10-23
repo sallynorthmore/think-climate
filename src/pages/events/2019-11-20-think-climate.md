@@ -25,27 +25,29 @@ THINK Climate is a fast-paced and fun evening event where you will hear from bus
 
 ## Headline Speakers
 
-### Dorothy Shaver
+**Dorothy Shaver**
 Global Sustainability
 Lead - Unilever
 
-### Jeremy Waite
+**Jeremy Waite**
 Climate Reality Leader & Chief
 Customer Officer - IBM iX
 
-### Dr. Murray Simpson
+**Dr. Murray Simpson**
 IBM Global Lead, Climate
 Risk & Resilience
 
 ## Why come?
-• Learn about the reality of the Climate Crisis.
-• What does the science say and why should we care?
-• What can we do personally and professionally to make a difference?
+* Learn about the reality of the Climate Crisis.
+* What does the science say and why should we care?
+* What can we do personally and professionally to make a difference?
 
 ## Who is it for ?
 
 Anybody who is interested in learning how we can tackle the Climate Crisis together.
 
-For each audience member coming to the event, Climate Reality will plant one tree on their behalf in partnership with One Tree Planted.
+## Book tickets
+**[Get tickets here](https://www.eventbrite.co.uk/e/think-climate-tickets-74001529567)**
 
-[Get tickets here](https://www.eventbrite.co.uk/e/think-climate-tickets-74001529567)
+
+**For each audience member coming to the event, Climate Reality will plant one tree on their behalf in partnership with One Tree Planted.**

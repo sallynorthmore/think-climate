@@ -5,7 +5,10 @@ import Helmet from 'react-helmet';
 import { graphql, Link } from 'gatsby';
 import Layout from '../components/Layout/index.js';
 import Content, { HTMLContent } from '../components/Content';
-
+import Hero from '../components/Hero';
+import Footer from '../components/Footer';
+import Subscribe from '../components/Subscribe';
+import * as S from './event-post.styles';
 export const EventPostTemplate = ({
   content,
   contentComponent,
@@ -17,13 +20,13 @@ export const EventPostTemplate = ({
   const PostContent = contentComponent || Content;
 
   return (
-    <section className="section">
+    <S.EventPostTemplate>
       {helmet || ''}
-      <div className="container content">
-        <h1>{title}</h1>
-        <p>{description}</p>
+      <Hero isEvent headline={title} smallText="Event"></Hero>
+      <S.Main>
         <PostContent content={content} />
-        {tags && tags.length ? (
+
+        {/* tags && tags.length ? (
           <div>
             <h4>Tags</h4>
             <ul>
@@ -34,9 +37,11 @@ export const EventPostTemplate = ({
               ))}
             </ul>
           </div>
-        ) : null}
-      </div>
-    </section>
+              ) : null */}
+      </S.Main>
+      <Subscribe />
+      <Footer />
+    </S.EventPostTemplate>
   );
 };
 
