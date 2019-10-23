@@ -26,7 +26,7 @@ export const Content = styled.div`
   & * + * {
     color: var(--black);
     font: inherit;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
   }
 
   & h1 {
@@ -37,11 +37,13 @@ export const Content = styled.div`
   & h2 {
     color: var(--black);
     font: 900 var(--type-3) var(--font-questrial);
+    margin-top: 3rem;
   }
 
   & h3 {
     color: var(--black);
     font: 900 var(--type-2) var(--font-questrial);
+    margin-top: 3rem;
   }
 
   & h4 {

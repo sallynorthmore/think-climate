@@ -1,4 +1,5 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
+import { ifProp } from 'styled-tools';
 
 const fadeIn = keyframes`
   from {
@@ -19,8 +20,23 @@ export const Hero = styled.header`
   padding: 2rem 2.5rem;
   text-align: left;
 
+  ${ifProp(
+    'isEvent',
+    css`
+      min-height: 300px;
+    `
+  )}
+
   @media (min-width: ${props => props.theme.desktop}) {
     min-height: 100vh;
+
+    ${ifProp(
+      'isEvent',
+      css`
+        min-height: 400px;
+        padding: 4rem 2.5rem 1rem;
+      `
+    )}
   }
 `;
 

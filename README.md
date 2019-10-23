@@ -1,17 +1,45 @@
-# ThinkEarth
+# ThinkClimate.earth website
 
-Website
+This is a statically generated GatsbyJS website hosted on thinkclimate.earth, via Netlify. Content is managed via Netlify CMS.
 
-## Getting Started
+## Prerequisites
 
-- `npm i`
-- `npm start` Start server & client, serve at [http://localhost:3001/](http://localhost:3001/)
+- Node v11
+- [Gatsby CLI](https://www.gatsbyjs.org/docs/)
+- [Netlify CLI](https://github.com/netlify/cli)
+- Install prettier globally
+
+If you're using VSCode as an IDE, refer to the recommended plugins and settings in `./vscode`
 
 ## Tech stack
 
-- [GatsbyJS](https://www.gatsbyjs.org/)
-- [ReactJS](https://reactjs.org/)
-- [StyledComponents](https://www.styled-components.com/)
-- [Prettier](https://prettier.io/)
+- GatsbyJS (React)
+- StyledComponents
+- Storybook
+- Netlify CMS (& markdown content)
+- Stylelint and Eslint for
 
-Built with GatsbyJS starter ( [docs](./docs/gatsby-docs.md) )
+
+## Access Locally
+
+Pulldown a local copy of the Github repository Netlify created for you, with the name you specified in the previous step
+```
+$ git clone https://github.com/sallynorthmore/think-climate.git
+$ cd think-climate
+$ yarn
+$ netlify dev # or ntl dev
+
+To test the CMS locally, you'll need run a production build of the site:
+
+```
+$ npm run build
+$ netlify dev # or ntl dev
+```
+
+More info on using Netlify, GatsbyJS & Netlify CMS in the [Netlify docs](./docs/netlify.md).
+
+
+### Ways of working
+
+We use Git, gitflow methodology and github's project management tools.
+

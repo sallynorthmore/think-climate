@@ -12,8 +12,6 @@ const fadeIn = keyframes`
 
 export const Banner = styled.div`
   animation: ${fadeIn} 0.5s ease-in;
-  /* background: var(--black); */
-  /* background: linear-gradient(var(--black), transparent); */
   display: flex;
   justify-content: space-between;
   padding: 2rem 2.5rem;
@@ -28,6 +26,18 @@ export const Logo = styled.a`
   display: inline-block;
   font: 900 var(--type--1) var(--font-questrial);
   letter-spacing: 1px;
+  text-align: left;
+
+  & svg {
+    margin: 0 auto 0 0;
+  }
+`;
+
+export const SR = styled.span`
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
 `;
 
 export const Nav = styled.div`

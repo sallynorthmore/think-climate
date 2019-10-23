@@ -8,12 +8,28 @@ module.exports = {
     siteUrl: `https://thinkclimate.earth`
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
     {
-      resolve: `gatsby-source-filesystem`,
+      // keep as first gatsby-source-filesystem plugin for gatsby image support
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `images`,
-        path: `${__dirname}/static/images`
+        path: `${__dirname}/static/img`,
+        name: 'uploads'
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: 'pages'
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/img`,
+        name: 'images'
       }
     },
     {
@@ -21,20 +37,6 @@ module.exports = {
       options: {
         name: `videos`,
         path: `${__dirname}/static/videos`
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `uploads`,
-        path: `${__dirname}/static/images/uploads`
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `content`,
-        path: `${__dirname}/content`
       }
     },
     {
@@ -50,21 +52,7 @@ module.exports = {
         trackingId: 'UA-150388513-1'
       }
     },
-    {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        resolveEnv: () => process.env.GATSBY_ENV,
-        env: {
-          staging: {
-            policy: [{ userAgent: '*', disallow: ['/'] }]
-          },
-          production: {
-            policy: [{ userAgent: '*', allow: '/' }]
-          }
-        }
-      }
-    },
-    `gatsby-plugin-sharp`,
+    'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-transformer-remark',
@@ -94,16 +82,20 @@ module.exports = {
         ]
       }
     },
-    `gatsby-plugin-styled-components`
-    // {
-    //   resolve: `gatsby-plugin-netlify-cms`,
-    //   options: {
-    //     enableIdentityWidget: false
-    //     // modulePath: `${__dirname}/src/cms/cms.tsx`
-    //   }
-    // }
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      resolve: 'gatsby-plugin-netlify-cms',
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`
+      }
+    },
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
+      options: {
+        develop: true, // Activates purging in npm run develop
+        purgeOnly: ['/all.sass'] // applies purging only on the bulma css file
+      }
+    }, // must be after other CSS plugins
+    'gatsby-plugin-netlify' // make sure to keep it last in the array
   ]
 };
