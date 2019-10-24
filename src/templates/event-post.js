@@ -1,27 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { kebabCase } from 'lodash';
-import Helmet from 'react-helmet';
-import { graphql, Link } from 'gatsby';
+import SEO from '../components/SEO';
+import { graphql, withPrefix } from 'gatsby';
 import Layout from '../components/Layout/index.js';
 import Content, { HTMLContent } from '../components/Content';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
 import Subscribe from '../components/Subscribe';
 import * as S from './event-post.styles';
-export const EventPostTemplate = ({
-  content,
-  contentComponent,
-  description,
-  tags,
-  title,
-  helmet
-}) => {
+
+export const EventPostTemplate = ({ content, contentComponent, title }) => {
   const PostContent = contentComponent || Content;
 
   return (
     <S.EventPostTemplate>
-      {helmet || ''}
       <Hero isEvent headline={title} smallText="Event"></Hero>
       <S.Main>
         <PostContent content={content} />
@@ -58,19 +50,17 @@ const EventPost = ({ data }) => {
 
   return (
     <Layout>
+      <SEO
+        description={`${post.frontmatter.description}`}
+        title={`${post.frontmatter.title}`}
+        titleTemplate="%s | Events"
+        lang="en"
+        image={`${withPrefix('/')}img/og-image.jpg`}
+      />
       <EventPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
-        helmet={
-          <Helmet titleTemplate="%s | Blog">
-            <title>{`${post.frontmatter.title}`}</title>
-            <meta
-              name="description"
-              content={`${post.frontmatter.description}`}
-            />
-          </Helmet>
-        }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />

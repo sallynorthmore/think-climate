@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, graphql, StaticQuery } from 'gatsby';
 import PreviewCompatibleImage from '../PreviewCompatibleImage';
-import Content from '../Content';
+// import Content from '../Content';
 import * as S from './styles';
 
 class EventRoll extends React.Component {
