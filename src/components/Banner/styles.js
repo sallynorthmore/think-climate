@@ -29,7 +29,7 @@ export const Logo = styled.a`
   text-align: left;
 
   & svg {
-    margin: 0 auto 0 0;
+    margin: 0;
   }
 `;
 
