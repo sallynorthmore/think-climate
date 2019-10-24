@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import useSiteMetadata from './SiteMetadata';
-// import { withPrefix } from 'gatsby';
-
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyle, GlobalTheme } from '../StyleGuide/global';
 import Banner from '../Banner';
+import Footer from '../Footer';
+import Subscribe from '../Subscribe';
 
 import * as S from './styles';
 
@@ -17,6 +16,8 @@ const Layout = ({ children }) => {
           <GlobalStyle />
           <Banner />
           <div>{children}</div>
+          <Subscribe />
+          <Footer />
         </S.Layout>
       </ThemeProvider>
     </>

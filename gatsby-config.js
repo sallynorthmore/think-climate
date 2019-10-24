@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `ThinkClimate`,
-    titleTemplate: '%s · ThinkClimate',
-    description: '',
-    author: `ThinkClimate`,
+    title: `THINKClimate`,
+    titleTemplate: '%s · THINKClimate',
+    description: 'We can build a business, change the world and have fun.',
+    author: `THINKClimate`,
     image: '',
     siteUrl: `https://thinkclimate.earth`
   },
@@ -89,13 +89,6 @@ module.exports = {
       }
     },
     `gatsby-plugin-styled-components`,
-    {
-      resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
-      options: {
-        develop: true, // Activates purging in npm run develop
-        purgeOnly: ['/all.sass'] // applies purging only on the bulma css file
-      }
-    }, // must be after other CSS plugins
     'gatsby-plugin-netlify' // make sure to keep it last in the array
   ]
 };

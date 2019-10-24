@@ -1,18 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet';
+// import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout/index.js';
 import ParralaxHero from '../components/ParralaxHero';
-import Footer from '../components/Footer';
-import Subscribe from '../components/Subscribe';
-import { withPrefix } from 'gatsby';
+import SEO from '../components/SEO';
+// import { withPrefix } from 'gatsby';
 import * as S from '../components/Home/styles';
 import EventRoll from '../components/EventRoll';
 
 export const IndexPageTemplate = ({ title, hero }) => (
   <S.Home>
-    <Helmet>
+    <SEO />
+    {/* <Helmet>
       <html lang="en" />
       <title>{title}</title>
       <meta name="description" content={hero.title} />
@@ -23,7 +23,7 @@ export const IndexPageTemplate = ({ title, hero }) => (
         property="og:image"
         content={`${withPrefix('/')}img/og-image.jpg`}
       />
-    </Helmet>
+    </Helmet> */}
     <ParralaxHero
       headline={hero.title}
       smallText={hero.smalltext}
@@ -33,10 +33,7 @@ export const IndexPageTemplate = ({ title, hero }) => (
       <EventRoll />
       {/* <Link to="/blog">Read more</Link> */}
       {/* <Link to="/contact">Contact us</Link> */}
-
-      <Subscribe />
     </S.Main>
-    <Footer />
   </S.Home>
 );
 
