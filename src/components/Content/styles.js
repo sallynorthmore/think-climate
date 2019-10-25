@@ -17,27 +17,53 @@ export const Content = styled.div`
   font: 400 var(--type-0) var(--font-questrial);
   margin: 0;
   max-width: 45rem; /* 720px */
-  text-align: center;
+  /* text-align: center; */
 
   @media (min-width: ${props => props.theme.tablet}) {
-    text-align: left;
+    /* text-align: left; */
+  }
+
+  & *:first-child {
+    margin-top: 0;
   }
 
   & * + * {
     color: var(--black);
     font: inherit;
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
+
+    @media (min-width: ${props => props.theme.tablet}) {
+      margin-top: 2.5rem;
+    }
   }
 
   & h1 {
     color: var(--black);
-    font: 900 var(--type-4) var(--font-questrial);
+    font: 900 var(--type-2) var(--font-questrial);
+
+    @media (min-width: ${props => props.theme.tablet}) {
+      color: var(--black);
+      font: 900 var(--type-4) var(--font-questrial);
+
+      &:not(:first-child) {
+        margin-top: 3rem;
+      }
+    }
   }
 
   & h2 {
     color: var(--black);
-    font: 900 var(--type-3) var(--font-questrial);
-    margin-top: 3rem;
+    font: 900 var(--type-1) var(--font-questrial);
+    margin-top: 2rem;
+
+    @media (min-width: ${props => props.theme.tablet}) {
+      color: var(--black);
+      font: 900 var(--type-3) var(--font-questrial);
+
+      &:not(:first-child) {
+        margin-top: 3rem;
+      }
+    }
   }
 
   & h3 {
@@ -55,7 +81,13 @@ export const Content = styled.div`
     font: 300 var(--type-0) var(--font-raleway);
 
     &:not(:first-child) {
-      margin-top: 2rem;
+      margin-top: 1.25rem;
+    }
+
+    @media (min-width: ${props => props.theme.tablet}) {
+      &:not(:first-child) {
+        margin-top: 2rem;
+      }
     }
   }
 
