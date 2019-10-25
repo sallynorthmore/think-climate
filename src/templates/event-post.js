@@ -4,20 +4,58 @@ import SEO from '../components/SEO';
 import { graphql, withPrefix } from 'gatsby';
 import Layout from '../components/Layout/index.js';
 import Content, { HTMLContent } from '../components/Content';
-import Hero from '../components/Hero';
+import VideoHero from '../components/VideoHero';
 import Footer from '../components/Footer';
 import Subscribe from '../components/Subscribe';
 import * as S from './event-post.styles';
 
-export const EventPostTemplate = ({ content, contentComponent, title }) => {
+export const EventPostTemplate = ({
+  content,
+  contentComponent,
+  title,
+  location,
+  date,
+  time,
+  ticketsLink
+}) => {
   const PostContent = contentComponent || Content;
 
   return (
     <S.EventPostTemplate>
-      <Hero isEvent headline={title} smallText="Event"></Hero>
+      <VideoHero isEvent headline={title}></VideoHero>
       <S.Main>
-        <PostContent content={content} />
+        <S.Content>
+          <PostContent content={content} />
+        </S.Content>
 
+        <S.Aside>
+          <Content>
+            <h2>Event details</h2>
+            {location && (
+              <p>
+                <strong>Location</strong>: {location}
+              </p>
+            )}
+            {date && (
+              <p>
+                <strong>Date</strong>: {date}
+              </p>
+            )}
+            {time && (
+              <p>
+                <strong>Time</strong>: {time}
+              </p>
+            )}
+            {ticketsLink && (
+              <p>
+                <strong>Tickets</strong>:{' '}
+                <a href={ticketsLink} target="_blank">
+                  Get tickets
+                </a>
+              </p>
+            )}
+          </Content>
+        </S.Aside>
         {/* tags && tags.length ? (
           <div>
             <h4>Tags</h4>
@@ -63,6 +101,10 @@ const EventPost = ({ data }) => {
         description={post.frontmatter.description}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        date={post.frontmatter.eventDate}
+        location={post.frontmatter.location}
+        time={post.frontmatter.eventTime}
+        ticketsLink={post.frontmatter.ticketsLink}
       />
     </Layout>
   );
@@ -86,6 +128,10 @@ export const pageQuery = graphql`
         title
         description
         tags
+        location
+        eventDate
+        eventTime
+        ticketsLink
       }
     }
   }

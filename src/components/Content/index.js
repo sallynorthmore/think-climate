@@ -9,8 +9,11 @@ export const HTMLContent = ({ content, className }) => (
   />
 );
 
-const Content = ({ content, className }) => (
-  <div className={className}>{content}</div>
+const Content = ({ content, className, children }) => (
+  <S.Content className={className}>
+    {content}
+    {children}
+  </S.Content>
 );
 
 Content.defaultProps = {};

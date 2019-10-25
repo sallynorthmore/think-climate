@@ -23,6 +23,10 @@ export const Content = styled.div`
     text-align: left;
   }
 
+  & *:first-child {
+    margin-top: 0;
+  }
+
   & * + * {
     color: var(--black);
     font: inherit;
