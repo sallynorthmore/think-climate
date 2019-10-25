@@ -95,10 +95,10 @@ const EventPost = ({ data }) => {
     <Layout>
       <SEO
         description={`${post.frontmatter.description}`}
-        title={`${post.frontmatter.title}`}
+        title={`Event: ${post.frontmatter.title}`}
         titleTemplate="%s | Events"
         lang="en"
-        image={post.frontmatter.shareImage}
+        image={`/img/${post.frontmatter.shareImage}`}
       />
       <EventPostTemplate
         heroImage={post.frontmatter.heroImage}
@@ -139,7 +139,7 @@ export const pageQuery = graphql`
         eventDate
         eventTime
         ticketsLink
-        # shareImage
+        shareImage
         heroImage {
           childImageSharp {
             fluid(maxWidth: 2000, quality: 100) {
