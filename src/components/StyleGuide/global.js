@@ -32,7 +32,7 @@ export const GlobalStyle = createGlobalStyle`
 
     --type--2: .707rem/1rem;
     --type--1: 1rem/1.25rem;
-    --type-0: 1rem/1.5rem; /* Base, Small body*/
+    --type-0: 1rem/1.5rem; /* Base/body*/
     --type-1: 1.414rem/2rem;
     --type-2: 1.99rem/2.25rem;
     --type-3: 2.827rem/3rem;

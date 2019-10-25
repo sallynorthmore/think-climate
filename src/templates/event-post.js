@@ -69,8 +69,6 @@ export const EventPostTemplate = ({
           </div>
               ) : null */}
       </S.Main>
-      <Subscribe />
-      <Footer />
     </S.EventPostTemplate>
   );
 };
