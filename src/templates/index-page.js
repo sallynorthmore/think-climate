@@ -9,7 +9,11 @@ import * as S from '../components/Home/styles';
 
 export const IndexPageTemplate = ({ title, hero }) => (
   <S.Home>
-    <SEO lang="en" image={`${withPrefix('/')}img/og-image.jpg`} />
+    <SEO
+      lang="en"
+      title="THINK Climate"
+      description="We can build a business, change the world and have fun."
+    />
     <ParralaxHero
       headline={hero.title}
       smallText={hero.smalltext}

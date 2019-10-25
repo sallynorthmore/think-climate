@@ -4,7 +4,7 @@ module.exports = {
     titleTemplate: '%s · THINKClimate',
     description: 'We can build a business, change the world and have fun.',
     author: `THINKClimate`,
-    image: '',
+    image: '/img/earth-1.jpg',
     siteUrl: `https://thinkclimate.earth`
   },
   plugins: [
