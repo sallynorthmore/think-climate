@@ -4,6 +4,9 @@ title: THINK Climate
 date: 2019-10-22T15:04:10.000Z
 featuredpost: true
 featuredimage: /img/earth-rise.jpg
+shareImage: "/img/uploads/earth-rise.jpg"
+heroImage: /img/uploads/water-still.jpg
+heroVideo: /videos/uploads/waves.mp4
 location: IBM Southbank, Client Center
 eventDate: 20 November 2019
 eventTime: 18:00-20:30

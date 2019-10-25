@@ -22,18 +22,38 @@ export const VideoHero = styled.header`
   position: relative;
   text-align: left;
 
+  & .gatsby-image-wrapper {
+    left: 0;
+    min-height: 400px;
+    opacity: 0.5;
+    position: absolute !important;
+    top: 0;
+    width: 150%;
+    z-index: 0;
+  }
+
   @media (min-width: ${props => props.theme.desktop}) {
     min-height: 400px;
     padding: 4rem 2.5rem 1rem;
+
+    & .gatsby-image-wrapper {
+      display: none;
+    }
   }
 `;
 
 export const Video = styled.video`
-  left: 0;
-  opacity: 0.5;
-  position: absolute;
-  top: 0;
-  width: 150%;
+  display: none;
+
+  @media (min-width: ${props => props.theme.desktop}) {
+    display: block;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 150%;
+    z-index: 2;
+  }
 `;
 
 export const VideoHeroInner = styled.div`

@@ -1,13 +1,20 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import PreviewCompatibleImage from '../PreviewCompatibleImage';
 import * as S from './styles';
 
-const VideoHero = ({ smallText, headline, isEvent }) => (
+const VideoHero = ({ smallText, headline, isEvent, video, image }) => (
   <S.VideoHero isEvent={isEvent}>
-    <S.Video autoPlay="true" loop="true" muted>
-      <source src="/videos/uploads/waves.mp4" type="video/mp4" />
-      Sorry, your browser doesn't support embedded videos.
+    <S.Video autoPlay loop muted>
+      <source src={video} type="video/mp4" />
     </S.Video>
+    <PreviewCompatibleImage
+      className="heroImage"
+      imageInfo={{
+        image: image,
+        alt: headline
+      }}
+    />
     <S.VideoHeroInner>
       {smallText && <p>{smallText}</p>}
       <h1>{headline}</h1>

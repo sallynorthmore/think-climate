@@ -16,13 +16,20 @@ export const EventPostTemplate = ({
   location,
   date,
   time,
-  ticketsLink
+  ticketsLink,
+  heroImage,
+  heroVideo
 }) => {
   const PostContent = contentComponent || Content;
 
   return (
     <S.EventPostTemplate>
-      <VideoHero isEvent headline={title}></VideoHero>
+      <VideoHero
+        video={heroVideo}
+        image={heroImage}
+        isEvent
+        headline={title}
+      ></VideoHero>
       <S.Main>
         <S.Content>
           <PostContent content={content} />
@@ -91,9 +98,11 @@ const EventPost = ({ data }) => {
         title={`${post.frontmatter.title}`}
         titleTemplate="%s | Events"
         lang="en"
-        image={`${withPrefix('/')}img/og-image.jpg`}
+        image={post.frontmatter.shareImage}
       />
       <EventPostTemplate
+        heroImage={post.frontmatter.heroImage}
+        heroVideo={post.frontmatter.heroVideo}
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
@@ -130,6 +139,15 @@ export const pageQuery = graphql`
         eventDate
         eventTime
         ticketsLink
+        # shareImage
+        heroImage {
+          childImageSharp {
+            fluid(maxWidth: 2000, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        heroVideo
       }
     }
   }
