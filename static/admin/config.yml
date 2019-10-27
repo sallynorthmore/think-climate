@@ -51,16 +51,16 @@ collections:
             }
           - { label: Title, name: title, widget: string }
           - { label: Image, name: image, widget: image }
-              label: Hero,
-              name: hero,
-              widget: object,
-              fields:
-                [
-                  { label: Title, name: title, widget: string },
-                  { label: Small Text, name: smalltext, widget: text },
-                  { label: Background color, name: color, widget: text },
-                  { label: Image, name: image, widget: image },
-                ],
+          - label: Hero,
+            name: hero,
+            widget: object,
+            fields:
+              [
+                { label: Title, name: title, widget: string },
+                { label: Small Text, name: smalltext, widget: text },
+                { label: Background color, name: color, widget: text },
+                { label: Image, name: image, widget: image },
+              ]
             }
           - { label: Description, name: description, widget: string }
       - file: 'src/pages/about/index.md'
