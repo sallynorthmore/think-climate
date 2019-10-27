@@ -51,6 +51,7 @@ collections:
             }
           - { label: Title, name: title, widget: string }
           - { label: Image, name: image, widget: image }
+          - { label: Description, name: description, widget: string }
           - label: Hero,
             name: hero,
             widget: object,
@@ -61,8 +62,6 @@ collections:
                 { label: Background color, name: color, widget: text },
                 { label: Image, name: image, widget: image },
               ]
-            }
-          - { label: Description, name: description, widget: string }
       - file: 'src/pages/about/index.md'
         label: 'About'
         name: 'about'
