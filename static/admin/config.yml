@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: sallynorthmore/think-climate
   branch: master
 
 media_folder: static/img
@@ -7,10 +8,10 @@ public_folder: /img
 
 collections:
   - name: 'events'
-    label: 'Blogs'
+    label: 'Events'
     folder: 'src/pages/events'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{slug}}-{{year}}-{{month}}-{{day}}-'
     fields:
       - {
           label: 'Template Key',
@@ -21,11 +22,20 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'text' }
+      - { label: 'Location', name: 'location', widget: 'text' }
+      - { label: 'Event Date', name: 'eventDate', widget: 'text' }
+      - { label: 'Event Time', name: 'eventTime', widget: 'text' }
+      - {
+          label: 'Tickets or Registration link',
+          name: 'ticketsLink',
+          widget: 'text',
+        }
+      - { label: 'Hero Image', name: 'heroImage', widget: image }
       - { label: 'Featured Post', name: 'featuredpost', widget: 'boolean' }
       - { label: 'Featured Image', name: 'featuredimage', widget: image }
+      - { label: 'Share Image', name: 'shareImage', widget: image }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Tags', name: 'tags', widget: 'list' }
-
   - name: 'pages'
     label: 'Pages'
     files:
@@ -41,79 +51,18 @@ collections:
             }
           - { label: Title, name: title, widget: string }
           - { label: Image, name: image, widget: image }
-          - { label: Heading, name: heading, widget: string }
-          - { label: Subheading, name: subheading, widget: string }
-          - {
-              label: Mainpitch,
-              name: mainpitch,
+              label: Hero,
+              name: hero,
               widget: object,
               fields:
                 [
                   { label: Title, name: title, widget: string },
-                  { label: Description, name: description, widget: text },
+                  { label: Small Text, name: smalltext, widget: text },
+                  { label: Background color, name: color, widget: text },
+                  { label: Image, name: image, widget: image },
                 ],
             }
           - { label: Description, name: description, widget: string }
-          - {
-              label: Intro,
-              name: intro,
-              widget: object,
-              fields:
-                [
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: text },
-                  {
-                    label: Blurbs,
-                    name: blurbs,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Text, name: text, widget: text },
-                      ],
-                  },
-                ],
-            }
-          - {
-              label: Main,
-              name: main,
-              widget: object,
-              fields:
-                [
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: text },
-                  {
-                    label: Image1,
-                    name: image1,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
-                  },
-                  {
-                    label: Image2,
-                    name: image2,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
-                  },
-                  {
-                    label: Image3,
-                    name: image3,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
-                  },
-                ],
-            }
       - file: 'src/pages/about/index.md'
         label: 'About'
         name: 'about'
