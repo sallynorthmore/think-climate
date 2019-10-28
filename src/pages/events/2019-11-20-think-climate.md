@@ -6,8 +6,8 @@ description: >-
   On November 20th, we invite you to join us for an event about climate change
   in association with Al Gore's Climate Reality Project. THINK Climate is a
   fast-paced and fun evening event where you will hear from business
-  professionals, scientists and climate activists, who will be giving a truthful
-  and hopeful take on how we can solve the Climate Crisis.
+  professionals and scientists, who will be giving a truthful and hopeful take
+  on how we can solve the Climate Crisis.
 location: 'IBM Southbank, Client Center'
 eventDate: 20 November 2019
 eventTime: '18:00-20:30'
