@@ -3,25 +3,48 @@ import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout/index.js';
 import Content, { HTMLContent } from '../components/Content';
+import Hero from '../components/Hero';
+import * as S from './about-page.styles';
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const AboutPageTemplate = ({
+  title,
+  content,
+  contentComponent,
+  profiles
+}) => {
   const PageContent = contentComponent || Content;
 
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <PageContent className="content" content={content} />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <S.AboutPage>
+      <Hero isEvent headline={title}></Hero>
+      <S.Main>
+        <PageContent content={content} />
+
+        <S.Team>
+          {profiles.map(profile => (
+            <S.TeamMate>
+              <S.Image>
+                <img src="http://lorempixel.com/400/400/people" />
+              </S.Image>
+              <S.Bio>
+                <h3>{profile.name}</h3>
+                <p>{profile.description}</p>
+                <h4>My pledge</h4>
+                <p>{profile.pledge}</p>
+                <p>
+                  <strong>Read:</strong>
+                  <a href={profile.bookLink}>{profile.book}</a>
+                  <br />
+                  <strong>Watch:</strong>{' '}
+                  <a href={profile.filmLink}>{profile.film}</a>
+                  <br />
+                </p>
+              </S.Bio>
+            </S.TeamMate>
+          ))}
+        </S.Team>
+      </S.Main>
+    </S.AboutPage>
   );
 };
 
@@ -40,6 +63,7 @@ const AboutPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
+        profiles={post.frontmatter.profiles}
       />
     </Layout>
   );
@@ -57,6 +81,15 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
+        profiles {
+          name
+          description
+          pledge
+          bookLink
+          book
+          film
+          filmLink
+        }
       }
     }
   }

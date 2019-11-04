@@ -5,8 +5,6 @@ import { graphql, withPrefix } from 'gatsby';
 import Layout from '../components/Layout/index.js';
 import Content, { HTMLContent } from '../components/Content';
 import VideoHero from '../components/VideoHero';
-import Footer from '../components/Footer';
-import Subscribe from '../components/Subscribe';
 import * as S from './event-post.styles';
 
 export const EventPostTemplate = ({
@@ -98,7 +96,7 @@ const EventPost = ({ data }) => {
         title={`Event: ${post.frontmatter.title}`}
         titleTemplate="%s | Events"
         lang="en"
-        image={`/img/${post.frontmatter.shareImage}`}
+        image={post.frontmatter.shareImage.childImageSharp.resolutions.src}
       />
       <EventPostTemplate
         heroImage={post.frontmatter.heroImage}
@@ -139,7 +137,14 @@ export const pageQuery = graphql`
         eventDate
         eventTime
         ticketsLink
-        shareImage
+        shareImage {
+          childImageSharp {
+            resolutions(width: 600) {
+              src
+              srcSet
+            }
+          }
+        }
         heroImage {
           childImageSharp {
             fluid(maxWidth: 2000, quality: 100) {
@@ -147,7 +152,7 @@ export const pageQuery = graphql`
             }
           }
         }
-        heroVideo
+        #heroVideo
       }
     }
   }

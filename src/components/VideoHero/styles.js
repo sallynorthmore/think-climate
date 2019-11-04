@@ -1,5 +1,4 @@
-import styled, { keyframes, css } from 'styled-components';
-import { ifProp } from 'styled-tools';
+import styled, { keyframes } from 'styled-components';
 
 const fadeIn = keyframes`
   from {
@@ -26,7 +25,7 @@ export const VideoHero = styled.header`
     left: 0;
     min-height: 400px;
     opacity: 0.5;
-    position: absolute !important;
+    position: absolute !important; /* stylelint-disable-line */
     top: 0;
     width: 150%;
     z-index: 0;

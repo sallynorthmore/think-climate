@@ -176,5 +176,9 @@ export const Content = styled.div`
       vertical-align: text-top;
     }
   }
+
+  & img {
+    max-width: 100%;
+  }
   /* stylelint-enable */
 `;
