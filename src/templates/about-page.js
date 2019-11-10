@@ -18,11 +18,13 @@ export const AboutPageTemplate = ({
     <S.AboutPage>
       <Hero isEvent headline={title}></Hero>
       <S.Main>
-        <PageContent content={content} />
+        <S.Description>
+          <PageContent content={content} />
+        </S.Description>
 
         <S.Team>
-          {profiles.map(profile => (
-            <S.TeamMate>
+          {profiles.map((profile, i) => (
+            <S.TeamMate isImageRight={i % 2 !== 0}>
               <S.Image>
                 <img src="http://lorempixel.com/400/400/people" />
               </S.Image>
@@ -37,7 +39,6 @@ export const AboutPageTemplate = ({
                   <br />
                   <strong>Watch:</strong>{' '}
                   <a href={profile.filmLink}>{profile.film}</a>
-                  <br />
                 </p>
               </S.Bio>
             </S.TeamMate>

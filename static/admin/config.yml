@@ -74,3 +74,17 @@ collections:
             }
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
+          - label: Profiles
+            name: profiles
+            widget: list
+            allow_add: true
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Image, name: image, widget: image
+              - { label: Description, name: description, widget: text }}
+              - { label: Pledge, name: pledge, widget: text }}
+              - { label: Book, name: book, widget: string }}
+              - { label: Book, name: book, widget: string }}
+              - { label: Book Link, name: bookLink, widget: string }}
+              - { label: Film, name: film, widget: string }}
+              - { label: Film Link, name: filmLink, widget: string }}

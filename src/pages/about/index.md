@@ -2,6 +2,7 @@
 templateKey: 'about-page'
 path: /about
 title: About us
+body:
 profiles:
   - image: /img/uploads/bio.jpg
     name: Sophie Blank
@@ -77,4 +78,4 @@ profiles:
     filmLink: http://chasingice.com
 ---
 
-We are a group of concerned citizens passionate about the climate and how IBM can ...
+We are a group of concerned citizens passionate about working for a safer climate. We believe communication is key

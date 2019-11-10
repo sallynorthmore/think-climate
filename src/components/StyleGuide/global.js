@@ -103,5 +103,10 @@ export const GlobalStyle = createGlobalStyle`
       text-decoration: none;
     }
   }
+
+  img,
+  iframe {
+    max-width: 100%;
+  }
   /* stylelint-enable */
 `;
