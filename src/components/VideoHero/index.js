@@ -33,8 +33,3 @@ VideoHero.props = {
 };
 
 export default VideoHero;
-
-{
-  /* <source src="/videos/uploads/waves.webm"
-        type="video/webm"> */
-}
