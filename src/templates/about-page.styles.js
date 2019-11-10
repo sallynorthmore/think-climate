@@ -72,6 +72,7 @@ export const Image = styled.div`
 
 export const Bio = styled.div`
   flex: 1;
+  padding: 1rem 2rem;
 
   & h3 {
     color: var(--black);

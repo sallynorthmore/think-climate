@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout/index.js';
 import Content, { HTMLContent } from '../components/Content';
 import Hero from '../components/Hero';
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 import * as S from './about-page.styles';
 
 export const AboutPageTemplate = ({
@@ -26,19 +27,39 @@ export const AboutPageTemplate = ({
           {profiles.map((profile, i) => (
             <S.TeamMate isImageRight={i % 2 !== 0}>
               <S.Image>
-                <img src="http://lorempixel.com/400/400/people" />
+                {profile.image && (
+                  <PreviewCompatibleImage
+                    className="eventImage"
+                    imageInfo={{
+                      image: profile.image,
+                      alt: `Profile image of ${profile.name}`
+                    }}
+                  />
+                )}
               </S.Image>
               <S.Bio>
                 <h3>{profile.name}</h3>
                 <p>{profile.description}</p>
-                <h4>My pledge</h4>
-                <p>{profile.pledge}</p>
+                {profile.pledge && (
+                  <div>
+                    <h4>My pledge</h4>
+                    <p>{profile.pledge}</p>
+                  </div>
+                )}
+
                 <p>
-                  <strong>Read:</strong>
-                  <a href={profile.bookLink}>{profile.book}</a>
-                  <br />
-                  <strong>Watch:</strong>{' '}
-                  <a href={profile.filmLink}>{profile.film}</a>
+                  {profile.book && (
+                    <div>
+                      <strong>Read:</strong>{' '}
+                      <a href={profile.bookLink}>{profile.book}</a>
+                    </div>
+                  )}
+                  {profile.film && (
+                    <div>
+                      <strong>Watch:</strong>{' '}
+                      <a href={profile.filmLink}>{profile.film}</a>
+                    </div>
+                  )}
                 </p>
               </S.Bio>
             </S.TeamMate>
@@ -90,6 +111,13 @@ export const aboutPageQuery = graphql`
           book
           film
           filmLink
+          image {
+            childImageSharp {
+              fluid(maxWidth: 400, quality: 80) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
       }
     }

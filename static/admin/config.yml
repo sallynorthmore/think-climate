@@ -81,8 +81,8 @@ collections:
             fields:
               - { label: Name, name: name, widget: string }
               - { label: Image, name: image, widget: image }
-              - { label: Description, name: description, widget: text }
-              - { label: Pledge, name: pledge, widget: text }
+              - { label: Description, name: description, widget: markdown }
+              - { label: Pledge, name: pledge, widget: markdown }
               - { label: Book, name: book, widget: string }
               - { label: Book, name: book, widget: string }
               - { label: Book Link, name: bookLink, widget: string }

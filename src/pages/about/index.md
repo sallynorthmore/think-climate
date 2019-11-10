@@ -7,7 +7,7 @@ profiles:
     description: Description text
     film: Chasing Ice
     filmLink: 'http://chasingice.com'
-    image: /img/uploads/bio.jpg
+    image: /img/earth-rise.jpg
     name: Sophie Blank
     pledge: Pledge text
   - book: The Powerbroker
@@ -19,7 +19,7 @@ profiles:
       is actively working to embed sustainability into IBM’s design approach.
     film: Chasing Ice
     filmLink: 'http://chasingice.com'
-    image: /img/uploads/bio.jpg
+    image: /img/earth-rise.jpg
     name: Jerome Greutmann
     pledge: Pledge text
   - book: The Powerbroker
@@ -27,7 +27,7 @@ profiles:
     description: Description text
     film: Chasing Ice
     filmLink: 'http://chasingice.com'
-    image: /img/uploads/bio.jpg
+    image: /img/earth-rise.jpg
     name: Anthony Huntley
     pledge: Pledge text
   - book: Eating Animals
@@ -40,7 +40,7 @@ profiles:
     film: The Third Industrial Revolution
     filmLink: >-
       https://www.vice.com/en_us/article/bj5zaq/watch-vices-new-documentary-the-third-industrial-revolution-a-radical-new-sharing-economy
-    image: /img/uploads/bio.jpg
+    image: /img/earth-rise.jpg
     name: Sally Northmore
     pledge: |-
       I've pledged to make fairly bold changes to my lifestyle this year:
@@ -69,7 +69,7 @@ profiles:
       decarbonisation journey.
     film: Chasing Ice
     filmLink: 'http://chasingice.com'
-    image: /img/uploads/bio.jpg
+    image: /img/earth-rise.jpg
     name: Sarah Powell
     pledge: Pledge text
   - book: The Powerbroker
@@ -77,7 +77,7 @@ profiles:
     description: Description text
     film: Chasing Ice
     filmLink: 'http://chasingice.com'
-    image: /img/uploads/bio.jpg
+    image: /img/earth-rise.jpg
     name: Pietro Piantadina
     pledge: Pledge text
   - book: The Powerbroker
@@ -85,7 +85,7 @@ profiles:
     description: Description text
     film: Chasing Ice
     filmLink: 'http://chasingice.com'
-    image: /img/uploads/bio.jpg
+    image: /img/earth-rise.jpg
     name: Mansha Rajani
     pledge: Pledge text
   - book: The Powerbroker
@@ -93,7 +93,7 @@ profiles:
     description: Description text
     film: Chasing Ice
     filmLink: 'http://chasingice.com'
-    image: /img/uploads/bio.jpg
+    image: /img/earth-rise.jpg
     name: Max Rickards
     pledge: Pledge text
   - book: Truth to Power
@@ -102,7 +102,7 @@ profiles:
     description: Description text
     film: Chasing Ice
     filmLink: 'http://chasingice.com'
-    image: /img/uploads/bio.jpg
+    image: /img/earth-rise.jpg
     name: Jeremy Waite
     pledge: >-
       My pledge is to help executives care about the climate crisis by showing
