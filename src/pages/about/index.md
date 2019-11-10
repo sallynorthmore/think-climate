@@ -12,7 +12,11 @@ profiles:
     pledge: Pledge text
   - book: The Powerbroker
     bookLink: 'http://book.com'
-    description: Description text
+    description: >-
+      Jerome is a Service Designer who has spent the past few years researching
+      the climate crisis and it’s solutions. As a member of the London Design +
+      Climate Network and co-lead of the Service Design community within IBM, he
+      is actively working to embed sustainability into IBM’s design approach.
     film: Chasing Ice
     filmLink: 'http://chasingice.com'
     image: /img/uploads/bio.jpg
@@ -46,7 +50,23 @@ profiles:
       - To vote for a Green New Deal
   - book: The Powerbroker
     bookLink: 'http://book.com'
-    description: Description text
+    description: >-
+      Sarah Powell is a Senior Managing Consultant within IBM’s Energy,
+      Environment & Utilities industry team in Europe. With a background in
+      organisational change and transformation, Sarah’s goal is to develop
+      cross-industry solutions, using exponential technologies such as
+      Artificial Intelligence (AI), Blockchain and Advanced Analytics, to
+      challenge existing behaviours, ecosystems and business models, in the
+      quest for cleaner, greener and more sustainable living.
+
+
+      Sarah’s passion for sustainability was reinforced through her recent
+      sabbatical to the America’s, where she witnessed the effects of plastic
+      pollution and climate change first-hand. This passion is continuing to
+      drive the future direction of her career. As a leader in this critical
+      field, Sarah is currently developing IBM’s climate-related risk analysis
+      and resilience offering and working with clients to accelerate their
+      decarbonisation journey.
     film: Chasing Ice
     filmLink: 'http://chasingice.com'
     image: /img/uploads/bio.jpg
@@ -76,14 +96,17 @@ profiles:
     image: /img/uploads/bio.jpg
     name: Max Rickards
     pledge: Pledge text
-  - book: The Powerbroker
-    bookLink: 'http://book.com'
+  - book: Truth to Power
+    bookLink: >-
+      https://www.algore.com/library/an-inconvenient-sequel-truth-to-power-a39b1050-d846-4b9e-a4e7-3b5fd6bb6b03
     description: Description text
     film: Chasing Ice
     filmLink: 'http://chasingice.com'
     image: /img/uploads/bio.jpg
     name: Jeremy Waite
-    pledge: Pledge text
+    pledge: >-
+      My pledge is to help executives care about the climate crisis by showing
+      that it is possible to save money and save the planet.
 ---
 
 We are a group of concerned citizens passionate about working for a safer climate. We believe communication is key
