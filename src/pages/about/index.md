@@ -125,7 +125,7 @@ profiles:
     film: Chasing Ice
     filmLink: 'http://chasingice.com'
     image: /img/ibm_3nov_img_0915.jpg
-    name: Jeremy Waite
+    name: Jeremy Connell-Waite
     pledge: >-
       My pledge is to help executives care about the climate crisis by showing
       that it is possible to save money and save the planet.
