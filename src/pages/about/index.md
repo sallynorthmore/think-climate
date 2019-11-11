@@ -10,8 +10,8 @@ profiles:
     image: /img/earth-rise.jpg
     name: Sophie Blank
     pledge: Pledge text
-  - book: The Powerbroker
-    bookLink: 'http://book.com'
+  - book: Eating Animals
+    bookLink: 'https://www.goodreads.com/book/show/6604712-eating-animals'
     description: >-
       Jerome is a Service Designer who has spent the past few years researching
       the climate crisis and it’s solutions. As a member of the London Design +
@@ -30,8 +30,9 @@ profiles:
     image: /img/earth-rise.jpg
     name: Anthony Huntley
     pledge: Pledge text
-  - book: Eating Animals
-    bookLink: 'https://www.goodreads.com/book/show/6604712-eating-animals'
+  - book: We are the Weather
+    bookLink: >-
+      https://www.penguin.co.uk/books/310/310101/we-are-the-weather/9780241363331.html
     description: >-
       Sally is a Senior Interactive Developer in iX and has built digital
       products for ten years for agencies, startups, the fashion industry,
@@ -69,7 +70,7 @@ profiles:
       decarbonisation journey.
     film: Chasing Ice
     filmLink: 'http://chasingice.com'
-    image: /img/earth-rise.jpg
+    image: /img/1-129.jpg
     name: Sarah Powell
     pledge: Pledge text
   - book: Project Drawdown
@@ -102,10 +103,28 @@ profiles:
   - book: Truth to Power
     bookLink: >-
       https://www.algore.com/library/an-inconvenient-sequel-truth-to-power-a39b1050-d846-4b9e-a4e7-3b5fd6bb6b03
-    description: Description text
+    description: >-
+      Jeremy Connell-Waite is Chief Customer Officer for IBM iX.  Jeremy travels
+      around the world talking to executives from sustainable brands about
+      changing consumer trends, digital transformation, AI and the future of
+      cloud computing. He is also an IBM ambassador who helps companies combat
+      climate change through the use of technology and is a European leader for
+      Al Gore’s Climate Reality Project. He has been voted the most influential
+      person on twitter for #BigDataand one of the world’s top 100 digital
+      marketers. In previous roles he was the CSO of IBM Watson Customer
+      Engagement, Head of Strategy for Salesforce Marketing Cloud and Head of
+      Social Strategy for Adobe Marketing Cloud.  
+
+
+      Jeremy is the host of The TenWords podcast and the author of four books.
+
+
+      **Blog**: Jeremy.Earth\
+
+      **Twitter**: @JeremyWaite
     film: Chasing Ice
     filmLink: 'http://chasingice.com'
-    image: /img/earth-rise.jpg
+    image: /img/ibm_3nov_img_0915.jpg
     name: Jeremy Waite
     pledge: >-
       My pledge is to help executives care about the climate crisis by showing
