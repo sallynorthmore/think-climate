@@ -72,14 +72,17 @@ profiles:
     image: /img/earth-rise.jpg
     name: Sarah Powell
     pledge: Pledge text
-  - book: The Powerbroker
-    bookLink: 'http://book.com'
-    description: Description text
-    film: Chasing Ice
-    filmLink: 'http://chasingice.com'
-    image: /img/earth-rise.jpg
+  - book: Project Drawdown
+    bookLink: 'https://www.drawdown.org/the-book'
+    description: >-
+      I'm a 20-something, nature-lovin' Italiano on the quest to make IBM the
+      most respected thought tank for circular business models and driver for
+      environmental and social change.
+    film: Before The Flood
+    filmLink: 'https://www.beforetheflood.com/'
+    image: /img/profile-photo-4769.jpg
     name: Pietro Piantadina
-    pledge: Pledge text
+    pledge: '**Pietro''s pledge?!**'
   - book: The Powerbroker
     bookLink: 'http://book.com'
     description: Description text
