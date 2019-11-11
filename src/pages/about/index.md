@@ -41,7 +41,7 @@ profiles:
     film: The Third Industrial Revolution
     filmLink: >-
       https://www.vice.com/en_us/article/bj5zaq/watch-vices-new-documentary-the-third-industrial-revolution-a-radical-new-sharing-economy
-    image: /img/earth-rise.jpg
+    image: /img/sally.jpeg
     name: Sally Northmore
     pledge: |-
       I've pledged to make fairly bold changes to my lifestyle this year:
