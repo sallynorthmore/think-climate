@@ -82,9 +82,23 @@ collections:
               - { label: Name, name: name, widget: string }
               - { label: Image, name: image, widget: image }
               - { label: Description, name: description, widget: markdown }
-              - { label: Pledge, name: pledge, widget: markdown }
-              - { label: Book, name: book, widget: string }
-              - { label: Book, name: book, widget: string }
-              - { label: Book Link, name: bookLink, widget: string }
-              - { label: Film, name: film, widget: string }
-              - { label: Film Link, name: filmLink, widget: string }
+              - {
+                  label: Pledge,
+                  name: pledge,
+                  widget: markdown,
+                  required: false,
+                }
+              - { label: Book, name: book, widget: string, required: false }
+              - {
+                  label: Book Link,
+                  name: bookLink,
+                  widget: string,
+                  required: false,
+                }
+              - { label: Film, name: film, widget: string, required: false }
+              - {
+                  label: Film Link,
+                  name: filmLink,
+                  widget: string,
+                  required: false,
+                }
