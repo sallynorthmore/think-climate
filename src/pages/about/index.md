@@ -57,21 +57,27 @@ profiles:
     bookLink: >-
       https://www.penguin.co.uk/books/310/310101/we-are-the-weather/9780241363331.html
     description: >-
-      Sally is a Senior Interactive Developer in iX and has built digital
-      products for ten years for agencies, startups, the fashion industry,
-      publishers, arts charities and financial tech companies. She's
-      experimenting with a greener lifestyle on The Switch.
+      Sally is a Senior Interactive Developer at IBM iX and has built digital
+      products for ten years for agencies, startups, fashion, publishers, arts
+      charities and financial tech companies. After reading Nathaniel Rich's
+      [Losing
+      Earth](https://www.nytimes.com/interactive/2018/08/01/magazine/climate-change-losing-earth.html),
+      she decided she wanted to learn as much as possible around climate change
+      and what digital efforts can be made.  Most recently she volunteered on
+      the [Digital Climate Strike](https://digital.globalclimatestrike.net/)
+      campaign, with a reach of over 10 million visitors. She experiments with a
+      greener lifestyle on [The Switch](https://the-switch.org/) and can be
+      found on [sallynorthmore.com](https://sallynorthmore.com/).
     film: The Third Industrial Revolution
     filmLink: >-
       https://www.vice.com/en_us/article/bj5zaq/watch-vices-new-documentary-the-third-industrial-revolution-a-radical-new-sharing-economy
     image: /img/sally.jpeg
     name: Sally Northmore
     pledge: |-
-      I've pledged to make fairly bold changes to my lifestyle this year:
-      - To eat a meatless diet (exceptions when I'm a guest)
-      - Only rent electric cars (I mostly cycle)
-      - To speak boldly about the climate
-      - To vote for a Green New Deal
+      * To eat a meatless diet (exceptions when I'm a guest)
+      * Only rent electric cars (I mostly cycle)
+      * To speak boldly about the climate
+      * To vote for a Green New Deal
   - book: The Powerbroker
     bookLink: 'http://book.com'
     description: >-
@@ -106,25 +112,25 @@ profiles:
     filmLink: 'https://www.beforetheflood.com/'
     image: /img/profile-photo-4769.jpg
     name: Pietro Piantadina
-    pledge: '**Pietro''s pledge?!**'
-  - book: The Powerbroker
-    bookLink: 'http://book.com'
-    description: Description text
-    film: Chasing Ice
-    filmLink: 'http://chasingice.com'
-    image: /img/earth-rise.jpg
-    name: Mansha Rajani
-    pledge: Pledge text
+    pledge: '****'
   - book: ''
     bookLink: ''
+    description: Bio text
+    film: ''
+    filmLink: ''
+    image: /img/earth-rise.jpg
+    name: Mansha Rajani
+    pledge: ''
+  - book: Our Planet
+    bookLink: 'https://www.goodreads.com/book/show/42778090-our-planet'
     description: >-
       I currently work within an integrated agile team as a visual designer,
       designing an improved user interface for technicians worldwide. In my
       spare time I am a keen photographer and travel around London capturing the
       energy the city generates and documenting these photos on my website
       maxrickards.com
-    film: ''
-    filmLink: ''
+    film: Chasing Coral
+    filmLink: 'https://www.chasingcoral.com/'
     image: /img/max2.jpeg
     name: Max Rickards
     pledge: >-
@@ -147,12 +153,13 @@ profiles:
       Social Strategy for Adobe Marketing Cloud.  
 
 
-      Jeremy is the host of The TenWords podcast and the author of four books.
+      Jeremy is the host of [The TenWords podcast
+      ](https://tenwords.libsyn.com/)and the author of four books.
 
 
-      **Blog**: Jeremy.Earth\
+      **Blog**: [Jeremy.Earth](http://jeremy.earth/)\
 
-      **Twitter**: @JeremyWaite
+      **Twitter**: [@JeremyWaite](https://twitter.com/jeremywaite)
     film: 'An Inconvenient Truth 2: Truth to Power'
     filmLink: 'https://www.imdb.com/title/tt6322922/'
     image: /img/ibm_3nov_img_0915.jpg
