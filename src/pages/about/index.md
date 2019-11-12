@@ -2,14 +2,26 @@
 templateKey: about-page
 title: About us
 profiles:
-  - book: The Powerbroker
-    bookLink: 'http://book.com'
-    description: Description text
-    film: Chasing Ice
-    filmLink: 'http://chasingice.com'
-    image: /img/earth-rise.jpg
+  - book: No One Is Too Small to Make a Difference Greta Thunberg
+    bookLink: >-
+      https://www.penguin.co.uk/books/315/315787/no-one-is-too-small-to-make-a-difference/9780141992716.html
+    description: >-
+      Sophie Blank is a Digital Consultant for IBM iX. During her BSc and MSc in
+      International Relations and War Studies, she focussed largely on the
+      impact of climate change on migration and conflict. In the past, she
+      volunteered for Unite 2030, an NGO empowering young leaders to develop
+      solutions to the world’s biggest challenges, the United Nations SDGs.
+
+
+      Sophie is particularly interested in sustainable investment. We, as
+      individuals, can have an impact on what the future looks like by investing
+      our money into a better world. It is an easy way of signalling to
+      companies that change is needed to attract investments.
+    film: ''
+    filmLink: ''
+    image: /img/sophie.jpg
     name: Sophie Blank
-    pledge: Pledge text
+    pledge: ''
   - book: Eating Animals
     bookLink: 'https://www.goodreads.com/book/show/6604712-eating-animals'
     description: >-
@@ -21,7 +33,18 @@ profiles:
     filmLink: 'http://chasingice.com'
     image: /img/earth-rise.jpg
     name: Jerome Greutmann
-    pledge: Pledge text
+    pledge: >-
+      * 2 Vegan and 1 Vegetarian meals a day
+
+      * At most 2 personal roundtrip flights a year
+
+      * Choose alternative transport methods at every opportunity
+
+      * Create and apply a sustainable design framework before the summer of
+      2020
+
+      * Speak up, discuss and learn about the climate crisis with friends and
+      colleagues
   - book: The Powerbroker
     bookLink: 'http://book.com'
     description: Description text
@@ -92,14 +115,22 @@ profiles:
     image: /img/earth-rise.jpg
     name: Mansha Rajani
     pledge: Pledge text
-  - book: The Powerbroker
-    bookLink: 'http://book.com'
-    description: Description text
-    film: Chasing Ice
-    filmLink: 'http://chasingice.com'
-    image: /img/earth-rise.jpg
+  - book: ''
+    bookLink: ''
+    description: >-
+      I currently work within an integrated agile team as a visual designer,
+      designing an improved user interface for technicians worldwide. In my
+      spare time I am a keen photographer and travel around London capturing the
+      energy the city generates and documenting these photos on my website
+      maxrickards.com
+    film: ''
+    filmLink: ''
+    image: /img/max2.jpeg
     name: Max Rickards
-    pledge: Pledge text
+    pledge: >-
+      I pledge to expand my knowledge of climate and research the impacts my
+      daily actions have to this earth - and work out ways on how to reduce
+      them.
   - book: Truth to Power
     bookLink: >-
       https://www.algore.com/library/an-inconvenient-sequel-truth-to-power-a39b1050-d846-4b9e-a4e7-3b5fd6bb6b03
@@ -122,13 +153,35 @@ profiles:
       **Blog**: Jeremy.Earth\
 
       **Twitter**: @JeremyWaite
-    film: Chasing Ice
-    filmLink: 'http://chasingice.com'
+    film: 'An Inconvenient Truth 2: Truth to Power'
+    filmLink: 'https://www.imdb.com/title/tt6322922/'
     image: /img/ibm_3nov_img_0915.jpg
     name: Jeremy Connell-Waite
     pledge: >-
       My pledge is to help executives care about the climate crisis by showing
       that it is possible to save money and save the planet.
+  - book: Wilding
+    bookLink: 'https://www.panmacmillan.com/authors/isabella-tree/wilding/9781509805099'
+    description: >-
+      Cecilia helps organisations understand the impact of weather on their
+      business as the European Technical lead for IBM’s Weather Services. She
+      gets particularly excited about opportunities to improve businesses’
+      environmental footprints. She watched Al Gore speak about an Inconvenient
+      Truth in Stockholm in 2004 which drove her decision to study Environmental
+      Engineering. After graduating, she conducted flood risk assessments,
+      looking at projections of sea level rise in the UK on a daily basis.
+      Feeling there was more that could be done, she is at IBM to be part of a
+      bigger community and to find out how technology can be part of the
+      solution.
+    film: Racing Extinction
+    filmLink: ' https://racingextinction.com/film/'
+    image: /img/earth-rise.jpg
+    name: Cecilia Ivsen
+    pledge: >-
+      My pledge is to speak up about climate change and to use my voice to make
+      an impact through my work. On a personal level, I take no internal flights
+      and maximise remote working options; eat vegetarian or vegan a majority of
+      the time; and vote for effective environmental policies in all elections I
+      can.
 ---
-
-We are a group of concerned citizens passionate about working for a safer climate. We believe communication is key
+We are a group of concerned citizens and IBM professionals passionate about working for a safer climate.
