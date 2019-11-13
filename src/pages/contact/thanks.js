@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../../components/Layout';
 import Hero from '../../components/Hero';
 import Content from '../../components/Content';
-import * as S from './Contact.styles.js';
+import * as S from '../../components/Contact/Contact.styles.js';
 
 export default () => (
   <Layout>

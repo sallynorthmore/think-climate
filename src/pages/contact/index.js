@@ -2,7 +2,7 @@ import React from 'react';
 import { navigate } from 'gatsby-link';
 import Layout from '../../components/Layout';
 import Hero from '../../components/Hero';
-import * as S from './Contact.styles.js';
+import * as S from '../../components/Contact/Contact.styles.js';
 
 function encode(data) {
   return Object.keys(data)
