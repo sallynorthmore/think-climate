@@ -2,28 +2,28 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout/index.js';
-import Content, { HTMLContent } from '../components/Content';
+import { HTMLContent } from '../components/Content';
 import Hero from '../components/Hero';
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 import * as S from './about-page.styles';
+import showdown from 'showdown';
+
+const converter = new showdown.Converter();
 
 export const AboutPageTemplate = ({
   title,
-  content,
+  // content,
   contentComponent,
   profiles
 }) => {
-  const PageContent = contentComponent || Content;
+  // const PageContent = contentComponent || Content;
 
   return (
     <S.AboutPage>
       <Hero isEvent headline={title}></Hero>
       <S.Main>
-        <S.Description>
-          <PageContent content={content} />
-        </S.Description>
-
         <S.Team>
+          <h2>Our Team</h2>
           {profiles.map((profile, i) => (
             <S.TeamMate isImageRight={i % 2 !== 0}>
               <S.Image>
@@ -39,11 +39,19 @@ export const AboutPageTemplate = ({
               </S.Image>
               <S.Bio>
                 <h3>{profile.name}</h3>
-                <p>{profile.description}</p>
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: converter.makeHtml(profile.description)
+                  }}
+                ></div>
                 {profile.pledge && (
                   <div>
                     <h4>My pledge</h4>
-                    <p>{profile.pledge}</p>
+                    <div
+                      dangerouslySetInnerHTML={{
+                        __html: converter.makeHtml(profile.pledge)
+                      }}
+                    ></div>
                   </div>
                 )}
 
@@ -113,7 +121,7 @@ export const aboutPageQuery = graphql`
           filmLink
           image {
             childImageSharp {
-              fluid(maxWidth: 400, quality: 80) {
+              fluid(maxWidth: 500, quality: 80) {
                 ...GatsbyImageSharpFluid
               }
             }

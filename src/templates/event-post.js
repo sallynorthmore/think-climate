@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import SEO from '../components/SEO';
-import { graphql, withPrefix } from 'gatsby';
+import { graphql } from 'gatsby';
+// import { withPrefix} form 'gatsby';
 import Layout from '../components/Layout/index.js';
 import Content, { HTMLContent } from '../components/Content';
 import VideoHero from '../components/VideoHero';

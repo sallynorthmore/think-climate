@@ -52,7 +52,30 @@ profiles:
     filmLink: ''
     image: /img/earth-rise.jpg
     name: Anthony Huntley
-    pledge: Pledge text
+    pledge: ''
+  - book: Wilding
+    bookLink: 'https://www.panmacmillan.com/authors/isabella-tree/wilding/9781509805099'
+    description: >-
+      Cecilia helps organisations understand the impact of weather on their
+      business as the European Technical lead for IBM’s Weather Services. She
+      gets particularly excited about opportunities to improve businesses’
+      environmental footprints. She watched Al Gore speak about an Inconvenient
+      Truth in Stockholm in 2004 which drove her decision to study Environmental
+      Engineering. After graduating, she conducted flood risk assessments,
+      looking at projections of sea level rise in the UK on a daily basis.
+      Feeling there was more that could be done, she is at IBM to be part of a
+      bigger community and to find out how technology can be part of the
+      solution.
+    film: Racing Extinction
+    filmLink: ' https://racingextinction.com/film/'
+    image: /img/earth-rise.jpg
+    name: Cecilia Ivsen
+    pledge: >-
+      My pledge is to speak up about climate change and to use my voice to make
+      an impact through my work. On a personal level, I take no internal flights
+      and maximise remote working options; eat vegetarian or vegan a majority of
+      the time; and vote for effective environmental policies in all elections I
+      can.
   - book: We are the Weather
     bookLink: >-
       https://www.penguin.co.uk/books/310/310101/we-are-the-weather/9780241363331.html
@@ -116,7 +139,7 @@ profiles:
     filmLink: 'https://www.beforetheflood.com/'
     image: /img/profile-photo-4769.jpg
     name: Pietro Piantadina
-    pledge: '****'
+    pledge: ''
   - book: ''
     bookLink: ''
     description: >-
@@ -158,19 +181,12 @@ profiles:
       cloud computing. He is also an IBM ambassador who helps companies combat
       climate change through the use of technology and is a European leader for
       Al Gore’s Climate Reality Project. He has been voted the most influential
-      person on twitter for #BigDataand one of the world’s top 100 digital
+      person on twitter for BigData and one of the world’s top 100 digital
       marketers. In previous roles he was the CSO of IBM Watson Customer
       Engagement, Head of Strategy for Salesforce Marketing Cloud and Head of
-      Social Strategy for Adobe Marketing Cloud.  
-
-
-      Jeremy is the host of [The TenWords podcast
+      Social Strategy for Adobe Marketing Cloud. Jeremy is the host of [The TenWords podcast
       ](https://tenwords.libsyn.com/)and the author of four books.
 
-
-      **Blog**: [Jeremy.Earth](http://jeremy.earth/)\
-
-      **Twitter**: [@JeremyWaite](https://twitter.com/jeremywaite)
     film: 'An Inconvenient Truth 2: Truth to Power'
     filmLink: 'https://www.imdb.com/title/tt6322922/'
     image: /img/ibm_3nov_img_0915.jpg
@@ -178,28 +194,5 @@ profiles:
     pledge: >-
       My pledge is to help executives care about the climate crisis by showing
       that it is possible to save money and save the planet.
-  - book: Wilding
-    bookLink: 'https://www.panmacmillan.com/authors/isabella-tree/wilding/9781509805099'
-    description: >-
-      Cecilia helps organisations understand the impact of weather on their
-      business as the European Technical lead for IBM’s Weather Services. She
-      gets particularly excited about opportunities to improve businesses’
-      environmental footprints. She watched Al Gore speak about an Inconvenient
-      Truth in Stockholm in 2004 which drove her decision to study Environmental
-      Engineering. After graduating, she conducted flood risk assessments,
-      looking at projections of sea level rise in the UK on a daily basis.
-      Feeling there was more that could be done, she is at IBM to be part of a
-      bigger community and to find out how technology can be part of the
-      solution.
-    film: Racing Extinction
-    filmLink: ' https://racingextinction.com/film/'
-    image: /img/earth-rise.jpg
-    name: Cecilia Ivsen
-    pledge: >-
-      My pledge is to speak up about climate change and to use my voice to make
-      an impact through my work. On a personal level, I take no internal flights
-      and maximise remote working options; eat vegetarian or vegan a majority of
-      the time; and vote for effective environmental policies in all elections I
-      can.
 ---
 We are a group of concerned citizens and IBM professionals passionate about working for a safer climate.
