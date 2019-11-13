@@ -56,13 +56,10 @@ export default class Index extends React.Component {
                 <input name="bot-field" onChange={this.handleChange} />
               </label>
             </div>
-            <S.FormInput className="field">
-              <S.Label className="label" htmlFor={'name'}>
-                Your name
-              </S.Label>
+            <S.FormInput>
+              <S.Label htmlFor={'name'}>Your name</S.Label>
 
               <S.Input
-                className="input"
                 type={'text'}
                 name={'name'}
                 onChange={this.handleChange}
@@ -70,13 +67,10 @@ export default class Index extends React.Component {
                 required={true}
               />
             </S.FormInput>
-            <S.FormInput className="field">
-              <S.Label className="label" htmlFor={'email'}>
-                Email
-              </S.Label>
+            <S.FormInput>
+              <S.Label htmlFor={'email'}>Email</S.Label>
 
               <S.Input
-                className="input"
                 type={'email'}
                 name={'email'}
                 onChange={this.handleChange}
@@ -84,13 +78,10 @@ export default class Index extends React.Component {
                 required={true}
               />
             </S.FormInput>
-            <S.FormInput className="field">
-              <S.Label className="label" htmlFor={'message'}>
-                Message
-              </S.Label>
+            <S.FormInput>
+              <S.Label htmlFor={'message'}>Message</S.Label>
 
               <S.TextArea
-                className="textarea"
                 name={'message'}
                 onChange={this.handleChange}
                 id={'message'}
