@@ -20,12 +20,11 @@ export const Description = styled.div`
 `;
 
 export const Team = styled.ul`
-  margin: 3rem auto 0;
+  margin: 1rem auto 0;
 
   & h2 {
     color: var(--black);
     font: 900 var(--type-1) var(--font-questrial);
-    margin-top: 2rem;
 
     @media (min-width: ${props => props.theme.tablet}) {
       color: var(--black);
@@ -73,7 +72,7 @@ export const TeamMate = styled.li`
 
 export const Image = styled.div`
   & img {
-    max-width: 20rem;
+    /* max-width: 20rem; */
   }
 
   @media (min-width: ${props => props.theme.tablet}) {

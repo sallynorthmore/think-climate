@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout/index.js';
-import Content, { HTMLContent } from '../components/Content';
+import { HTMLContent } from '../components/Content';
 import Hero from '../components/Hero';
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 import * as S from './about-page.styles';
@@ -12,11 +12,11 @@ const converter = new showdown.Converter();
 
 export const AboutPageTemplate = ({
   title,
-  content,
+  // content,
   contentComponent,
   profiles
 }) => {
-  const PageContent = contentComponent || Content;
+  // const PageContent = contentComponent || Content;
 
   return (
     <S.AboutPage>
@@ -121,7 +121,7 @@ export const aboutPageQuery = graphql`
           filmLink
           image {
             childImageSharp {
-              fluid(maxWidth: 400, quality: 80) {
+              fluid(maxWidth: 500, quality: 80) {
                 ...GatsbyImageSharpFluid
               }
             }
