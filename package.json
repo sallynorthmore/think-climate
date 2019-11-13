@@ -72,6 +72,9 @@
     "plop": "^2.4.0",
     "prettier": "^1.18.2",
     "react-spring": "^8.0.27",
+    "showdown": "^1.9.1",
+    "storybook": "^5.1.11",
+    "storybook-addon-styled-component-theme": "^1.2.3",
     "stylelint": "^9.10.1",
     "stylelint-config-recommended": "^2.2.0",
     "stylelint-config-styled-components": "^0.1.1",
@@ -79,8 +82,6 @@
     "stylelint-number-z-index-constraint": "^2.0.0",
     "stylelint-order": "^2.2.1",
     "stylelint-processor-styled-components": "^1.8.0",
-    "validator": "^10.11.0",
-    "storybook": "^5.1.11",
-    "storybook-addon-styled-component-theme": "^1.2.3"
+    "validator": "^10.11.0"
   }
 }

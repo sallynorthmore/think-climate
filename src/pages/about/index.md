@@ -158,10 +158,10 @@ profiles:
       cloud computing. He is also an IBM ambassador who helps companies combat
       climate change through the use of technology and is a European leader for
       Al Gore’s Climate Reality Project. He has been voted the most influential
-      person on twitter for #BigDataand one of the world’s top 100 digital
+      person on twitter for BigData and one of the world’s top 100 digital
       marketers. In previous roles he was the CSO of IBM Watson Customer
       Engagement, Head of Strategy for Salesforce Marketing Cloud and Head of
-      Social Strategy for Adobe Marketing Cloud.  
+      Social Strategy for Adobe Marketing Cloud.
 
 
       Jeremy is the host of [The TenWords podcast
