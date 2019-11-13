@@ -1,15 +1,17 @@
-import React from 'react'
-import Layout from '../../components/Layout'
+import React from 'react';
+import Layout from '../../components/Layout';
+import Hero from '../../components/Hero';
+import Content from '../../components/Content';
+import * as S from './Contact.styles.js';
 
 export default () => (
   <Layout>
-    <section className="section">
-      <div className="container">
-        <div className="content">
-          <h1>Thank you!</h1>
-          <p>This is a custom thank you page for form submissions</p>
-        </div>
-      </div>
-    </section>
+    <Hero isEvent headline="Contact us"></Hero>
+    <S.Main>
+      <Content>
+        <h2>Thank you for your message.</h2>
+        <p> We will endeavour to respond to you promptly.</p>
+      </Content>
+    </S.Main>
   </Layout>
-)
+);
