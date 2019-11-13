@@ -29,9 +29,9 @@ profiles:
       the climate crisis and it’s solutions. As a member of the London Design +
       Climate Network and co-lead of the Service Design community within IBM, he
       is actively working to embed sustainability into IBM’s design approach.
-    film: Chasing Ice
-    filmLink: 'http://chasingice.com'
-    image: /img/earth-rise.jpg
+    film: ''
+    filmLink: ''
+    image: /img/img_8806.jpeg
     name: Jerome Greutmann
     pledge: >-
       * 2 Vegan and 1 Vegetarian meals a day
@@ -45,11 +45,11 @@ profiles:
 
       * Speak up, discuss and learn about the climate crisis with friends and
       colleagues
-  - book: The Powerbroker
-    bookLink: 'http://book.com'
+  - book: ''
+    bookLink: ''
     description: Description text
-    film: Chasing Ice
-    filmLink: 'http://chasingice.com'
+    film: ''
+    filmLink: ''
     image: /img/earth-rise.jpg
     name: Anthony Huntley
     pledge: Pledge text
@@ -78,8 +78,8 @@ profiles:
       * Only rent electric cars (I mostly cycle)
       * To speak boldly about the climate
       * To vote for a Green New Deal
-  - book: The Powerbroker
-    bookLink: 'http://book.com'
+  - book: ''
+    bookLink: ''
     description: >-
       Sarah Powell is a Senior Managing Consultant within IBM’s Energy,
       Environment & Utilities industry team in Europe. With a background in
@@ -97,11 +97,15 @@ profiles:
       field, Sarah is currently developing IBM’s climate-related risk analysis
       and resilience offering and working with clients to accelerate their
       decarbonisation journey.
-    film: Chasing Ice
-    filmLink: 'http://chasingice.com'
+    film: ''
+    filmLink: ''
     image: /img/1-129.jpg
     name: Sarah Powell
-    pledge: Pledge text
+    pledge: >-
+      I pledge to be bold, ambitious and innovative. To not only make my clients
+      successful, but do so in a cleaner, greener, and more sustainable way. The
+      needs and solutions are all around us and we have the skills, knowledge,
+      platform and network to make this happen.
   - book: Project Drawdown
     bookLink: 'https://www.drawdown.org/the-book'
     description: >-
@@ -115,12 +119,19 @@ profiles:
     pledge: '****'
   - book: ''
     bookLink: ''
-    description: Bio text
+    description: >-
+      Mansha is a placement student from the University of Bath and is currently
+      supporting the leadership team of the BP IA in account management. Mansha
+      is also helping support ‘Connected Innovation’, a project that enables the
+      identification, proving and scaling of innovative ideas throughout
+      Alternative Energy, Shipping and Group Functions within BP. Mansha is
+      interested in how small, incremental, individual changes can help in the
+      movement against climate change.
     film: ''
     filmLink: ''
-    image: /img/earth-rise.jpg
+    image: /img/manshamr.jpg
     name: Mansha Rajani
-    pledge: ''
+    pledge: ' I pledge to reduce my use of single-use plastics and be more energy efficient.'
   - book: Our Planet
     bookLink: 'https://www.goodreads.com/book/show/42778090-our-planet'
     description: >-
