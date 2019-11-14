@@ -68,7 +68,7 @@ profiles:
       solution.
     film: Racing Extinction
     filmLink: ' https://racingextinction.com/film/'
-    image: /img/earth-rise.jpg
+    image: /img/cecilia.jpg
     name: Cecilia Ivsen
     pledge: >-
       My pledge is to speak up about climate change and to use my voice to make
@@ -184,9 +184,9 @@ profiles:
       person on twitter for BigData and one of the world’s top 100 digital
       marketers. In previous roles he was the CSO of IBM Watson Customer
       Engagement, Head of Strategy for Salesforce Marketing Cloud and Head of
-      Social Strategy for Adobe Marketing Cloud. Jeremy is the host of [The TenWords podcast
-      ](https://tenwords.libsyn.com/)and the author of four books.
-
+      Social Strategy for Adobe Marketing Cloud. Jeremy is the host of [The
+      TenWords podcast ](https://tenwords.libsyn.com/)and the author of four
+      books.
     film: 'An Inconvenient Truth 2: Truth to Power'
     filmLink: 'https://www.imdb.com/title/tt6322922/'
     image: /img/ibm_3nov_img_0915.jpg
