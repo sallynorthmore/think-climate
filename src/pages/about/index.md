@@ -45,14 +45,6 @@ profiles:
 
       * Speak up, discuss and learn about the climate crisis with friends and
       colleagues
-  - book: ''
-    bookLink: ''
-    description: Description text
-    film: ''
-    filmLink: ''
-    image: /img/earth-rise.jpg
-    name: Anthony Huntley
-    pledge: ''
   - book: Wilding
     bookLink: 'https://www.panmacmillan.com/authors/isabella-tree/wilding/9781509805099'
     description: >-
@@ -169,7 +161,7 @@ profiles:
       maxrickards.com
     film: Chasing Coral
     filmLink: 'https://www.chasingcoral.com/'
-    image: /img/max2.jpeg
+    image: /img/manshamr.jpg
     name: Max Rickards
     pledge: >-
       I pledge to expand my knowledge of climate and research the impacts my
