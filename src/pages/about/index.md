@@ -80,17 +80,21 @@ profiles:
     bookLink: >-
       https://www.penguin.co.uk/books/310/310101/we-are-the-weather/9780241363331.html
     description: >-
-      Sally is a Senior Interactive Developer at IBM iX and has built digital
-      products for ten years for agencies, startups, fashion, publishers, arts
-      charities and financial tech companies. After reading Nathaniel Rich's
-      [Losing
-      Earth](https://www.nytimes.com/interactive/2018/08/01/magazine/climate-change-losing-earth.html),
-      she decided she wanted to learn as much as possible around climate change
-      and what digital efforts can be made.  Most recently she volunteered on
-      the [Digital Climate Strike](https://digital.globalclimatestrike.net/)
-      campaign, with a reach of over 10 million visitors. She experiments with a
-      greener lifestyle on [The Switch](https://the-switch.org/) and can be
-      found on [sallynorthmore.com](https://sallynorthmore.com/).
+      Sally is a Senior Interactive Developer at IBM iX.  She has worked in the
+      digital space for over ten years; first, as a writer and cofounder of [a
+      feminist tech education group](https://twitter.com/mztek), and in more
+      recent years as a front end developer. She freelanced building digital
+      products with agencies, startups, fashion, publishers, arts charities and
+      financial tech companies before recently landing at IBM. After reading
+      Nathaniel Rich's [Losing
+      Earth](https://www.nytimes.com/interactive/2018/08/01/magazine/climate-change-losing-earth.html)
+      in 2018, she decided she wanted to learn as much as possible around
+      climate change and what digital efforts can be made in this space.  Most
+      recently she volunteered on the [Digital Climate
+      Strike](https://digital.globalclimatestrike.net/) campaign, with a reach
+      of over 1.5 million. She experiments with a greener lifestyle on [The
+      Switch](https://www.instagram.com/theswitchorg/). Website:
+      [sallynorthmore.com](https://sallynorthmore.com/).
     film: The Third Industrial Revolution
     filmLink: >-
       https://www.vice.com/en_us/article/bj5zaq/watch-vices-new-documentary-the-third-industrial-revolution-a-radical-new-sharing-economy
@@ -98,7 +102,7 @@ profiles:
     name: Sally Northmore
     pledge: |-
       * To eat a meatless diet (exceptions when I'm a guest)
-      * Only rent electric cars (I mostly cycle)
+      * To only rent electric cars 
       * To speak boldly about the climate
       * To vote for a Green New Deal
   - book: ''
