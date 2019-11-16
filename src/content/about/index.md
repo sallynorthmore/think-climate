@@ -2,7 +2,7 @@
 templateKey: about-page
 title: About us
 profiles:
-  - book: No One Is Too Small to Make a Difference Greta Thunberg
+  - book: No One Is Too Small to Make a Difference
     bookLink: >-
       https://www.penguin.co.uk/books/315/315787/no-one-is-too-small-to-make-a-difference/9780141992716.html
     description: >-
@@ -16,20 +16,43 @@ profiles:
       Sophie is particularly interested in sustainable investment. We, as
       individuals, can have an impact on what the future looks like by investing
       our money into a better world. It is an easy way of signalling to
-      companies that change is needed to attract investments.
+      companies that change is needed to attract investments. Find me on Instagram: [@annsophieblank](https://www.instagram.com/annsophieblank/) and Twitter:
+      [@annsophieblank](https://twitter.com/annsophieblank)
     film: ''
     filmLink: ''
     image: /img/sophie.jpg
     name: Sophie Blank
     pledge: ''
+  - book: Truth to Power
+    bookLink: >-
+      https://www.algore.com/library/an-inconvenient-sequel-truth-to-power-a39b1050-d846-4b9e-a4e7-3b5fd6bb6b03
+    description: >-
+      Jeremy Connell-Waite is Chief Customer Officer for IBM iX.  Jeremy travels
+      around the world talking to executives from sustainable brands about
+      changing consumer trends, digital transformation, AI and the future of
+      cloud computing. He is also an IBM ambassador who helps companies combat
+      climate change through the use of technology and is a European leader for
+      Al Gore’s Climate Reality Project. He has been voted the most influential
+      person on twitter for BigData and one of the world’s top 100 digital
+      marketers. In previous roles he was the CSO of IBM Watson Customer
+      Engagement, Head of Strategy for Salesforce Marketing Cloud and Head of
+      Social Strategy for Adobe Marketing Cloud. Jeremy is the host of [The
+      TenWords podcast ](https://tenwords.libsyn.com/)and the author of four
+      books.
+    film: 'An Inconvenient Truth 2: Truth to Power'
+    filmLink: 'https://www.imdb.com/title/tt6322922/'
+    image: /img/ibm_3nov_img_0915.jpg
+    name: Jeremy Connell-Waite
+    pledge: >-
+      My pledge is to help executives care about the climate crisis by showing
+      that it is possible to save money and save the planet.
   - book: Eating Animals
     bookLink: 'https://www.goodreads.com/book/show/6604712-eating-animals'
     description: >-
       Jerome is a Service Designer who has spent the past few years researching
       the climate crisis and it’s solutions. As a member of the London Design +
       Climate Network and co-lead of the Service Design community within IBM, he
-      is actively working to embed sustainability into IBM’s design approach.
-    film: ''
+      is actively working to embed sustainability into IBM’s design approach. Twitter: [@jeromegreutmann](https://twitter.com/jeromegreutmann)
     filmLink: ''
     image: /img/img_8806.jpeg
     name: Jerome Greutmann
@@ -61,7 +84,7 @@ profiles:
     film: Racing Extinction
     filmLink: ' https://racingextinction.com/film/'
     image: /img/cecilia.jpg
-    name: Cecilia Ivsen
+    name: Cecilia Ivsén
     pledge: >-
       My pledge is to speak up about climate change and to use my voice to make
       an impact through my work. On a personal level, I take no internal flights
@@ -94,48 +117,33 @@ profiles:
     name: Sally Northmore
     pledge: |-
       * To eat a meatless diet (exceptions when I'm a guest)
-      * To only rent electric cars 
+      * To only rent electric cars
       * To speak boldly about the climate
       * To vote for a Green New Deal
   - book: ''
     bookLink: ''
     description: >-
-      Sarah Powell is a Senior Managing Consultant within IBM’s Energy,
-      Environment & Utilities industry team in Europe. With a background in
-      organisational change and transformation, Sarah’s goal is to develop
-      cross-industry solutions, using exponential technologies such as
-      Artificial Intelligence (AI), Blockchain and Advanced Analytics, to
-      challenge existing behaviours, ecosystems and business models, in the
-      quest for cleaner, greener and more sustainable living.
-
-
-      Sarah’s passion for sustainability was reinforced through her recent
-      sabbatical to the America’s, where she witnessed the effects of plastic
-      pollution and climate change first-hand. This passion is continuing to
-      drive the future direction of her career. As a leader in this critical
-      field, Sarah is currently developing IBM’s climate-related risk analysis
-      and resilience offering and working with clients to accelerate their
-      decarbonisation journey.
+      Sarah Powell is a Senior Managing Consultant within IBM’s Energy, Environment & Utilities industry team in Europe. With a background in organisational change and transformation, Sarah’s goal is to develop cross-industry solutions, using exponential technologies such as Artificial Intelligence (AI), Blockchain and Advanced Analytics, to challenge existing behaviours, ecosystems and business models, in the quest for cleaner, greener and more sustainable living.  Sarah’s passion for sustainability was reinforced through her recent sabbatical to the Americas, where she witnessed the devastating effects of plastic pollution and climate change first-hand.
     film: ''
     filmLink: ''
     image: /img/1-129.jpg
     name: Sarah Powell
     pledge: >-
-      I pledge to be bold, ambitious and innovative. To not only make my clients
-      successful, but do so in a cleaner, greener, and more sustainable way. The
-      needs and solutions are all around us and we have the skills, knowledge,
-      platform and network to make this happen.
+     I pledge to be bold, ambitious and innovative. To not only make my clients successful, but do so in a cleaner, greener, and more sustainable way. The needs and solutions are all around us and we have the skills, knowledge, platform and network to make this happen.
   - book: Project Drawdown
     bookLink: 'https://www.drawdown.org/the-book'
     description: >-
-      I'm a 20-something, nature-lovin' Italiano on the quest to make IBM the
-      most respected thought tank for circular business models and driver for
-      environmental and social change.
+      Pietro is a Digital Consultant for IBM iX. In 2017, he has attended the World Business Council for Sustainable Development in Switzerland and the Circular Economy summit 2019 in London. Fuelled by a year's backpacking around the world, falling in love with nature's wonders, Pietro has grown passionate about the issues concerning global warming, and is on the quest to use the power of storytelling, technology and human creativity to drive social and environmental change.
     film: Before The Flood
     filmLink: 'https://www.beforetheflood.com/'
     image: /img/profile-photo-4769.jpg
     name: Pietro Piantadina
-    pledge: ''
+    pledge: |-
+      * Become a Climate Reality leader by end of 2020
+      * Speak boldly and spread the word on the climate crisis
+      * Don’t buy from fast fashion brands
+      * Don’t buy plastic bottles and vegetables in plastic containers
+      * Reduce meat to twice a week
   - book: ''
     bookLink: ''
     description: >-
@@ -161,34 +169,11 @@ profiles:
       maxrickards.com
     film: Chasing Coral
     filmLink: 'https://www.chasingcoral.com/'
-    image: /img/manshamr.jpg
+    image: /img/max2.jpeg
     name: Max Rickards
     pledge: >-
       I pledge to expand my knowledge of climate and research the impacts my
       daily actions have to this earth - and work out ways on how to reduce
       them.
-  - book: Truth to Power
-    bookLink: >-
-      https://www.algore.com/library/an-inconvenient-sequel-truth-to-power-a39b1050-d846-4b9e-a4e7-3b5fd6bb6b03
-    description: >-
-      Jeremy Connell-Waite is Chief Customer Officer for IBM iX.  Jeremy travels
-      around the world talking to executives from sustainable brands about
-      changing consumer trends, digital transformation, AI and the future of
-      cloud computing. He is also an IBM ambassador who helps companies combat
-      climate change through the use of technology and is a European leader for
-      Al Gore’s Climate Reality Project. He has been voted the most influential
-      person on twitter for BigData and one of the world’s top 100 digital
-      marketers. In previous roles he was the CSO of IBM Watson Customer
-      Engagement, Head of Strategy for Salesforce Marketing Cloud and Head of
-      Social Strategy for Adobe Marketing Cloud. Jeremy is the host of [The
-      TenWords podcast ](https://tenwords.libsyn.com/)and the author of four
-      books.
-    film: 'An Inconvenient Truth 2: Truth to Power'
-    filmLink: 'https://www.imdb.com/title/tt6322922/'
-    image: /img/ibm_3nov_img_0915.jpg
-    name: Jeremy Connell-Waite
-    pledge: >-
-      My pledge is to help executives care about the climate crisis by showing
-      that it is possible to save money and save the planet.
 ---
 We are a group of concerned citizens and IBM professionals passionate about working for a safer climate.
