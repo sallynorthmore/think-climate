@@ -5,7 +5,7 @@ import IconButton from '../IconButton';
 import * as S from './styles';
 
 const Banner = ({ text }) => {
-  const [sideNav, toggleSideNav] = useState(false);
+  const [sideNav, toggleSideNav] = useState(true);
 
   return (
     <S.Banner>
