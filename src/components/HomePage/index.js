@@ -8,7 +8,6 @@ import EventRoll from '../EventRoll';
 import * as S from './styles';
 
 const HomePage = ({ hero, profiles }) => {
-  console.log(typeof profiles);
   return (
     <S.HomePage>
       <Layout>
@@ -27,25 +26,27 @@ const HomePage = ({ hero, profiles }) => {
           {/* <Link to="/blog">Read more</Link> */}
           {/* <Link to="/contact">Contact us</Link> */}
         </S.Main>
-        <div id="team">
-          <h2>Team</h2>
-          <ul>
+        <S.Team id="team">
+          <S.Title>The team</S.Title>
+          <S.Profiles>
             {profiles &&
               profiles.map(profile => (
-                <li>
-                  {profile.image && (
-                    <PreviewCompatibleImage
-                      className="eventImage"
-                      imageInfo={{
-                        image: profile.image,
-                        alt: `Image of ${profile.name}`
-                      }}
-                    />
-                  )}
+                <li key={profile.name}>
+                  <div className="image">
+                    {profile.image && (
+                      <PreviewCompatibleImage
+                        className="eventImage"
+                        imageInfo={{
+                          image: profile.image,
+                          alt: `Image of ${profile.name}`
+                        }}
+                      />
+                    )}
+                  </div>
                 </li>
               ))}
-          </ul>
-        </div>
+          </S.Profiles>
+        </S.Team>
       </Layout>
     </S.HomePage>
   );
