@@ -41,7 +41,7 @@ profiles:
       books.
     film: 'An Inconvenient Truth 2: Truth to Power'
     filmLink: 'https://www.imdb.com/title/tt6322922/'
-    image: /img/ibm_3nov_img_0915.jpg
+    image: /img/jeremy.jpg
     name: Jeremy Connell-Waite
     pledge: >-
       My pledge is to help executives care about the climate crisis by showing
@@ -68,6 +68,16 @@ profiles:
 
       * Speak up, discuss and learn about the climate crisis with friends and
       colleagues
+  - book: Atomic Habits
+    bookLink: 'https://jamesclear.com/atomic-habits'
+    description: >-
+      Anthony Huntley helps businesses to leverage weather and climate data in their business decisions to create value for their customers, society and shareholders. As IBM’s Leader for Weather Services & Analytics in the UK, he works with business in every industry, from leading food retailers, to F1 teams, to advance from hoping that weather is favourable for their business, to capitalising on whatever the weather brings. With IBM’s ‘The Weather Company’ and with the world’s leading weather data, he helps improve forecasts of renewable energy generation, minimise wastage with retailer demand forecasting, and help enhance precision agriculture techniques to increase yield to feed the world. As a founding member of the Global Climate Risk, Transition & Resilience offering, he helps companies to quantify their climate related financial risk, and how to minimise it; in the process, making companies much more conscious about what their own climate impact is, and how they can reduce it. Outside of work he loves to learn, get into nature and capture photos & drone videos of our incredible world.
+    film: This may be the single biggest opportunity in human history
+    filmLink: 'https://www.forbes.com/sites/devinthorpe/2019/08/07/this-may-be-the-single-biggest-business-opportunity-in-human-history/amp/?fbclid=IwAR2ACkMhsga9b_h_xc3mE9p9Zb1A4sjDninrwKjsJguphE6dsDJvr5Bym0M'
+    image: /img/anthony.jpg
+    name: Anthony Huntley
+    pledge: >-
+      My pledge is to continue eat as a ‘Flexitarian’, reducing my red meat consumption (as it’s the worst offender in terms of negative carbon impact), live a ‘minimalist lifestyle’ to reduce my personal consumption carbon footprint, and help others find great resources helping address the climate crisis both inside IBM, and beyond.
   - book: Wilding
     bookLink: 'https://www.panmacmillan.com/authors/isabella-tree/wilding/9781509805099'
     description: >-
@@ -126,7 +136,7 @@ profiles:
       Sarah Powell is a Senior Managing Consultant within IBM’s Energy, Environment & Utilities industry team in Europe. With a background in organisational change and transformation, Sarah’s goal is to develop cross-industry solutions, using exponential technologies such as Artificial Intelligence (AI), Blockchain and Advanced Analytics, to challenge existing behaviours, ecosystems and business models, in the quest for cleaner, greener and more sustainable living.  Sarah’s passion for sustainability was reinforced through her recent sabbatical to the Americas, where she witnessed the devastating effects of plastic pollution and climate change first-hand.
     film: ''
     filmLink: ''
-    image: /img/1-129.jpg
+    image: /img/sarah.jpg
     name: Sarah Powell
     pledge: >-
      I pledge to be bold, ambitious and innovative. To not only make my clients successful, but do so in a cleaner, greener, and more sustainable way. The needs and solutions are all around us and we have the skills, knowledge, platform and network to make this happen.
