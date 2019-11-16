@@ -1,20 +1,11 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import SideNav from '../SideNav';
+import IconButton from '../IconButton';
 import * as S from './styles';
 
 const Banner = ({ text }) => {
-  // const [navBarActive, setNavBarActive] = useState(false);
-  // const [burgerActive, setburgerActive] = useState(false);
-  // const toggleBurger = () => {
-  //   // toggle the active boolean in the state
-  //   setburgerActive(!burgerActive);
-  //   // set the class in state for the navbar accordingly
-  //   setNavBarActive(!burgerActive);
-  // };
-  const handleSideNav = () => {
-    // ...
-  };
+  const [sideNav, toggleSideNav] = useState(false);
 
   return (
     <S.Banner>
@@ -44,8 +35,10 @@ const Banner = ({ text }) => {
         </svg>
         <S.SR>{text}</S.SR>
       </S.Logo>
-      <button onClick={handleSideNav}>Show nav</button>
-      <SideNav />
+      <SideNav isActive={sideNav} />
+      <S.Button>
+        <IconButton onClick={() => toggleSideNav(!sideNav)} />
+      </S.Button>
     </S.Banner>
   );
 };

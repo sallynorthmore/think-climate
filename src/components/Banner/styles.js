@@ -18,7 +18,7 @@ export const Banner = styled.div`
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 9;
+  z-index: 8;
 `;
 
 export const Logo = styled.a`
@@ -39,6 +39,13 @@ export const SR = styled.span`
   overflow: hidden;
   visibility: hidden;
   width: 0;
+`;
+
+export const Button = styled.button`
+  position: absolute;
+  right: 2.5rem;
+  top: 2rem;
+  z-index: 10;
 `;
 
 export const Nav = styled.div`

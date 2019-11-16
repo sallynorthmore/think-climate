@@ -1,27 +1,26 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { ifProp } from 'styled-tools';
 
 export const SideNav = styled.div`
   background: var(--black);
   height: 100vh;
-  right: 0;
   max-height: 100vh;
   max-width: 50%;
   overflow: hidden;
   padding: 2rem 2.5rem;
   position: fixed;
+  right: -50%;
   top: 0;
+  transition: 200ms transform ease-in;
   width: 100%;
-  z-index: 10;
-`;
+  z-index: 9;
 
-export const Button = styled.button`
-  background: transparent;
-  color: var(--white);
-  height: 3rem;
-  position: absolute;
-  right: 2.5rem;
-  top: 2rem;
-  width: 3rem;
+  ${ifProp(
+    'isActive',
+    css`
+      transform: translateX(-100%);
+    `
+  )}
 `;
 
 export const Content = styled.div`
