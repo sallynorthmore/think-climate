@@ -17,7 +17,8 @@ export const Banner = styled.div`
   padding: 2rem 2.5rem;
   position: absolute;
   top: 0;
-  z-index: 10;
+  width: 100%;
+  z-index: 9;
 `;
 
 export const Logo = styled.a`
