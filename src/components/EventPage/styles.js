@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-export const EventPostTemplate = styled.div``;
+export const EventPage = styled.div`
+  /* ... */
+`;
 
 export const Main = styled.main`
   background: var(--white);
