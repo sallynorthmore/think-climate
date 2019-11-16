@@ -28,7 +28,7 @@ const Nav = ({ items, isDesktop }) => {
       ) : (
         <ul>
           {items.map(item => (
-            <li>
+            <li key={item.text}>
               {item.link ? (
                 <Link to={item.route}>{item.text}</Link>
               ) : (

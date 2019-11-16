@@ -5,9 +5,12 @@ import ParralaxHero from '../ParralaxHero';
 import PreviewCompatibleImage from '../PreviewCompatibleImage';
 import SEO from '../SEO';
 import EventRoll from '../EventRoll';
+import FeaturedEvent from '../FeaturedEvent';
 import * as S from './styles';
 
-const HomePage = ({ hero, profiles }) => {
+const HomePage = ({ hero, profiles, events }) => {
+  const featuredEvent = events[0].node;
+  console.log('featuredEvent', featuredEvent);
   return (
     <S.HomePage>
       <Layout>
@@ -22,9 +25,19 @@ const HomePage = ({ hero, profiles }) => {
           image={hero.image}
         ></ParralaxHero>
         <S.Main role="main">
-          <EventRoll />
-          {/* <Link to="/blog">Read more</Link> */}
-          {/* <Link to="/contact">Contact us</Link> */}
+          <h2>Coming up</h2>
+          <FeaturedEvent
+            content={featuredEvent.html}
+            link={featuredEvent.fields.slug}
+            title={featuredEvent.frontmatter.title}
+            date={featuredEvent.frontmatter.date}
+            location={featuredEvent.frontmatter.location}
+            eventTime={featuredEvent.frontmatter.eventTime}
+            eventDate={featuredEvent.frontmatter.eventDate}
+            description={featuredEvent.frontmatter.description}
+            featuredImage={featuredEvent.frontmatter.featuredImage}
+            ticketsLink={featuredEvent.frontmatter.ticketsLink}
+          />
         </S.Main>
         <S.Team id="team">
           <S.Title>The team</S.Title>
@@ -32,7 +45,13 @@ const HomePage = ({ hero, profiles }) => {
             {profiles &&
               profiles.map(profile => (
                 <li key={profile.name}>
-                  <div className="image">
+                  <a
+                    href={`/about#${profile.name
+                      .toLowerCase()
+                      .split(' ')
+                      .join('-')}`}
+                    className="image"
+                  >
                     {profile.image && (
                       <PreviewCompatibleImage
                         className="eventImage"
@@ -42,7 +61,7 @@ const HomePage = ({ hero, profiles }) => {
                         }}
                       />
                     )}
-                  </div>
+                  </a>
                 </li>
               ))}
           </S.Profiles>

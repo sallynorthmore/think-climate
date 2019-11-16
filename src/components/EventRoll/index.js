@@ -11,7 +11,7 @@ class EventRoll extends React.Component {
 
     return (
       <S.EventRoll>
-        <h2>Upcoming Events</h2>
+        <h2>Upcoming events</h2>
         <ol>
           {posts &&
             posts.map(({ node: post }, i) => (

@@ -7,8 +7,10 @@ const IndexPage = ({ data }) => {
   // const { frontmatter } = data.markdownRemark;
   const page = data.page.frontmatter;
   const profiles = data.profiles.frontmatter.profiles;
+  const events = data.events;
+  const { edges: eventPosts } = events;
 
-  return <HomePage hero={page.hero} profiles={profiles} />;
+  return <HomePage hero={page.hero} profiles={profiles} events={eventPosts} />;
 };
 
 IndexPage.propTypes = {
@@ -37,6 +39,38 @@ export const pageQuery = graphql`
                 ...GatsbyImageSharpFluid
               }
             }
+          }
+        }
+      }
+    }
+    events: allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { templateKey: { eq: "event-post" } } }
+    ) {
+      edges {
+        node {
+          excerpt(pruneLength: 400)
+          id
+          html
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            templateKey
+            date(formatString: "MMMM DD, YYYY")
+            featuredpost
+            featuredimage {
+              childImageSharp {
+                fluid(maxWidth: 120, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            location
+            eventDate
+            eventTime
+            description
           }
         }
       }

@@ -10,6 +10,10 @@ export const Main = styled.main`
 export const Team = styled.div`
   background: var(--silver);
   padding: 2rem 2.25rem;
+
+  @media (min-width: ${props => props.theme.tablet}) {
+    padding: 5rem 2.5rem;
+  }
 `;
 
 export const Title = styled.h2`
@@ -31,6 +35,7 @@ export const Profiles = styled.ul`
 
   & .image {
     border-radius: 100%;
+    display: block;
     overflow: hidden;
   }
 
@@ -43,7 +48,7 @@ export const Profiles = styled.ul`
     }
 
     & .image {
-      border-radius: 0;
+      /* border-radius: 0; */
     }
   }
 `;
