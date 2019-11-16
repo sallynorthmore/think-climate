@@ -23,7 +23,7 @@ const Team = ({ profiles }) => (
             />
           )}
         </S.Image>
-        <S.Bio>
+        <S.Bio isImageRight={i % 2 !== 0}>
           <h3>{profile.name}</h3>
           <div
             dangerouslySetInnerHTML={{

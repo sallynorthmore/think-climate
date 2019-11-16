@@ -43,10 +43,6 @@ export const TeamMate = styled.li`
 `;
 
 export const Image = styled.div`
-  & img {
-    /* max-width: 20rem; */
-  }
-
   @media (min-width: ${props => props.theme.tablet}) {
     flex: 0 0 50%;
 
@@ -59,15 +55,11 @@ export const Image = styled.div`
 export const Bio = styled.div`
   flex: 1;
   padding: 1rem 2rem;
-  /* stylelint-disable selector-max-type */
+
   & h3 {
     color: var(--black);
     font: 900 var(--type-1) var(--font-questrial);
     margin-top: 1.5rem;
-
-    @media (min-width: ${props => props.theme.tablet}) {
-      margin-top: 0;
-    }
   }
 
   & h4 {
@@ -93,5 +85,19 @@ export const Bio = styled.div`
   & strong {
     font-weight: 600;
   }
-  /* stylelint-enable */
+
+  @media (min-width: ${props => props.theme.tablet}) {
+    padding: 2rem 0 2rem 3rem;
+
+    ${ifProp(
+      'isImageRight',
+      css`
+        padding: 2rem 3rem 2rem 0;
+      `
+    )}
+
+    & h3 {
+      margin-top: 0;
+    }
+  }
 `;
