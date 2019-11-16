@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import SideNav from '../SideNav';
 import IconButton from '../IconButton';
+import Nav from '../Nav';
 import * as S from './styles';
 
 const Banner = ({ text }) => {
-  const [sideNav, toggleSideNav] = useState(true);
+  const [sideNav, toggleSideNav] = useState(false);
 
   return (
     <S.Banner>
@@ -42,6 +43,9 @@ const Banner = ({ text }) => {
           onClick={() => toggleSideNav(!sideNav)}
         />
       </S.NavButton>
+      <S.Navigation>
+        <Nav isDesktop={true} />
+      </S.Navigation>
     </S.Banner>
   );
 };

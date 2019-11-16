@@ -17,11 +17,6 @@ export const Content = styled.div`
   font: 400 var(--type-0) var(--font-questrial);
   margin: 0;
   max-width: 45rem; /* 720px */
-  /* text-align: center; */
-
-  @media (min-width: ${props => props.theme.tablet}) {
-    /* text-align: left; */
-  }
 
   & *:first-child {
     margin-top: 0;

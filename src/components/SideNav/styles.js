@@ -21,6 +21,10 @@ export const SideNav = styled.div`
       transform: translateX(-100%);
     `
   )}
+
+  @media (min-width: ${props => props.theme.desktop}) {
+   display: none;
+  }
 `;
 
 export const Content = styled.div`

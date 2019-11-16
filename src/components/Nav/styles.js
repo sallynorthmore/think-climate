@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 export const Nav = styled.nav`
   display: block;
@@ -22,6 +22,17 @@ export const Nav = styled.nav`
   @media (min-width: ${props => props.theme.desktop}) {
     & ul {
       display: flex;
+    }
+
+    & li {
+      margin: 0 1rem;
+    }
+
+    & a {
+      color: var(--white);
+      font-size: 2rem;
+      /* font: 600 var(--type--2) var(--font-questrial); */
+      margin: auto 0 auto auto;
     }
   }
 `;

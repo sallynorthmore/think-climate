@@ -54,16 +54,16 @@ export const NavButton = styled.div`
       position: fixed;
     `
   )}
+
+  @media (min-width: ${props => props.theme.desktop}) {
+   display: none;
+  }
 `;
 
-export const Nav = styled.div`
-  & ul {
-    color: var(--white);
-    display: flex;
-    list-style: none;
+export const Navigation = styled.div`
+  display: none;
 
-    & a {
-      color: var(--white);
-    }
+  @media (min-width: ${props => props.theme.desktop}) {
+    display: block;
   }
 `;
