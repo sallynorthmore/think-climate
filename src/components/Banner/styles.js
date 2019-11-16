@@ -1,4 +1,5 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
+import { ifProp } from 'styled-tools';
 
 const fadeIn = keyframes`
   from {
@@ -41,11 +42,18 @@ export const SR = styled.span`
   width: 0;
 `;
 
-export const Button = styled.button`
+export const NavButton = styled.div`
   position: absolute;
-  right: 2.5rem;
-  top: 2rem;
+  right: 1.5rem;
+  top: 1.25rem;
   z-index: 10;
+
+  ${ifProp(
+    'isFixed',
+    css`
+      position: fixed;
+    `
+  )}
 `;
 
 export const Nav = styled.div`

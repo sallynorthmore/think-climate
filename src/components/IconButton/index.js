@@ -2,9 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import * as S from './styles';
 
-const IconButton = ({ onClick, icon }) => (
+const IconButton = ({ onClick, isActive }) => (
   <S.IconButton onClick={onClick} type="button">
-    <div>{icon}</div>
+    <S.Icon isActive={isActive}>
+      <span className="top" />
+      <span className="middle" />
+      <span className="bottom" />
+    </S.Icon>
   </S.IconButton>
 );
 

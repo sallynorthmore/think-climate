@@ -11,7 +11,7 @@ export const SideNav = styled.div`
   position: fixed;
   right: -50%;
   top: 0;
-  transition: 200ms transform ease-in;
+  transition: 0.2s transform var(--ease-inOut);
   width: 100%;
   z-index: 9;
 

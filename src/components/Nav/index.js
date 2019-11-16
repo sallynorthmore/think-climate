@@ -10,6 +10,12 @@ const Nav = () => {
           <Link to="/about">About</Link>
         </li>
         <li>
+          <a href="#team">Team</a>
+        </li>
+        <li>
+          <a href="#subscribe">Subscribe</a>
+        </li>
+        <li>
           <Link to="/contact">Contact</Link>
         </li>
       </ul>

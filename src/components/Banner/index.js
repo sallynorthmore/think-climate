@@ -36,9 +36,12 @@ const Banner = ({ text }) => {
         <S.SR>{text}</S.SR>
       </S.Logo>
       <SideNav isActive={sideNav} />
-      <S.Button>
-        <IconButton onClick={() => toggleSideNav(!sideNav)} />
-      </S.Button>
+      <S.NavButton isFixed={sideNav}>
+        <IconButton
+          isActive={sideNav}
+          onClick={() => toggleSideNav(!sideNav)}
+        />
+      </S.NavButton>
     </S.Banner>
   );
 };
