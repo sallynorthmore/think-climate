@@ -27,6 +27,15 @@ export const Hero = styled.header`
     `
   )}
 
+  ${ifProp(
+    'isSmall',
+    css`
+      background: var(--black);
+      max-height: 20rem;
+      min-height: 10rem;
+    `
+  )}
+
   @media (min-width: ${props => props.theme.desktop}) {
     min-height: 100vh;
 
@@ -35,6 +44,15 @@ export const Hero = styled.header`
       css`
         min-height: 400px;
         padding: 4rem 2.5rem 1rem;
+      `
+    )}
+
+    ${ifProp(
+      'isSmall',
+      css`
+        max-height: 30rem;
+        height: 20rem;
+        min-height: 10rem;
       `
     )}
   }
@@ -60,6 +78,13 @@ export const HeroInner = styled.div`
   @media (min-width: ${props => props.theme.desktop}) {
     margin: auto 0;
     padding-top: 0;
+
+    ${ifProp(
+      'isSmall',
+      css`
+        margin-bottom: 1rem;
+      `
+    )}
 
     & p {
       font: 900 var(--type-0) var(--font-questrial);

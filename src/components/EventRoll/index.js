@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, graphql, StaticQuery } from 'gatsby';
 import PreviewCompatibleImage from '../PreviewCompatibleImage';
-// import Content from '../Content';
 import * as S from './styles';
 
 class EventRoll extends React.Component {
@@ -12,7 +11,7 @@ class EventRoll extends React.Component {
 
     return (
       <S.EventRoll>
-        <h2>Upcoming Events</h2>
+        <h2>Upcoming events</h2>
         <ol>
           {posts &&
             posts.map(({ node: post }, i) => (
@@ -41,7 +40,7 @@ class EventRoll extends React.Component {
                     </div>
 
                     <Link className="readMore" to={post.fields.slug}>
-                      Keep Reading →
+                      More →
                     </Link>
                     <S.Footer className="footer">
                       {post.frontmatter.eventDate && (

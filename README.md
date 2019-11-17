@@ -43,3 +43,6 @@ More info on using Netlify, GatsbyJS & Netlify CMS in the [Netlify docs](./docs/
 
 We use Git, gitflow methodology and github's project management tools.
 
+## Content
+
+Markdown content is stored in `./src/content` and managed by a Netlify CMS at `http://thinkclimate/admin`

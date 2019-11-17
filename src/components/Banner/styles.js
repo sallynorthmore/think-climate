@@ -1,4 +1,5 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
+import { ifProp } from 'styled-tools';
 
 const fadeIn = keyframes`
   from {
@@ -17,7 +18,8 @@ export const Banner = styled.div`
   padding: 2rem 2.5rem;
   position: absolute;
   top: 0;
-  z-index: 10;
+  width: 100%;
+  z-index: 8;
 `;
 
 export const Logo = styled.a`
@@ -40,14 +42,28 @@ export const SR = styled.span`
   width: 0;
 `;
 
-export const Nav = styled.div`
-  & ul {
-    color: var(--white);
-    display: flex;
-    list-style: none;
+export const NavButton = styled.div`
+  position: absolute;
+  right: 1.5rem;
+  top: 1.25rem;
+  z-index: 10;
 
-    & a {
-      color: var(--white);
-    }
+  ${ifProp(
+    'isFixed',
+    css`
+      position: fixed;
+    `
+  )}
+
+  @media (min-width: ${props => props.theme.desktop}) {
+   display: none;
+  }
+`;
+
+export const Navigation = styled.div`
+  display: none;
+
+  @media (min-width: ${props => props.theme.desktop}) {
+    display: block;
   }
 `;

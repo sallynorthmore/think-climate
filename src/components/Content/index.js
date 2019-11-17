@@ -9,7 +9,7 @@ export const HTMLContent = ({ content, className }) => (
   />
 );
 
-const Content = ({ content, className, children }) => (
+const Content = ({ content, className, children, isWide }) => (
   <S.Content className={className}>
     {content}
     {children}

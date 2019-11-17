@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
         <S.Layout>
           <GlobalStyle />
           <Banner />
-          <div>{children}</div>
+          {children}
           <Subscribe />
           <Footer />
         </S.Layout>

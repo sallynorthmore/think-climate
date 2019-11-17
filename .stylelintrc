@@ -91,7 +91,7 @@
     "selector-max-attribute": 0,
     "selector-max-class": 2,
     "selector-max-id": 0,
-    "selector-max-type": 0,
+    "selector-max-type": 1,
     "selector-max-universal": 1,
     "selector-nested-pattern": "^&",
     "selector-no-vendor-prefix": true,
