@@ -15,7 +15,7 @@ export const Content = styled.div`
 
   /* stylelint-disable  */
   font: 400 var(--type-0) var(--font-questrial);
-  margin: 0;
+  margin: 0 auto;
   max-width: 45rem; /* 720px */
 
   & *:first-child {
