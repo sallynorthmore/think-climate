@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+export const ContactPage = styled.div`
+  /* ... */
+`;
+
 export const Main = styled.main`
   background: var(--white);
   font: 400 var(--type-0) var(--font-questrial);
@@ -8,7 +12,7 @@ export const Main = styled.main`
   text-align: center;
 
   @media (min-width: ${props => props.theme.tablet}) {
-    padding: 2rem 2.5rem;
+    padding: 5rem 2.5rem;
   }
 `;
 
