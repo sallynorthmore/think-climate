@@ -40,7 +40,7 @@ class EventRoll extends React.Component {
                     </div>
 
                     <Link className="readMore" to={post.fields.slug}>
-                      Keep Reading →
+                      More →
                     </Link>
                     <S.Footer className="footer">
                       {post.frontmatter.eventDate && (

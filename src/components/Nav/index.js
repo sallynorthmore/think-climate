@@ -49,11 +49,11 @@ Nav.defaultProps = {
       link: true,
       route: '/about'
     },
-    {
-      text: 'Team',
-      link: false,
-      route: '#team'
-    },
+    // {
+    //   text: 'Events',
+    //   link: true,
+    //   route: '/events'
+    // },
     {
       text: 'Subscribe',
       link: false,
