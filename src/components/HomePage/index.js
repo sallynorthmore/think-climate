@@ -27,13 +27,13 @@ const HomePage = ({ hero, profiles, events }) => {
           image={hero.image}
         ></ParralaxHero>
         <S.Main role="main">
-          {/* <div>
-            <Content><blockquote><p>We can build a business, change the world and have fun.</p></blockquote></Content>
-          </div> */}
           <S.Events>
             <S.MainEvent>
               <S.Post>
-                <Link to="#" className="imageLink">
+                <Link
+                  to="/events/2019-11-20-think-climate/"
+                  className="imageLink"
+                >
                   <PreviewCompatibleImage
                     imageInfo={{
                       image: 'img/event-hero.png',
@@ -59,14 +59,55 @@ const HomePage = ({ hero, profiles, events }) => {
                     Climate Change is the biggest crisis humanity has ever faced
                     but both its causes and solutions are complex.
                   </p>
-                  <Link className="more">More ></Link>
+                  <Link to="/events/2019-11-20-think-climate/" className="more">
+                    More >
+                  </Link>
                 </div>
               </S.Post>
             </S.MainEvent>
-            <S.EventAside>
-              <S.Post>Post: Notes on the talk</S.Post>
-              <S.Post>Post: How can you get involved?</S.Post>
+
+            {/* <S.EventAside>
+              <S.Post>
+                <Link to="#" className="imageLink">
+                  <PreviewCompatibleImage
+                    imageInfo={{
+                      image: 'img/simon-wilkes-unsplash.jpg',
+                      alt: `Image of event`
+                    }}
+                  />
+                </Link>
+                <div className="content">
+                  <h2 className="title">
+                    <span>Post:</span> Notes on the talk
+                  </h2>
+                  <p>
+                    Did you attend our talk? Get more info on topics covered.{' '}
+                    <Link to="#"> More ></Link>
+                  </p>
+                </div>
+              </S.Post>
             </S.EventAside>
+            <S.EventAside>
+              <S.Post>
+                <Link to="#" className="imageLink">
+                  <PreviewCompatibleImage
+                    imageInfo={{
+                      image: 'img/britt-gaiser.jpg',
+                      alt: `Image of event`
+                    }}
+                  />
+                </Link>
+                <div className="content">
+                  <h2 className="title">
+                    <span>Post:</span> Want to get involved?
+                  </h2>
+                  <p>
+                    How you can get involved in environmentalism at IBM{' '}
+                    <Link to="#">More ></Link>
+                  </p>
+                </div>
+              </S.Post>
+            </S.EventAside> */}
           </S.Events>
         </S.Main>
         <S.Team id="team">

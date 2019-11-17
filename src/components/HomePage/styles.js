@@ -3,17 +3,41 @@ import styled from 'styled-components';
 export const HomePage = styled.div``;
 
 export const Main = styled.main`
-  background: var(--white);
+  background: var(--silver);
   text-align: center;
 `;
 
 export const Events = styled.div`
-  background: var(--silver);
   padding: 1rem;
+
+  @media (min-width: ${props => props.theme.desktop}) {
+    /* display: flex; */
+    margin: 0 auto;
+    /* max-width: 80rem; */
+    /* display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 'main item1' 'main item2'; */
+  }
 `;
 
 export const MainEvent = styled.div`
   /* margin: 1rem 0 0; */
+  @media (min-width: ${props => props.theme.desktop}) {
+    /* grid-area: main; */
+    /* flex: 0 0 50%; */
+  }
+`;
+
+export const Quote = styled.div`
+  display: none;
+
+  @media (min-width: ${props => props.theme.desktop}) {
+    display: flex;
+    padding: 3rem;
+    flex: 0 0 50%;
+  }
 `;
 
 export const Post = styled.div`
@@ -69,15 +93,63 @@ export const Post = styled.div`
 `;
 
 export const EventAside = styled.div`
-  /* margin: 1rem 0 0;
+  & .imageLink {
+    max-height: 160px;
+    overflow: hidden;
+    position: relative;
+
+    & img {
+      margin-top: -30%;
+      position: relative;
+      width: 100%;
+    }
+  }
 
   @media (min-width: ${props => props.theme.tablet}) {
-    margin: 0;
+    display: inline-block;
+    max-width: 50%;
 
-    & div:not(:first-child) {
-      margin: 1rem 0 0;
+    &:last-of-type {
+      padding-left: 1rem;
     }
-  } */
+  }
+
+  @media (min-width: ${props => props.theme.desktop}) {
+    display: block;
+
+    /* padding-left: 1rem; */
+
+    &:first-child {
+      grid-area: item1;
+      /* max-height: 50%; */
+    }
+
+    &:last-child {
+      grid-area: item2;
+      /* max-height: 50%; */
+    }
+
+    & ${Post} {
+      position: relative;
+      max-height: 50%;
+
+      &:not(:first-child) {
+        padding-left: 0;
+      }
+    }
+
+    & .imageLink {
+      max-height: 180px;
+      overflow: hidden;
+      position: relative;
+
+      & img {
+        margin-top: -30%;
+        width: 100%;
+        position: relative;
+      }
+    }
+  }
 `;
 
 export const Team = styled.div`
