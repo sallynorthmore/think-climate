@@ -86,6 +86,10 @@ export const Content = styled.div`
     }
   }
 
+  & blockquote {
+    margin: 3rem auto;
+  }
+
   & blockquote p {
     color: var(--coal);
     font: 300 var(--type-2) var(--font-raleway);

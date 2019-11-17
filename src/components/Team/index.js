@@ -10,63 +10,65 @@ const converter = new showdown.Converter();
 const Team = ({ profiles }) => (
   <S.Team>
     <h2>Our team</h2>
-    {profiles.map((profile, i) => {
-      const anchor = profile.name
-        .toLowerCase()
-        .split(' ')
-        .join('-');
-      console.log(anchor);
-      return (
-        <S.TeamMate
-          key={profile.name}
-          isImageRight={i % 2 !== 0}
-          id={`${anchor}`}
-        >
-          <S.Image>
-            {profile.image && (
-              <PreviewCompatibleImage
-                className="eventImage"
-                imageInfo={{
-                  image: profile.image,
-                  alt: `Profile image of ${profile.name}`
-                }}
-              />
-            )}
-          </S.Image>
-          <S.Bio isImageRight={i % 2 !== 0}>
-            <h3>{profile.name}</h3>
-            <div
-              dangerouslySetInnerHTML={{
-                __html: converter.makeHtml(profile.description)
-              }}
-            ></div>
-            {profile.pledge && (
-              <div>
-                <h4>My pledge</h4>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: converter.makeHtml(profile.pledge)
+    <S.Profiles>
+      {profiles.map((profile, i) => {
+        const anchor = profile.name
+          .toLowerCase()
+          .split(' ')
+          .join('-');
+        console.log(anchor);
+        return (
+          <S.Profile
+            key={profile.name}
+            isImageRight={i % 2 !== 0}
+            id={`${anchor}`}
+          >
+            <S.Image>
+              {profile.image && (
+                <PreviewCompatibleImage
+                  className="eventImage"
+                  imageInfo={{
+                    image: profile.image,
+                    alt: `Profile image of ${profile.name}`
                   }}
-                ></div>
-              </div>
-            )}
+                />
+              )}
+            </S.Image>
+            <S.Bio isImageRight={i % 2 !== 0}>
+              <h3>{profile.name}</h3>
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: converter.makeHtml(profile.description)
+                }}
+              ></div>
+              {profile.pledge && (
+                <div>
+                  <h4>My pledge</h4>
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: converter.makeHtml(profile.pledge)
+                    }}
+                  ></div>
+                </div>
+              )}
 
-            {profile.book && (
-              <p>
-                <strong>Read:</strong>{' '}
-                <a href={profile.bookLink}>{profile.book}</a>
-              </p>
-            )}
-            {profile.film && (
-              <p>
-                <strong>Watch:</strong>{' '}
-                <a href={profile.filmLink}>{profile.film}</a>
-              </p>
-            )}
-          </S.Bio>
-        </S.TeamMate>
-      );
-    })}
+              {profile.book && (
+                <p>
+                  <strong>Read:</strong>{' '}
+                  <a href={profile.bookLink}>{profile.book}</a>
+                </p>
+              )}
+              {profile.film && (
+                <p>
+                  <strong>Watch:</strong>{' '}
+                  <a href={profile.filmLink}>{profile.film}</a>
+                </p>
+              )}
+            </S.Bio>
+          </S.Profile>
+        );
+      })}
+    </S.Profiles>
   </S.Team>
 );
 

@@ -1,9 +1,7 @@
 import styled, { css } from 'styled-components';
 import { ifProp } from 'styled-tools';
 
-export const Team = styled.ul`
-  margin: 1rem auto 0;
-
+export const Team = styled.div`
   & h2 {
     color: var(--black);
     font: 900 var(--type-1) var(--font-questrial);
@@ -17,13 +15,18 @@ export const Team = styled.ul`
       }
     }
   }
+`;
+
+export const Profiles = styled.ul`
+  margin: 1rem auto 0;
 
   @media (min-width: ${props => props.theme.tablet}) {
+    margin: 5rem auto 0;
     max-width: 70rem;
   }
 `;
 
-export const TeamMate = styled.li`
+export const Profile = styled.li`
   list-style: none;
   margin-top: 2rem;
   text-align: left;

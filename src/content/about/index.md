@@ -186,4 +186,4 @@ profiles:
       daily actions have to this earth - and work out ways on how to reduce
       them.
 ---
-We are a group of concerned citizens and IBM professionals passionate about working for a safer climate.
+>  We are a group of volunteers at IBM who are passionate about  our planet.
