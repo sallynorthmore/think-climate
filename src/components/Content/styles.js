@@ -18,6 +18,10 @@ export const Content = styled.div`
   margin: 0 auto;
   max-width: 45rem; /* 720px */
 
+  &.postPage {
+    max-width: 75rem;
+  }
+
   & *:first-child {
     margin-top: 0;
   }
@@ -178,6 +182,11 @@ export const Content = styled.div`
 
   & img {
     max-width: 100%;
+  }
+
+  & iframe {
+    height: 80vh;
+    width: 100%;
   }
   /* stylelint-enable */
 `;
