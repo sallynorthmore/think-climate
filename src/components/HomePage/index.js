@@ -1,11 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'gatsby';
 import Layout from '../Layout/index.js';
 import ParralaxHero from '../ParralaxHero';
 import PreviewCompatibleImage from '../PreviewCompatibleImage';
 import SEO from '../SEO';
-import EventRoll from '../EventRoll';
-import FeaturedEvent from '../FeaturedEvent';
+// import Content from '../Content';
+// import EventRoll from '../EventRoll';
+// import FeaturedEvent from '../FeaturedEvent';
 import * as S from './styles';
 
 const HomePage = ({ hero, profiles, events }) => {
@@ -25,22 +27,54 @@ const HomePage = ({ hero, profiles, events }) => {
           image={hero.image}
         ></ParralaxHero>
         <S.Main role="main">
-          <h2>Coming up</h2>
-          <FeaturedEvent
-            content={featuredEvent.html}
-            link={featuredEvent.fields.slug}
-            title={featuredEvent.frontmatter.title}
-            date={featuredEvent.frontmatter.date}
-            location={featuredEvent.frontmatter.location}
-            eventTime={featuredEvent.frontmatter.eventTime}
-            eventDate={featuredEvent.frontmatter.eventDate}
-            description={featuredEvent.frontmatter.description}
-            featuredImage={featuredEvent.frontmatter.featuredImage}
-            ticketsLink={featuredEvent.frontmatter.ticketsLink}
-          />
+          {/* <div>
+            <Content><blockquote><p>We can build a business, change the world and have fun.</p></blockquote></Content>
+          </div> */}
+          <S.Events>
+            <S.MainEvent>
+              <S.Post>
+                <Link to="#" className="imageLink">
+                  <PreviewCompatibleImage
+                    imageInfo={{
+                      image: 'img/event-hero.png',
+                      alt: `Image of event`
+                    }}
+                  />
+                </Link>
+                <div className="content">
+                  <div className="date">20 Nov 2018</div>
+                  <h2 className="title">
+                    <span>Event:</span> Think Climate
+                  </h2>
+                  <div className="speakers">
+                    with Jeremy Waite (iX), Dorothy Shaver (Unilever), and Dr.
+                    Murray Simpson (IBM Global Lead)
+                  </div>
+                  <p>
+                    On November 20th, we invite you to join us for an event
+                    about climate change in association with Al Gore's Climate
+                    Reality Project. For a full 24-hour period, Climate Reality
+                    leaders around the world trained by former Vice President Al
+                    Gore will hold public conversations and presentations.
+                    Climate Change is the biggest crisis humanity has ever faced
+                    but both its causes and solutions are complex.
+                  </p>
+                  <Link className="more">More ></Link>
+                </div>
+              </S.Post>
+            </S.MainEvent>
+            <S.EventAside>
+              <S.Post>Post: Notes on the talk</S.Post>
+              <S.Post>Post: How can you get involved?</S.Post>
+            </S.EventAside>
+          </S.Events>
         </S.Main>
         <S.Team id="team">
           <S.Title>The team</S.Title>
+          <p>
+            We are a team of volunteers who are passionate about the planet.{' '}
+            <Link to="/about">Get to know us.</Link>
+          </p>
           <S.Profiles>
             {profiles &&
               profiles.map(profile => (
@@ -54,7 +88,6 @@ const HomePage = ({ hero, profiles, events }) => {
                   >
                     {profile.image && (
                       <PreviewCompatibleImage
-                        className="eventImage"
                         imageInfo={{
                           image: profile.image,
                           alt: `Image of ${profile.name}`

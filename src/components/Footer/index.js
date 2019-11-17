@@ -29,11 +29,11 @@ Footer.defaultProps = {
       link: true,
       route: '/about'
     },
-    {
-      text: 'Team',
-      link: false,
-      route: '#team'
-    },
+    // {
+    //   text: 'Team',
+    //   link: false,
+    //   route: '#team'
+    // },
     {
       text: 'Subscribe',
       link: false,

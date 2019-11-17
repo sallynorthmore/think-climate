@@ -7,9 +7,96 @@ export const Main = styled.main`
   text-align: center;
 `;
 
+export const Events = styled.div`
+  background: var(--silver);
+  padding: 1rem;
+`;
+
+export const MainEvent = styled.div`
+  /* margin: 1rem 0 0; */
+`;
+
+export const Post = styled.div`
+  margin: 1rem 0 0;
+  text-align: left;
+
+  & a.imageLink {
+    display: block;
+  }
+
+  & img {
+    display: block;
+  }
+
+  & .date {
+    color: var(--silver);
+    font: 600 var(--type--2) var(--font-raleway);
+  }
+
+  & .title {
+    color: #cd282d;
+    font: 600 var(--type--1) var(--font-raleway);
+    margin: 0.25rem 0 0;
+  }
+
+  & .speakers {
+    color: var(--coal);
+    font: 600 var(--type--2) var(--font-raleway);
+    margin: 0.25rem 0 0;
+  }
+
+  & .more {
+    color: var(--coal);
+    display: inline-block;
+    font: 600 var(--type--2) var(--font-raleway);
+    margin: 0.5rem 0 0;
+  }
+
+  & .content {
+    background: var(--white);
+    border-radius: 0 0 8px 8px;
+    padding: 1rem;
+
+    & p {
+      font: 300 var(--type-0) var(--font-raleway);
+      margin: 0.5rem 0 0;
+
+      @media (min-width: ${props => props.theme.tablet}) {
+        margin: 0.5rem 0 0;
+      }
+    }
+  }
+`;
+
+export const EventAside = styled.div`
+  /* margin: 1rem 0 0;
+
+  @media (min-width: ${props => props.theme.tablet}) {
+    margin: 0;
+
+    & div:not(:first-child) {
+      margin: 1rem 0 0;
+    }
+  } */
+`;
+
 export const Team = styled.div`
   background: var(--silver);
   padding: 2rem 2.25rem;
+
+  & p {
+    font: 300 var(--type-0) var(--font-raleway);
+
+    &:not(:first-child) {
+      margin-top: 1.25rem;
+    }
+
+    @media (min-width: ${props => props.theme.tablet}) {
+      &:not(:first-child) {
+        margin-top: 2rem;
+      }
+    }
+  }
 
   @media (min-width: ${props => props.theme.tablet}) {
     padding: 5rem 2.5rem;
