@@ -16,8 +16,9 @@ profiles:
       Sophie is particularly interested in sustainable investment. We, as
       individuals, can have an impact on what the future looks like by investing
       our money into a better world. It is an easy way of signalling to
-      companies that change is needed to attract investments. Find me on Instagram: [@annsophieblank](https://www.instagram.com/annsophieblank/) and Twitter:
-      [@annsophieblank](https://twitter.com/annsophieblank)
+      companies that change is needed to attract investments. Find me on
+      Instagram: [@annsophieblank](https://www.instagram.com/annsophieblank/)
+      and Twitter: [@annsophieblank](https://twitter.com/annsophieblank)
     film: ''
     filmLink: ''
     image: /img/sophie.jpg
@@ -52,7 +53,8 @@ profiles:
       Jerome is a Service Designer who has spent the past few years researching
       the climate crisis and it’s solutions. As a member of the London Design +
       Climate Network and co-lead of the Service Design community within IBM, he
-      is actively working to embed sustainability into IBM’s design approach. Twitter: [@jeromegreutmann](https://twitter.com/jeromegreutmann)
+      is actively working to embed sustainability into IBM’s design approach.
+      Twitter: [@jeromegreutmann](https://twitter.com/jeromegreutmann)
     filmLink: ''
     image: /img/img_8806.jpeg
     name: Jerome Greutmann
@@ -71,13 +73,33 @@ profiles:
   - book: Atomic Habits
     bookLink: 'https://jamesclear.com/atomic-habits'
     description: >-
-      Anthony Huntley helps businesses to leverage weather and climate data in their business decisions to create value for their customers, society and shareholders. As IBM’s Leader for Weather Services & Analytics in the UK, he works with business in every industry, from leading food retailers, to F1 teams, to advance from hoping that weather is favourable for their business, to capitalising on whatever the weather brings. With IBM’s ‘The Weather Company’ and with the world’s leading weather data, he helps improve forecasts of renewable energy generation, minimise wastage with retailer demand forecasting, and help enhance precision agriculture techniques to increase yield to feed the world. As a founding member of the Global Climate Risk, Transition & Resilience offering, he helps companies to quantify their climate related financial risk, and how to minimise it; in the process, making companies much more conscious about what their own climate impact is, and how they can reduce it. Outside of work he loves to learn, get into nature and capture photos & drone videos of our incredible world.
+      Anthony Huntley helps businesses to leverage weather and climate data in
+      their business decisions to create value for their customers, society and
+      shareholders. As IBM’s Leader for Weather Services & Analytics in the UK,
+      he works with business in every industry, from leading food retailers, to
+      F1 teams, to advance from hoping that weather is favourable for their
+      business, to capitalising on whatever the weather brings. With IBM’s ‘The
+      Weather Company’ and with the world’s leading weather data, he helps
+      improve forecasts of renewable energy generation, minimise wastage with
+      retailer demand forecasting, and help enhance precision agriculture
+      techniques to increase yield to feed the world. As a founding member of
+      the Global Climate Risk, Transition & Resilience offering, he helps
+      companies to quantify their climate related financial risk, and how to
+      minimise it; in the process, making companies much more conscious about
+      what their own climate impact is, and how they can reduce it. Outside of
+      work he loves to learn, get into nature and capture photos & drone videos
+      of our incredible world.
     film: This may be the single biggest opportunity in human history
-    filmLink: 'https://www.forbes.com/sites/devinthorpe/2019/08/07/this-may-be-the-single-biggest-business-opportunity-in-human-history/amp/?fbclid=IwAR2ACkMhsga9b_h_xc3mE9p9Zb1A4sjDninrwKjsJguphE6dsDJvr5Bym0M'
+    filmLink: >-
+      https://www.forbes.com/sites/devinthorpe/2019/08/07/this-may-be-the-single-biggest-business-opportunity-in-human-history/amp/?fbclid=IwAR2ACkMhsga9b_h_xc3mE9p9Zb1A4sjDninrwKjsJguphE6dsDJvr5Bym0M
     image: /img/anthony.jpg
     name: Anthony Huntley
     pledge: >-
-      My pledge is to continue eat as a ‘Flexitarian’, reducing my red meat consumption (as it’s the worst offender in terms of negative carbon impact), live a ‘minimalist lifestyle’ to reduce my personal consumption carbon footprint, and help others find great resources helping address the climate crisis both inside IBM, and beyond.
+      My pledge is to continue eat as a ‘Flexitarian’, reducing my red meat
+      consumption (as it’s the worst offender in terms of negative carbon
+      impact), live a ‘minimalist lifestyle’ to reduce my personal consumption
+      carbon footprint, and help others find great resources helping address the
+      climate crisis both inside IBM, and beyond.
   - book: Wilding
     bookLink: 'https://www.panmacmillan.com/authors/isabella-tree/wilding/9781509805099'
     description: >-
@@ -94,7 +116,7 @@ profiles:
     film: Racing Extinction
     filmLink: ' https://racingextinction.com/film/'
     image: /img/cecilia.jpg
-    name: Cecilia Ivsén
+    name: Cecilia Isvén
     pledge: >-
       My pledge is to speak up about climate change and to use my voice to make
       an impact through my work. On a personal level, I take no internal flights
@@ -133,17 +155,35 @@ profiles:
   - book: ''
     bookLink: ''
     description: >-
-      Sarah Powell is a Senior Managing Consultant within IBM’s Energy, Environment & Utilities industry team in Europe. With a background in organisational change and transformation, Sarah’s goal is to develop cross-industry solutions, using exponential technologies such as Artificial Intelligence (AI), Blockchain and Advanced Analytics, to challenge existing behaviours, ecosystems and business models, in the quest for cleaner, greener and more sustainable living.  Sarah’s passion for sustainability was reinforced through her recent sabbatical to the Americas, where she witnessed the devastating effects of plastic pollution and climate change first-hand.
+      Sarah Powell is a Senior Managing Consultant within IBM’s Energy,
+      Environment & Utilities industry team in Europe. With a background in
+      organisational change and transformation, Sarah’s goal is to develop
+      cross-industry solutions, using exponential technologies such as
+      Artificial Intelligence (AI), Blockchain and Advanced Analytics, to
+      challenge existing behaviours, ecosystems and business models, in the
+      quest for cleaner, greener and more sustainable living.  Sarah’s passion
+      for sustainability was reinforced through her recent sabbatical to the
+      Americas, where she witnessed the devastating effects of plastic pollution
+      and climate change first-hand.
     film: ''
     filmLink: ''
     image: /img/sarah.jpg
     name: Sarah Powell
     pledge: >-
-     I pledge to be bold, ambitious and innovative. To not only make my clients successful, but do so in a cleaner, greener, and more sustainable way. The needs and solutions are all around us and we have the skills, knowledge, platform and network to make this happen.
+      I pledge to be bold, ambitious and innovative. To not only make my clients
+      successful, but do so in a cleaner, greener, and more sustainable way. The
+      needs and solutions are all around us and we have the skills, knowledge,
+      platform and network to make this happen.
   - book: Project Drawdown
     bookLink: 'https://www.drawdown.org/the-book'
     description: >-
-      Pietro is a Digital Consultant for IBM iX. In 2017, he has attended the World Business Council for Sustainable Development in Switzerland and the Circular Economy summit 2019 in London. Fuelled by a year's backpacking around the world, falling in love with nature's wonders, Pietro has grown passionate about the issues concerning global warming, and is on the quest to use the power of storytelling, technology and human creativity to drive social and environmental change.
+      Pietro is a Digital Consultant for IBM iX. In 2017, he has attended the
+      World Business Council for Sustainable Development in Switzerland and the
+      Circular Economy summit 2019 in London. Fuelled by a year's backpacking
+      around the world, falling in love with nature's wonders, Pietro has grown
+      passionate about the issues concerning global warming, and is on the quest
+      to use the power of storytelling, technology and human creativity to drive
+      social and environmental change.
     film: Before The Flood
     filmLink: 'https://www.beforetheflood.com/'
     image: /img/profile-photo-4769.jpg
