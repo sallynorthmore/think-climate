@@ -20,6 +20,7 @@ export const Content = styled.div`
 
   &.postPage {
     max-width: 75rem;
+    text-align: left;
   }
 
   & *:first-child {

@@ -28,6 +28,9 @@ export const GlobalStyle = createGlobalStyle`
     *
     *  or,
     *  font-size: 1rem;
+
+    * Scale based on https://type-scale.com/
+    * Augmented Fourth
     */
 
     --type--2: .707rem/1rem;

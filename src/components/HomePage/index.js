@@ -67,6 +67,28 @@ const HomePage = ({ hero, profiles, events }) => {
 
             <S.EventAside>
               <S.Post>
+                <Link to="/post/think-climate-agenda" className="imageLink">
+                  <PreviewCompatibleImage
+                    imageInfo={{
+                      image: 'img/nasa-night.jpg',
+                      alt: `NASA earth`
+                    }}
+                  />
+                </Link>
+                <div className="content">
+                  <h2 className="title">
+                    <span>Event Agenda</span>
+                  </h2>
+                  <p>Find out who is speaking on Nov 20.</p>
+                  <Link to="/post/think-climate-agenda" className="more">
+                    More >
+                  </Link>
+                </div>
+              </S.Post>
+            </S.EventAside>
+
+            <S.EventAside>
+              <S.Post>
                 <Link to="/post/think-climate-notes/" className="imageLink">
                   <PreviewCompatibleImage
                     imageInfo={{
@@ -76,34 +98,11 @@ const HomePage = ({ hero, profiles, events }) => {
                   />
                 </Link>
                 <div className="content">
-                  <h2 className="title">
-                    <span>Post:</span> Notes on the talk
-                  </h2>
+                  <h2 className="title">Notes on the talk</h2>
                   <p>
                     Did you attend our talk? Get more info on topics covered.
                   </p>
                   <Link to="/post/think-climate-notes/" className="more">
-                    More >
-                  </Link>
-                </div>
-              </S.Post>
-            </S.EventAside>
-            <S.EventAside>
-              <S.Post>
-                <Link to="#" className="imageLink">
-                  <PreviewCompatibleImage
-                    imageInfo={{
-                      image: 'img/britt-gaiser.jpg',
-                      alt: `Image of event`
-                    }}
-                  />
-                </Link>
-                <div className="content">
-                  <h2 className="title">
-                    <span>Post:</span> Want to get involved?
-                  </h2>
-                  <p>How you can get involved in environmentalism at IBM</p>
-                  <Link to="#" className="more">
                     More >
                   </Link>
                 </div>

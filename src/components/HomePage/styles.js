@@ -25,7 +25,9 @@ export const Events = styled.div`
 `;
 
 export const MainEvent = styled.div`
-  /* margin: 1rem 0 0; */
+  & p {
+    max-width: 40rem;
+  }
   @media (min-width: ${props => props.theme.desktop}) {
     grid-area: main;
   }
@@ -70,7 +72,7 @@ export const Post = styled.div`
   & .content {
     background: var(--white);
     border-radius: 0 0 8px 8px;
-    padding: 1rem;
+    padding: 1rem 1.5rem 2rem;
 
     & p {
       font: 300 var(--type-0) var(--font-raleway);
