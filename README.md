@@ -28,6 +28,7 @@ $ git clone https://github.com/sallynorthmore/think-climate.git
 $ cd think-climate
 $ yarn
 $ netlify dev # or ntl dev
+```
 
 To test the CMS locally, you'll need run a production build of the site:
 
