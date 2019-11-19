@@ -53,6 +53,7 @@ export const GlobalStyle = createGlobalStyle`
     --silver: #A8A6A0;
     --moon: #F7F7F7;
     --white: #fff;
+    --red: #cd282d;
   }
 
   /**

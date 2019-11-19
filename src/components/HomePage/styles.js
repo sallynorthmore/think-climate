@@ -4,39 +4,30 @@ export const HomePage = styled.div``;
 
 export const Main = styled.main`
   background: var(--silver);
+  padding: 1rem;
   text-align: center;
 `;
 
 export const Events = styled.div`
-  padding: 1rem;
+  padding: 0 1rem;
 
   @media (min-width: ${props => props.theme.desktop}) {
-    /* display: flex; */
-    margin: 0 auto;
-    /* max-width: 80rem; */
-    /* display: grid;
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
     grid-gap: 1rem;
+    grid-template-areas: 'main item1' 'main item2';
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: 'main item1' 'main item2'; */
+    margin: 0 auto;
+    max-width: 120rem;
+    padding: 2.5rem 2rem 0;
   }
 `;
 
 export const MainEvent = styled.div`
   /* margin: 1rem 0 0; */
   @media (min-width: ${props => props.theme.desktop}) {
-    /* grid-area: main; */
-    /* flex: 0 0 50%; */
-  }
-`;
-
-export const Quote = styled.div`
-  display: none;
-
-  @media (min-width: ${props => props.theme.desktop}) {
-    display: flex;
-    padding: 3rem;
-    flex: 0 0 50%;
+    grid-area: main;
   }
 `;
 
@@ -58,7 +49,7 @@ export const Post = styled.div`
   }
 
   & .title {
-    color: #cd282d;
+    color: var(--red);
     font: 600 var(--type--1) var(--font-raleway);
     margin: 0.25rem 0 0;
   }
@@ -90,11 +81,16 @@ export const Post = styled.div`
       }
     }
   }
+
+  @media (min-width: ${props => props.theme.desktop}) {
+    height: 100%;
+    margin: 0;
+  }
 `;
 
 export const EventAside = styled.div`
   & .imageLink {
-    max-height: 160px;
+    max-height: 12.5rem;
     overflow: hidden;
     position: relative;
 
@@ -105,48 +101,40 @@ export const EventAside = styled.div`
     }
   }
 
-  @media (min-width: ${props => props.theme.tablet}) {
-    display: inline-block;
-    max-width: 50%;
-
-    &:last-of-type {
-      padding-left: 1rem;
-    }
-  }
-
   @media (min-width: ${props => props.theme.desktop}) {
-    display: block;
-
-    /* padding-left: 1rem; */
+    height: 100%;
+    width: 100%;
 
     &:first-child {
       grid-area: item1;
-      /* max-height: 50%; */
     }
 
     &:last-child {
       grid-area: item2;
-      /* max-height: 50%; */
-    }
-
-    & ${Post} {
-      position: relative;
-      max-height: 50%;
-
-      &:not(:first-child) {
-        padding-left: 0;
-      }
     }
 
     & .imageLink {
-      max-height: 180px;
+      max-height: 11.25rem;
       overflow: hidden;
       position: relative;
 
       & img {
         margin-top: -30%;
-        width: 100%;
         position: relative;
+        width: 100%;
+      }
+    }
+
+    & ${Post} {
+      display: flex;
+      flex-direction: column;
+
+      & .content {
+        flex: 1;
+      }
+
+      &:not(:first-child) {
+        padding-left: 0;
       }
     }
   }
@@ -204,10 +192,6 @@ export const Profiles = styled.ul`
     & li {
       flex: 0 0 20%;
       padding: 0.5rem;
-    }
-
-    & .image {
-      /* border-radius: 0; */
     }
   }
 `;

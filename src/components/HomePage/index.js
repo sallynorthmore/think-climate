@@ -5,7 +5,6 @@ import Layout from '../Layout/index.js';
 import ParralaxHero from '../ParralaxHero';
 import PreviewCompatibleImage from '../PreviewCompatibleImage';
 import SEO from '../SEO';
-// import Content from '../Content';
 // import EventRoll from '../EventRoll';
 // import FeaturedEvent from '../FeaturedEvent';
 import * as S from './styles';
@@ -47,8 +46,8 @@ const HomePage = ({ hero, profiles, events }) => {
                     <span>Event:</span> Think Climate
                   </h2>
                   <div className="speakers">
-                    with Jeremy Waite (iX), Dorothy Shaver (Unilever), and Dr.
-                    Murray Simpson (IBM Global Lead)
+                    with Jeremy Waite (IBM iX), Dorothy Shaver (Unilever), and
+                    Dr. Murray Simpson (IBM Global Lead)
                   </div>
                   <p>
                     On November 20th, we invite you to join us for an event
@@ -66,9 +65,9 @@ const HomePage = ({ hero, profiles, events }) => {
               </S.Post>
             </S.MainEvent>
 
-            {/* <S.EventAside>
+            <S.EventAside>
               <S.Post>
-                <Link to="#" className="imageLink">
+                <Link to="/post/think-climate-notes/" className="imageLink">
                   <PreviewCompatibleImage
                     imageInfo={{
                       image: 'img/simon-wilkes-unsplash.jpg',
@@ -81,9 +80,11 @@ const HomePage = ({ hero, profiles, events }) => {
                     <span>Post:</span> Notes on the talk
                   </h2>
                   <p>
-                    Did you attend our talk? Get more info on topics covered.{' '}
-                    <Link to="#"> More ></Link>
+                    Did you attend our talk? Get more info on topics covered.
                   </p>
+                  <Link to="/post/think-climate-notes/" className="more">
+                    More >
+                  </Link>
                 </div>
               </S.Post>
             </S.EventAside>
@@ -101,13 +102,13 @@ const HomePage = ({ hero, profiles, events }) => {
                   <h2 className="title">
                     <span>Post:</span> Want to get involved?
                   </h2>
-                  <p>
-                    How you can get involved in environmentalism at IBM{' '}
-                    <Link to="#">More ></Link>
-                  </p>
+                  <p>How you can get involved in environmentalism at IBM</p>
+                  <Link to="#" className="more">
+                    More >
+                  </Link>
                 </div>
               </S.Post>
-            </S.EventAside> */}
+            </S.EventAside>
           </S.Events>
         </S.Main>
         <S.Team id="team">
