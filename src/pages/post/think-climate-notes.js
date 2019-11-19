@@ -2,7 +2,7 @@ import React from 'react';
 import PostPage from '../../components/PostPage';
 
 export default () => (
-  <PostPage title="THINK Climate Map">
+  <PostPage title="Event notes">
     <p>
       We've assembled a mindmap of our footnotes and content for you to explore.
     </p>

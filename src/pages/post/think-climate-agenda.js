@@ -2,9 +2,7 @@ import React from 'react';
 import PostPage from '../../components/PostPage';
 
 export default () => (
-  <PostPage title="THINK Climate">
-    <h2>Speaker Agenda</h2>
-
+  <PostPage title="Speaker agenda">
     <h3>A Few Words From Al Gore</h3>
 
     <h3>
