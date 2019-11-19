@@ -9,7 +9,7 @@ public_folder: /img
 collections:
   - name: 'events'
     label: 'Events'
-    folder: 'src/pages/events'
+    folder: 'src/content/events'
     create: true
     slug: '{{slug}}-{{year}}-{{month}}-{{day}}-'
     fields:
@@ -39,7 +39,7 @@ collections:
   - name: 'pages'
     label: 'Pages'
     files:
-      - file: 'src/pages/index.md'
+      - file: 'src/content/index.md'
         label: 'Landing Page'
         name: 'index'
         fields:
@@ -62,7 +62,7 @@ collections:
                 { label: Background color, name: color, widget: text },
                 { label: Image, name: image, widget: image },
               ]
-      - file: 'src/pages/about/index.md'
+      - file: 'src/content/about/index.md'
         label: 'About'
         name: 'about'
         fields:

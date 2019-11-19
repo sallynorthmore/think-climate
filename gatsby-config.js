@@ -22,8 +22,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/pages`,
-        name: 'pages'
+        path: `${__dirname}/src/content`,
+        name: 'content'
       }
     },
     {
@@ -38,13 +38,6 @@ module.exports = {
       options: {
         name: `videos`,
         path: `${__dirname}/static/videos`
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `content`,
-        path: `${__dirname}/content`
       }
     },
     {

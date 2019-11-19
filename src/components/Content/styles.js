@@ -17,10 +17,9 @@ export const Content = styled.div`
   font: 400 var(--type-0) var(--font-questrial);
   margin: 0 auto;
   max-width: 45rem; /* 720px */
-  /* text-align: center; */
 
-  @media (min-width: ${props => props.theme.tablet}) {
-    /* text-align: left; */
+  &.postPage {
+    max-width: 75rem;
   }
 
   & *:first-child {
@@ -89,6 +88,10 @@ export const Content = styled.div`
         margin-top: 2rem;
       }
     }
+  }
+
+  & blockquote {
+    margin: 3rem auto;
   }
 
   & blockquote p {
@@ -179,6 +182,11 @@ export const Content = styled.div`
 
   & img {
     max-width: 100%;
+  }
+
+  & iframe {
+    height: 80vh;
+    width: 100%;
   }
   /* stylelint-enable */
 `;

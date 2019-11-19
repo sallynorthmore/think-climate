@@ -1,17 +1,8 @@
 import React from 'react';
-import Layout from '../../components/Layout';
-import EventRoll from '../../components/EventRoll';
+import EventsPage from '../../components/EventsPage';
 
 export default class EventIndexPage extends React.Component {
   render() {
-    return (
-      <Layout>
-        <h1>Latest Stories</h1>
-
-        <section className="section">
-          <EventRoll />
-        </section>
-      </Layout>
-    );
+    return <EventsPage />;
   }
 }
