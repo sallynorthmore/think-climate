@@ -9,7 +9,13 @@ export default () => (
         href="https://www.mindomo.com/mindmap/think-climate-c968e0bcbaeb452596086d4209701ed9"
         target="_blank"
       >
-        Open in Mindomo window
+        Open in Mindomo.
+      </a>
+    </p>
+    <p>
+      Do you work at IBM and are interested in internal initiatives?{' '}
+      <a href="https://ibm.biz/ClimateInternalMap" target="_blank">
+        Click here.
       </a>
     </p>
     <div>
