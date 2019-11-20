@@ -4,12 +4,14 @@ import Layout from '../Layout/index.js';
 import Hero from '../Hero';
 import Content from '../Content';
 import Team from '../Team';
+import SEO from '../SEO';
 import * as S from './styles';
 
 const AboutPage = ({ title, content, contentComponent, profiles }) => {
   const PostContent = contentComponent || Content;
   return (
     <Layout>
+      <SEO description={title} />
       <S.AboutPage>
         <Hero isEvent headline={title}></Hero>
         <S.Main>

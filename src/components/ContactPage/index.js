@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { navigate } from 'gatsby-link';
 import Layout from '../../components/Layout';
+import SEO from '../SEO';
 import Hero from '../../components/Hero';
 import Content from '../../components/Content';
 import * as S from './styles';
@@ -40,6 +41,7 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
+        <SEO description="Get in touch." />
         <Hero isSmall headline="Contact"></Hero>
         <S.Main>
           <Content>
