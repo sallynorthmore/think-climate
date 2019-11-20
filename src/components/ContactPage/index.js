@@ -41,7 +41,7 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <SEO description={title} />
+        <SEO description="Get in touch." />
         <Hero isSmall headline="Contact"></Hero>
         <S.Main>
           <Content>
