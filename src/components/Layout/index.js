@@ -8,7 +8,7 @@ import Subscribe from '../Subscribe';
 
 import * as S from './styles';
 
-const Layout = ({ children }) => {
+const Layout = ({ children, noSubscribe }) => {
   return (
     <>
       <ThemeProvider theme={GlobalTheme}>
@@ -16,7 +16,8 @@ const Layout = ({ children }) => {
           <GlobalStyle />
           <Banner />
           {children}
-          <Subscribe />
+          {!noSubscribe && <Subscribe />}
+
           <Footer />
         </S.Layout>
       </ThemeProvider>
@@ -24,7 +25,9 @@ const Layout = ({ children }) => {
   );
 };
 
-Layout.defaultProps = {};
+Layout.defaultProps = {
+  noSubscribe: false
+};
 
 Layout.props = {
   children: PropTypes.node
