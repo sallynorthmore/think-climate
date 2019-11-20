@@ -11,7 +11,7 @@ export default () => (
     <p>Must We Change, Can We Change, Will We Change?</p>
 
     <h3>
-      <strong>Pietro Piantadina</strong>
+      <strong>Pietro Piantanida</strong>
     </h3>
     <p>The Top 100 Solutions to Global Warming</p>
 
