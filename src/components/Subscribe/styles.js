@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 export const Subscribe = styled.section`
   background: var(--moon);
+  color: var(--black);
   padding: 5rem 2.5rem;
 
   & * + * {
-    color: var(--black);
     margin-top: 3rem;
   }
 
