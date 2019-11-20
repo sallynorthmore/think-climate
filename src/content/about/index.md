@@ -187,7 +187,7 @@ profiles:
     film: Before The Flood
     filmLink: 'https://www.beforetheflood.com/'
     image: /img/profile-photo-4769.jpg
-    name: Pietro Piantadina
+    name: Pietro Piantanida
     pledge: |-
       * Become a Climate Reality leader by end of 2020
       * Speak boldly and spread the word on the climate crisis
