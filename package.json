@@ -83,6 +83,6 @@
     "stylelint-number-z-index-constraint": "^2.0.0",
     "stylelint-order": "^2.2.1",
     "stylelint-processor-styled-components": "^1.8.0",
-    "validator": "^10.11.0"
+    "validator": "^13.7.0"
   }
 }
